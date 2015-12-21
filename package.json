@@ -1,0 +1,36 @@
+{
+	"name"         : "node-red-contrib-homegear-mqtt",
+	"version"      : "0.0.1",
+	"description"  : "Interact with Homegear connected devices via mqtt",
+	"dependencies" : {
+		"mqtt"  : "1.x.x",
+		"clone" : "1.0.x",
+
+		"grunt"                : "0.4.5",
+		"grunt-cli"            : "0.1.13",
+		"grunt-lint-inline"    : "0.4.3",
+		"grunt-simple-mocha"   : "0.4.0",
+		"grunt-contrib-jshint" : "0.10.0",
+		"mocha"                : "1.21.4"
+	},
+	"repository"   : {
+		"type" : "git",
+		"url"  : "https://github.com/shirk/node-red-contrib-homegear-mqtt.git"
+	},
+	"license"      : "ISC",
+	"keywords"     : [ "node-red", "homegear", "homematic", "mqtt" ],
+	"node-red"     : {
+		"nodes" : {
+			"homegear-mqtt": "homegear-mqtt.js"
+		}
+	},
+	"directories" : {
+		"lib"           : "lib",
+		"icons"         : "icons",
+		"locales"       : "locales"
+	},
+	"author"      : {
+		"name"  : "René Köcher",
+		"email" : "shirk+node@bitspin.org"
+	}
+}

@@ -1,0 +1,397 @@
+<!-- Copyright (c) 2015 René Köcher
+  *- See the file LICENSE for copying permission.
+-->
+<!-- start of homegear-mqtt in -->
+<script type="text/javascript">
+
+	RED.nodes.registerType('homegear-mqtt in',{
+		category: 'input',
+		color: '#c0deed',
+		defaults: {
+			broker: {type:'mqtt-broker', required:true},
+			homegearId: {value:'1234-5678-9abc', required:true},
+			peerId: {value:1, required:true, validate:RED.validators.number()},
+			deviceType: {required:true},
+			publishUpdates: {value:true, required:true},
+			publishComplete: {value:true, required:true},
+			name: {value:''},
+			genName: {value:''}
+		},
+		inputs: 0,
+		outputs: 1,
+		icon: 'homegear-mqtt.png',
+		label: function() {
+			return this.name || this.genName || 'homegear-mqtt in';
+		},
+		labelStyle: function() {
+			return this.name ? 'node_label_italic' : '';
+		},
+		paletteLabel: 'homegear',
+		oneditprepare: function() {
+			$('#node-input-deviceType').hide();
+
+			$.getScript('homegear-mqtt/families/homematic')
+			.done(function(data, textStatus, jqxhr) {
+				$('#node-input-deviceTypeList option').remove();
+
+				var deviceTypes = JSON.parse(data);
+				var deviceOpts = [];
+
+				var selected = $('#node-input-deviceType').val();
+				for(var i in deviceTypes) {
+					for(var j in deviceTypes[i].names) {
+						var name = deviceTypes[i].names[j];
+						var value = i.toString() + ':' + j.toString();
+						deviceOpts.push([name, value]);
+					}
+				}
+				deviceOpts.sort();
+				for(var i = 0; i < deviceOpts.length; ++i) {
+					var opt = $('<option></option>').val(deviceOpts[i][1])
+					                                .text(deviceOpts[i][0]);
+
+					opt.appendTo('#node-input-deviceTypeList');
+					if(selected === opt.val()) {
+						opt.attr('selected', 'selected');
+					}
+				}
+
+				$('#node-input-deviceTypeList').change(function() {
+					var value = $('#node-input-deviceTypeList option:selected').val();
+					var name  = $('#node-input-deviceTypeList option:selected').text();
+					$('#node-input-deviceType').val(value);
+				}).show();
+			});
+		},
+		oneditsave: function() {
+			var name = $('#node-input-name').val();
+			var peer = $('#node-input-peerId').val();
+			var homegear = $('#node-input-homegearId').val() || '1234-5678-9abc';
+			var genName = homegear + '.' + peer + '.' + $('#node-input-deviceTypeList option:selected').text();
+
+			$('#node-input-genName').val((name === '') ? genName : '');
+		}
+	});
+</script>
+
+<script type="text/x-red" data-template-name="homegear-mqtt in">
+	<div class="form-row">
+		<label for="node-input-broker"><i class="fa fa-globe"></i><span data-i18n="homegear-mqtt.label.broker"></span></label>
+		<input type="text" id="node-input-broker">
+	</div>
+	<div class="form-row">
+		<label for="node-input-homegearId"><i class="fa fa-tag"></i><span data-i18n="homegear-mqtt.label.homegearId"></span></label>
+		<input type="text" id="node-input-homegearId" placeholder="1234-5678-9abc">
+	</div>
+	<div class="form-row">
+		<label for="node-input-peerId"><i class="fa fa-tag"></i><span data-i18n="homegear-mqtt.label.peerId"></span></label>
+		<input type="text" id="node-input-peerId" placeholder="1">
+	</div>
+	<div class="form-row">
+		<label for="node-input-deviceType"><i class="fa fa-tasks"></i><span data-i18n="homegear-mqtt.label.deviceType"></span></label>
+		<select id="node-input-deviceTypeList"></select>
+		<input type="text" id="node-input-deviceType" style="display: none;">
+	</div>
+	<div class="form-row">
+		<label>&nbsp;</label>
+		<input type="checkbox" id="node-input-publishUpdates" style="display: inline-block; width: auto; vertial-align: top;">
+		<label for="node-input-publishUpdates" style="width: 70%;"><span data-i18n="homegear-mqtt.label.publishUpdates"></span></label>
+	</div>
+	<div class="form-row">
+		<label>&nbsp;</label>
+		<input type="checkbox" id="node-input-publishComplete" style="display: inline-block; width: auto; vertial-align: top;">
+		<label for="node-input-publishComplete" style="width: 70%;"><span data-i18n="homegear-mqtt.label.publishComplete"></span></label>
+	</div>
+	<div class="form-row">
+		<label for="node-input-name"><i class="icon-tag"></i><span data-i18n="node-red:common.label.name"></span></label>
+		<input type="text" id="node-input-name" data-i18n="[placeholder]node-red:common.label.name">
+		<input type="text" id="node-input-genName" style="display: none;">
+	</div>
+</script>
+
+<script type="text/x-red" data-help-name="homegear-mqtt in">
+	<p>Collects data from <b>one device</b> connected to the configured Homegear server.</p>
+	<p>
+	The device is identified by it's <i><b>peerId</b></i> which an be queried from Homegear
+	using the <i>"peers list"</i> command or any suitable web interface.
+	</p>
+	<p>
+	On first connect the node will request all current device values and collect and publish
+	them. From this point on updates will be based on the received change events.
+	</p>
+	<p>
+	This node will subscribe to events via <b>mqtt</b>.
+	Make sure you're using Homegear <b>0.6 or later</b> with <i>"enabled = true"</i> set
+	inside your <i>/etc/homegear/mqtt.conf</i>.
+	</p>
+	<p>
+	(This file is also the location of the <b>homegearId</b> parameter)
+	</p>
+</script>
+<!-- end of homegear-mqtt in -->
+
+<!-- start of homegear-mqtt out -->
+<script type="text/javascript">
+	var homegear = null;
+
+	RED.nodes.registerType('homegear-mqtt out', {
+		category: 'output',
+		color: '#c0deed',
+		defaults: {
+			broker: {type:'mqtt-broker', required:true},
+			homegearId: {value:'1234-5678-9abc', required:true},
+			peerId: {value:1, required:true, validate:RED.validators.number()},
+			deviceType: {required:true},
+			paramName: {required:true},
+			paramValue: {value:''},
+			publishResult: {value:false},
+
+			name: {value:''},
+			genName: {value:''},
+			outputs: {value:0}
+		},
+		inputs: 1,
+		outputs: 0,
+		icon: 'homegear-mqtt.png',
+		align: 'right',
+		label: function() {
+			return this.name || this.genName || 'homegear-mqtt out';
+		},
+		labelStyle: function() {
+			return this.name ? 'node_label_italic' : '';
+		},
+		paletteLabel: 'homegear',
+		oneditprepare: function() {
+			$('#node-input-paramName').hide();
+			$('#node-input-paramNameList').hide();
+
+			$('#node-input-paramValue').hide();
+			$('#node-input-paramValueList').hide();
+
+			$('#node-input-deviceType').hide();
+
+			$.getScript('homegear-mqtt/common')
+			.done(function(data, textStatus, jqxhr) {
+				$.getScript('homegear-mqtt/families/homematic')
+				.done(function(data, textStatus, jqxhr) {
+					$('#node-input-deviceTypeList option').remove();
+
+					var deviceTypes = JSON.parse(data);
+					var deviceOpts  = [];
+
+					var selected = $('#node-input-deviceType').val();
+					for(var i in deviceTypes) {
+						for(var j in deviceTypes[i].names) {
+							var name = deviceTypes[i].names[j];
+							var value = i.toString() + ':' + j.toString();
+							deviceOpts.push([name, value]);
+						}
+					}
+					deviceOpts.sort();
+					for(var i = 0; i < deviceOpts.length; ++i) {
+						var opt = $('<option></option>').val(deviceOpts[i][1])
+														.text(deviceOpts[i][0]);
+
+						opt.appendTo('#node-input-deviceTypeList');
+						if(selected === opt.val()) {
+							opt.attr('selected', 'selected');
+						}
+					}
+
+					$('#node-input-deviceTypeList').change(function() {
+						var value = $('#node-input-deviceTypeList option:selected').val();
+						var name  = $('#node-input-deviceTypeList option:selected').text();
+						$('#node-input-deviceType').val(value);
+
+						updateDeviceParamLists(deviceTypes[Number(value.split(':')[0])]);
+					}).show();
+
+					updateDeviceParamLists(deviceTypes[Number((selected || '0:0').split(':')[0])]);
+				});
+			});
+
+			function updateDeviceParamLists(device) {
+				/* update paramValue / paramValueList */
+				var params = homegear.writeableParamsForDevice(device);
+
+				$('#node-input-paramNameList option').remove();
+				params.forEach(function(param){
+					var opt = $('<option></option>').val(param.name).text(param.name);
+						opt.appendTo('#node-input-paramNameList');
+
+					if($('#node-input-paramName').val() === opt.val()){
+						opt.attr('selected', 'selected');
+						updateDeviceParamValueList(device);
+					}
+				});
+
+				$('#node-input-paramNameList').change(function(){
+					var selected = $('#node-input-paramNameList option:selected').val();
+
+					$('#node-input-paramName').val(selected);
+					updateDeviceParamValueList(device, selected);
+				}).show();
+
+				var selected = $('#node-input-paramNameList option:selected').val();
+				updateDeviceParamValueList(device, selected);
+			}
+
+			function updateDeviceParamValueList(device, name) {
+				/* update possible choinces for paramValue */
+				var params   = homegear.writeableParamsForDevice(device);
+
+				$('#node-input-paramActionNotice').hide();
+				$('#node-input-paramValueList option').remove();
+				$('#node-input-paramValueList').hide();
+				$('#node-input-paramValueRow').hide();
+				$('#node-input-paramValue').hide();
+
+				params.forEach(function(param){
+					if(param.name === name) {
+						switch(param.type) {
+							case 'float':
+							case 'string':
+							case 'integer':
+								$('#node-input-paramValueRow').show();
+								$('#node-input-paramValue').show();
+								break;
+
+							case 'action':
+								$('#node-input-paramValue').val('1');
+								$('#node-input-paramActionNotice').show();
+								break;
+
+							case 'boolean':
+								var select = Number($('#node-input-paramValue').val()) || 0;
+
+								$('<option></option>').val(0).text('false')
+													  .appendTo('#node-input-paramValueList');
+								$('<option></option>').val(1).text('true')
+													  .appendTo('#node-input-paramValueList');
+
+								$('#node-input-paramValueList').show();
+								$('#node-input-paramValueRow').show();
+								break;
+
+							case 'option':
+								if(param.mapping === undefined) {
+									$('#node-input-paramValue').show();
+								} else {
+									for(var i = 0; i < param.mapping.length; ++i) {
+										var opt = $('<option></option>').val(i).text(param.mapping[i]);
+
+										if(Number($('#node-input-paramValue').val()) == i) {
+											opt.attr('selected', 'selected');
+										}
+										opt.appendTo('#node-input-paramValueList');
+									}
+									$('#node-input-paramValueList').show();
+								}
+								$('#node-input-paramValueRow').show();
+								break;
+						}
+					}
+				});
+
+				$('#node-input-paramValueList').change(function(){
+					var value = $('#node-input-paramValueList option:selected').val();
+					$('#node-input-paramValue').val(value);
+				});
+			}
+		},
+		oneditsave: function() {
+			var name     = $('#node-input-name').val();
+			var peer     = $('#node-input-peerId').val();
+			var homegear = $('#node-input-homegearId').val() || '1234-5678-9abc';
+			var device   = $('#node-input-deviceTypeList option:selected').text();
+			var param    = $('#node-input-paramName').val();
+			var value    = $('#node-input-paramValue').val();
+
+			var genName = homegear + '.' + peer + '.' + device + '.' + param + (value ? '.' : '') + value;
+
+			$('#node-input-genName').val((name === '') ? genName : '');
+
+			if($('#node-input-publishResult').prop('checked') === true) {
+				$('#node-input-outputs').val(true);
+				this.outputs = 1;
+			} else {
+				$('#node-input-outputs').val(false);
+				this.outputs = 0;
+			}
+		}
+	});
+</script>
+
+<script type="text/x-red" data-template-name="homegear-mqtt out">
+	<div class="form-row">
+		<label for="node-input-broker"><i class="fa fa-globe"></i><span data-i18n="homegear-mqtt.label.broker"></span></label>
+		<input type="text" id="node-input-broker">
+	</div>
+	<div class="form-row">
+		<label for="node-input-homegearId"><i class="fa fa-tag"></i><span data-i18n="homegear-mqtt.label.homegearId"></span></label>
+		<input type="text" id="node-input-homegearId" placeholder="1234-5678-9abc">
+	</div>
+	<div class="form-row">
+		<label for="node-input-peerId"><i class="fa fa-tag"></i><span data-i18n="homegear-mqtt.label.peerId"></span></label>
+		<input type="text" id="node-input-peerId" placeholder="1">
+	</div>
+	<div class="form-row">
+		<label for="node-input-deviceType"><i class="fa fa-tasks"></i><span data-i18n="homegear-mqtt.label.deviceType"></span></label>
+		<select id="node-input-deviceTypeList"></select>
+		<input type="text" id="node-input-deviceType" style="display: none;">
+	</div>
+	<div class="form-row">
+		<label for="node-input-paramName"><i class="fa fa-wrench"></i><span data-i18n="homegear-mqtt.label.paramName"></span></label>
+		<select id="node-input-paramNameList"></select>
+		<input type="text" id="node-input-paramName" style="display: none;">
+	</div>
+	<div class="form-row" id="node-input-paramValueRow">
+		<label for="node-input-paramValue"><i class="fa fa-pencil"></i><span data-i18n="homegear-mqtt.label.paramValue"></span></label>
+		<select id="node-input-paramValueList" style="display: none;"></select>
+		<input type="text" id="node-input-paramValue" data-i18n="[placeholder]homegear-mqtt.placeholder.paramValue" style="display: none;">
+	</div>
+	<div class="form-row" id="node-input-paramActionNotice" style="display: none">
+		<i><span data-i18n="homegear-mqtt.label.paramActionNotice" style="display: block; width: auto; text-align: center;"></span></i>
+	</div>
+	<div class="form-row">
+		<label>&nbsp;</label>
+		<input type="checkbox" id="node-input-publishResult" style="display: inline-block; width: auto; vertial-align: top;">
+		<label for="node-input-publishResult" style="width: 70%;"><span data-i18n="homegear-mqtt.label.publishResult"></span></label>
+		<input type="text" id="node-input-outputs" style="display: none;">
+	</div>
+	<div class="form-row">
+		<label for="node-input-name"><i class="icon-tag"></i><span data-i18n="node-red:common.label.name"></span></label>
+		<input type="text" id="node-input-name" data-i18n="[placeholder]node-red:common.label.name">
+		<input type="text" id="node-input-genName" style="display: none;">
+	</div>
+</script>
+
+<script type="text/x-red" data-help-name="homegear-mqtt out">
+	<p>Sends change requests for <b>one value</b> of <b>one device</b> connected to the configured Homegear server.</p>
+	<p>
+	Use this node to change values of the configured device.</br>
+	By default it will send a <i>setValue</i> RPC request for the configured variable / value pair.
+	</p>
+	<p>
+	<ul>
+		<li>if <b>msg.value</b> is specified it will be used as the new value</li>
+		<li>if <b>msg.name</b> is specified it will be used as the parameter name</li>
+	</ul>
+	</p>
+	<p>
+	The device is identified by it's <i><b>peerId</b></i> which an be queried from Homegear
+	using the <i>"peers list"</i> command or by using any suitable web interface.</br>
+	</p>
+	<p>
+	This node will subscribe to events via <b>mqtt</b>.
+	Make sure you're using Homegear <b>0.6 or later</b> with <i>"enabled = true"</i> set
+	inside your <i>/etc/homegear/mqtt.conf</i>.
+	</p>
+	<p>
+	(This file is also the location of the <b>homegearId</b> parameter)
+	</p>
+</script>
+<!-- end of homegear-mqtt out -->
+
+<!-- vim: ts=4 sw=4 sts=4 noet :
+-->

@@ -1,0 +1,24 @@
+{
+	"homegear-mqtt" : {
+		"label" : {
+			"broker" : " Server",
+			"homegearId": " Homegear id",
+			"peerId": " Peer id",
+			"deviceType": " Device Type",
+			"publishUpdates": "Only send a message on property changes.",
+			"publishComplete": "Wait for complete property before first message.",
+			"publishResult": "Output for HomeGear response.",
+			"paramName": " Parameter",
+			"paramValue": " Value",
+			"paramActionNotice": "The parameter is an action which will be triggered."
+		},
+		"placeholder" : {
+			"paramValue": "value to send"
+		}
+	},
+	"common" : {
+		"label" : {
+			"connected": "connected"
+		}
+	}
+}
