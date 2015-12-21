@@ -12,6 +12,11 @@ triggering actions.
 **Currently only the Homematic device family is supported but inclusion of MAX!, INSTEON an maybe even Hue
 is planned. However takes some time to write the required [JSON device descriptions](https://github.com/shirk/node-red-contrib-homegear-mqtt/blob/master/docs/json-device-description.md) so please bear with me.**
 
+![Sample Node-RED setup](https://github.com/shirk/node-red-contrib-homegear-mqtt/raw/master/docs/sample-1.png)
+
+![Sample input config](https://github.com/shirk/node-red-contrib-homegear-mqtt/raw/master/docs/config-in.png)
+![Sample output config](https://github.com/shirk/node-red-contrib-homegear-mqtt/raw/master/docs/config-out.png)
+
 ### Installation
 Per user:
 ```bash
