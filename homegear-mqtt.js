@@ -145,8 +145,15 @@ module.exports = function(RED) {
 				this.brokerConn.subscribe(node.rpcTopic, 2, function(topic, payload, packet) {
 					payload = JSON.parse(payload.toString());
 
-					if(payload.result !== undefined) {
+					if(payload.id !== node.rpcId) {
+						return;
+					}
+
+					if(payload.result !== undefined &&
+					   payload.result !== null) {
 						node.send({payload: payload.result[0]});
+					} else {
+						node.send({payload: 'success'});
 					}
 				}, this.id);
 			}
