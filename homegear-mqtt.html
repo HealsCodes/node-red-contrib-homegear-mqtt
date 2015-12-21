@@ -300,6 +300,8 @@
 			}
 		},
 		oneditsave: function() {
+			$('#node-input-paramName').val($('#node-input-paramNameList option:selected').val());
+
 			var name     = $('#node-input-name').val();
 			var peer     = $('#node-input-peerId').val();
 			var homegear = $('#node-input-homegearId').val() || '1234-5678-9abc';
