@@ -34,11 +34,10 @@ Make sure to set `enable = true` inside Homegears `/etc/homegear/mqtt.conf`.
 
 ### TODOs ###
 Things that are planned but not implemented (yet):
-
-    - [] refactor broker & homegearId to a separate config node
-         (requires: https://github.com/node-red/node-red/issues/636)
-    - [] add support for familie selection
-    - [] add families for MAX!, INSTEON and maybe Hue (need to test that one)
+- [ ] refactor broker & homegearId to a separate config node
+     (requires: https://github.com/node-red/node-red/issues/636)
+- [ ] add support for familie selection
+- [ ] add families for MAX!, INSTEON and maybe Hue (need to test that one)
 
 ### Contributing ###
 
