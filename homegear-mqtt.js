@@ -142,7 +142,7 @@ module.exports = function(RED) {
 
 			if(this.publishResult === true) {
 				node.log('subscribing to topic "' + node.rpcTopic + '"');
-				this.brokerConn.subscribe(node.eventTopic, 2, function(topic, payload, packet) {
+				this.brokerConn.subscribe(node.rpcTopic, 2, function(topic, payload, packet) {
 					payload = JSON.parse(payload.toString());
 
 					if(payload.result !== undefined) {
