@@ -2,7 +2,7 @@ node-red-contrib-homegear-mqtt
 ===============================
 Monitor and control your devices connect to [Homegear](https://www.homegear.eu) from [Node-RED](https://nodered.org).
 
-[![npm version](https://badge.fury.io/js/node-red-contrib-homegear-mqtt.svg)](http://badge.fury.io/js/node-red-contrib-homegear-mqtt) [![Build Status](https://travis-ci.org/Shirk/node-red-contrib-homegear-mqtt.svg?branch=master)](https://travis-ci.org/Shirk/node-red-contrib-homegear-mqtt) [![Coverage Status](https://coveralls.io/repos/shirk/node-red-contrib-homegear-mqtt/badge.svg?branch=master)](https://coveralls.io/r/shirk/node-red-contrib-homegear-mqtt?branch=master) [![Dependency Status](https://david-dm.org/shirk/node-red-contrib-homegear-mqtt.svg)](https://david-dm.org/shirk/noder-red-contrib-homegear-mqtt)
+[![npm version](https://badge.fury.io/js/node-red-contrib-homegear-mqtt.svg)](http://badge.fury.io/js/node-red-contrib-homegear-mqtt) [![Build Status](https://travis-ci.org/Shirk/node-red-contrib-homegear-mqtt.svg?branch=master)](https://travis-ci.org/Shirk/node-red-contrib-homegear-mqtt) [![Coverage Status](https://coveralls.io/repos/Shirk/node-red-contrib-homegear-mqtt/badge.svg?branch=master&service=github)](https://coveralls.io/github/Shirk/node-red-contrib-homegear-mqtt?branch=master)[![Dependency Status](https://david-dm.org/shirk/node-red-contrib-homegear-mqtt.svg)](https://david-dm.org/shirk/noder-red-contrib-homegear-mqtt)
 
 ### Overview
 node-red-contrib-homegear-mqtt interfaces with your [Homegear](https://www.homegear.eu) server using *MQTT*
