@@ -88,7 +88,7 @@ module.exports = function(RED) {
 						}
 					});
 				} else {
-					node.error('unexpected response to parameter request: ' + JSON.stringify(payload.result)
+					node.error('unexpected response to parameter request: ' + JSON.stringify(payload.result));
 				}
 
 				node.log('unsubscribing from topic "' + node.rpcTopic + '"');
