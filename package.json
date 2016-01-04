@@ -1,6 +1,6 @@
 {
 	"name"         : "node-red-contrib-homegear-mqtt",
-	"version"      : "0.0.3",
+	"version"      : "0.0.4",
 	"description"  : "Interact with Homegear connected devices via mqtt",
 	"dependencies" : {
 		"mqtt"  : "1.x.x",
