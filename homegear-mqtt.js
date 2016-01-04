@@ -103,7 +103,7 @@ module.exports = function(RED) {
 				retain: false,
 				payload: {
 					method: 'getAllValues',
-					params: [ node.peerId ],
+					params: [ parseInt(node.peerId) ],
 					id: node.rpcId
 				}
 			});
@@ -171,7 +171,7 @@ module.exports = function(RED) {
 				retain: false,
 				payload: {
 					method: 'setValue',
-					params: [ node.peerId ],
+					params: [ parseInt(node.peerId) ],
 					id: node.rpcId
 				}
 			};
