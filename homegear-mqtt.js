@@ -75,17 +75,21 @@ module.exports = function(RED) {
 					return;
 				}
 
-				node.log('received initial parameter values');
-				payload.result[0].CHANNELS.forEach(function(channel){
-					for(var name in channel.PARAMSET){
-						if(channel.PARAMSET.hasOwnProperty(name)) {
-							var param = channel.PARAMSET[name];
-							var eventTopic = node.eventTopic.replace('/#', '/' + channel.INDEX + '/' + name);
+				if(Array.isArray(payload.result)) {
+					node.log('received initial parameter values');
+					payload.result[0].CHANNELS.forEach(function(channel){
+						for(var name in channel.PARAMSET){
+							if(channel.PARAMSET.hasOwnProperty(name)) {
+								var param = channel.PARAMSET[name];
+								var eventTopic = node.eventTopic.replace('/#', '/' + channel.INDEX + '/' + name);
 
-							processMqttPayload(eventTopic, param.VALUE);
+								processMqttPayload(eventTopic, param.VALUE);
+							}
 						}
-					}
-				});
+					});
+				} else {
+					node.error('unexpected response to parameter request: ' + JSON.stringify(payload.result)
+				}
 
 				node.log('unsubscribing from topic "' + node.rpcTopic + '"');
 				node.brokerConn.unsubscribe(node.rpcTopic, node.id);
