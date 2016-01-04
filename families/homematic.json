@@ -6636,10 +6636,6 @@
         "channel": 1
       },
       {
-        "name": "KEY_1.INSTALL_TEST",
-        "channel": 1
-      },
-      {
         "name": "KEY_2.PRESS_SHORT",
         "channel": 2
       },
@@ -6648,10 +6644,6 @@
         "channel": 2
       },
       {
-        "name": "KEY_2.INSTALL_TEST",
-        "channel": 2
-      },
-      {
         "name": "KEY.PRESS_SHORT",
         "channel": 3
       },
@@ -6660,163 +6652,17 @@
         "channel": 3
       },
       {
-        "name": "KEY.INSTALL_TEST",
-        "channel": 3
-      },
-      {
         "name": "KEY.PRESS_SHORT",
-        "channel": 3
+        "channel": 4
       },
       {
         "name": "KEY.PRESS_LONG",
-        "channel": 3
-      },
-      {
-        "name": "KEY.INSTALL_TEST",
-        "channel": 3
-      }
-    ],
-    "write": [
-      {
-        "name": "KEY_1.PRESS_SHORT",
-        "channel": 1,
-        "type": "action"
-      },
-      {
-        "name": "KEY_1.PRESS_LONG",
-        "channel": 1,
-        "type": "action"
-      },
-      {
-        "name": "KEY_2.PRESS_SHORT",
-        "channel": 2,
-        "type": "action"
-      },
-      {
-        "name": "KEY_2.PRESS_LONG",
-        "channel": 2,
-        "type": "action"
-      },
-      {
-        "name": "KEY.PRESS_SHORT",
-        "channel": 3,
-        "type": "action"
-      },
-      {
-        "name": "KEY.PRESS_LONG",
-        "channel": 3,
-        "type": "action"
-      },
-      {
-        "name": "KEY.PRESS_SHORT",
-        "channel": 3,
-        "type": "action"
-      },
-      {
-        "name": "KEY.PRESS_LONG",
-        "channel": 3,
-        "type": "action"
+        "channel": 4
       }
     ],
     "names": [
       "HM-RC-Key4-2",
-      "HM-RC-Key4-3"
-    ]
-  },
-  {
-    "read": [
-      {
-        "name": "KEY_1.PRESS_SHORT",
-        "channel": 1
-      },
-      {
-        "name": "KEY_1.PRESS_LONG",
-        "channel": 1
-      },
-      {
-        "name": "KEY_1.INSTALL_TEST",
-        "channel": 1
-      },
-      {
-        "name": "KEY_2.PRESS_SHORT",
-        "channel": 2
-      },
-      {
-        "name": "KEY_2.PRESS_LONG",
-        "channel": 2
-      },
-      {
-        "name": "KEY_2.INSTALL_TEST",
-        "channel": 2
-      },
-      {
-        "name": "KEY.PRESS_SHORT",
-        "channel": 3
-      },
-      {
-        "name": "KEY.PRESS_LONG",
-        "channel": 3
-      },
-      {
-        "name": "KEY.INSTALL_TEST",
-        "channel": 3
-      },
-      {
-        "name": "KEY.PRESS_SHORT",
-        "channel": 3
-      },
-      {
-        "name": "KEY.PRESS_LONG",
-        "channel": 3
-      },
-      {
-        "name": "KEY.INSTALL_TEST",
-        "channel": 3
-      }
-    ],
-    "write": [
-      {
-        "name": "KEY_1.PRESS_SHORT",
-        "channel": 1,
-        "type": "action"
-      },
-      {
-        "name": "KEY_1.PRESS_LONG",
-        "channel": 1,
-        "type": "action"
-      },
-      {
-        "name": "KEY_2.PRESS_SHORT",
-        "channel": 2,
-        "type": "action"
-      },
-      {
-        "name": "KEY_2.PRESS_LONG",
-        "channel": 2,
-        "type": "action"
-      },
-      {
-        "name": "KEY.PRESS_SHORT",
-        "channel": 3,
-        "type": "action"
-      },
-      {
-        "name": "KEY.PRESS_LONG",
-        "channel": 3,
-        "type": "action"
-      },
-      {
-        "name": "KEY.PRESS_SHORT",
-        "channel": 3,
-        "type": "action"
-      },
-      {
-        "name": "KEY.PRESS_LONG",
-        "channel": 3,
-        "type": "action"
-      }
-    ],
-    "names": [
+      "HM-RC-Key4-3",
       "HM-RC-Sec4-2",
       "HM-RC-Sec4-3"
     ]
