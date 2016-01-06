@@ -1,0 +1,393 @@
+[
+  {
+    "read": [
+      {
+        "name": "STATE",
+        "channel": 1
+      },
+      {
+        "name": "BRIGHTNESS",
+        "channel": 1
+      },
+      {
+        "name": "HUE",
+        "channel": 1
+      },
+      {
+        "name": "SATURATION",
+        "channel": 1
+      },
+      {
+        "name": "COLOR_TEMPERATURE",
+        "channel": 1
+      },
+      {
+        "name": "ALERT",
+        "channel": 1,
+        "mapping": [
+          "none",
+          "select",
+          "lselect"
+        ]
+      },
+      {
+        "name": "EFFECT",
+        "channel": 1,
+        "mapping": [
+          "none",
+          "colorloop"
+        ]
+      },
+      {
+        "name": "COLORMODE",
+        "channel": 1,
+        "mapping": [
+          "hs",
+          "xy",
+          "ct"
+        ]
+      },
+      {
+        "name": "REACHABLE",
+        "channel": 1
+      },
+      {
+        "name": "XY",
+        "channel": 1
+      }
+    ],
+    "write": [
+      {
+        "name": "STATE",
+        "channel": 1,
+        "type": "boolean"
+      },
+      {
+        "name": "BRIGHTNESS",
+        "channel": 1,
+        "type": "integer"
+      },
+      {
+        "name": "HUE",
+        "channel": 1,
+        "type": "integer"
+      },
+      {
+        "name": "SATURATION",
+        "channel": 1,
+        "type": "integer"
+      },
+      {
+        "name": "COLOR_TEMPERATURE",
+        "channel": 1,
+        "type": "integer"
+      },
+      {
+        "name": "ALERT",
+        "channel": 1,
+        "type": "integer",
+        "mapping": [
+          "none",
+          "select",
+          "lselect"
+        ]
+      },
+      {
+        "name": "EFFECT",
+        "channel": 1,
+        "type": "integer",
+        "mapping": [
+          "none",
+          "colorloop"
+        ]
+      },
+      {
+        "name": "XY",
+        "channel": 1,
+        "type": "string"
+      }
+    ],
+    "names": [
+      "LCT001",
+      "LCT007",
+      "LIGHTIFY Classic A60 RGBW"
+    ]
+  },
+  {
+    "read": [
+      {
+        "name": "STATE",
+        "channel": 1
+      },
+      {
+        "name": "BRIGHTNESS",
+        "channel": 1
+      },
+      {
+        "name": "HUE",
+        "channel": 1
+      },
+      {
+        "name": "SATURATION",
+        "channel": 1
+      },
+      {
+        "name": "COLOR_TEMPERATURE",
+        "channel": 1
+      },
+      {
+        "name": "ALERT",
+        "channel": 1,
+        "mapping": [
+          "none",
+          "select",
+          "lselect"
+        ]
+      },
+      {
+        "name": "EFFECT",
+        "channel": 1,
+        "mapping": [
+          "none",
+          "colorloop"
+        ]
+      },
+      {
+        "name": "COLORMODE",
+        "channel": 1,
+        "mapping": [
+          "hs",
+          "xy",
+          "ct"
+        ]
+      },
+      {
+        "name": "REACHABLE",
+        "channel": 1
+      },
+      {
+        "name": "XY",
+        "channel": 1
+      }
+    ],
+    "write": [
+      {
+        "name": "STATE",
+        "channel": 1,
+        "type": "boolean"
+      },
+      {
+        "name": "BRIGHTNESS",
+        "channel": 1,
+        "type": "integer"
+      },
+      {
+        "name": "HUE",
+        "channel": 1,
+        "type": "integer"
+      },
+      {
+        "name": "SATURATION",
+        "channel": 1,
+        "type": "integer"
+      },
+      {
+        "name": "COLOR_TEMPERATURE",
+        "channel": 1,
+        "type": "integer"
+      },
+      {
+        "name": "ALERT",
+        "channel": 1,
+        "type": "integer",
+        "mapping": [
+          "none",
+          "select",
+          "lselect"
+        ]
+      },
+      {
+        "name": "EFFECT",
+        "channel": 1,
+        "type": "integer",
+        "mapping": [
+          "none",
+          "colorloop"
+        ]
+      },
+      {
+        "name": "XY",
+        "channel": 1,
+        "type": "string"
+      }
+    ],
+    "names": [
+      "LLC001",
+      "LLC006",
+      "LLC007",
+      "LLC011"
+    ]
+  },
+  {
+    "read": [
+      {
+        "name": "STATE",
+        "channel": 1
+      },
+      {
+        "name": "BRIGHTNESS",
+        "channel": 1
+      },
+      {
+        "name": "HUE",
+        "channel": 1
+      },
+      {
+        "name": "SATURATION",
+        "channel": 1
+      },
+      {
+        "name": "COLOR_TEMPERATURE",
+        "channel": 1
+      },
+      {
+        "name": "ALERT",
+        "channel": 1,
+        "mapping": [
+          "none",
+          "select",
+          "lselect"
+        ]
+      },
+      {
+        "name": "EFFECT",
+        "channel": 1,
+        "mapping": [
+          "none",
+          "colorloop"
+        ]
+      },
+      {
+        "name": "COLORMODE",
+        "channel": 1,
+        "mapping": [
+          "hs",
+          "xy",
+          "ct"
+        ]
+      },
+      {
+        "name": "REACHABLE",
+        "channel": 1
+      },
+      {
+        "name": "XY",
+        "channel": 1
+      }
+    ],
+    "write": [
+      {
+        "name": "STATE",
+        "channel": 1,
+        "type": "boolean"
+      },
+      {
+        "name": "BRIGHTNESS",
+        "channel": 1,
+        "type": "integer"
+      },
+      {
+        "name": "HUE",
+        "channel": 1,
+        "type": "integer"
+      },
+      {
+        "name": "SATURATION",
+        "channel": 1,
+        "type": "integer"
+      },
+      {
+        "name": "COLOR_TEMPERATURE",
+        "channel": 1,
+        "type": "integer"
+      },
+      {
+        "name": "ALERT",
+        "channel": 1,
+        "type": "integer",
+        "mapping": [
+          "none",
+          "select",
+          "lselect"
+        ]
+      },
+      {
+        "name": "EFFECT",
+        "channel": 1,
+        "type": "integer",
+        "mapping": [
+          "none",
+          "colorloop"
+        ]
+      },
+      {
+        "name": "XY",
+        "channel": 1,
+        "type": "string"
+      }
+    ],
+    "names": [
+      "LST001"
+    ]
+  },
+  {
+    "read": [
+      {
+        "name": "STATE",
+        "channel": 1
+      },
+      {
+        "name": "BRIGHTNESS",
+        "channel": 1
+      },
+      {
+        "name": "ALERT",
+        "channel": 1,
+        "mapping": [
+          "none",
+          "select",
+          "lselect"
+        ]
+      },
+      {
+        "name": "REACHABLE",
+        "channel": 1
+      }
+    ],
+    "write": [
+      {
+        "name": "STATE",
+        "channel": 1,
+        "type": "boolean"
+      },
+      {
+        "name": "BRIGHTNESS",
+        "channel": 1,
+        "type": "integer"
+      },
+      {
+        "name": "ALERT",
+        "channel": 1,
+        "type": "integer",
+        "mapping": [
+          "none",
+          "select",
+          "lselect"
+        ]
+      }
+    ],
+    "names": [
+      "LWB004"
+    ]
+  }
+]
