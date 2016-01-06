@@ -1,0 +1,623 @@
+[
+  {
+    "read": [
+      {
+        "name": "SPEAKER.LED_STATE",
+        "channel": 1
+      },
+      {
+        "name": "SPEAKER.FIRST_TRACK_NUMBER_ENQUEUED",
+        "channel": 1
+      },
+      {
+        "name": "SPEAKER.AV_TRANSPORT_URI",
+        "channel": 1
+      },
+      {
+        "name": "SPEAKER.AV_TRANSPORT_URI_METADATA",
+        "channel": 1
+      },
+      {
+        "name": "SPEAKER_INFO.VOLUME",
+        "channel": 2
+      },
+      {
+        "name": "SPEAKER_INFO.VOLUME_LF",
+        "channel": 2
+      },
+      {
+        "name": "SPEAKER_INFO.VOLUME_RF",
+        "channel": 2
+      },
+      {
+        "name": "SPEAKER_INFO.MUTE",
+        "channel": 2
+      },
+      {
+        "name": "SPEAKER_INFO.MUTE_LF",
+        "channel": 2
+      },
+      {
+        "name": "SPEAKER_INFO.MUTE_RF",
+        "channel": 2
+      },
+      {
+        "name": "SPEAKER_INFO.BASS",
+        "channel": 2
+      },
+      {
+        "name": "SPEAKER_INFO.TREBLE",
+        "channel": 2
+      },
+      {
+        "name": "SPEAKER_INFO.LOUDNESS",
+        "channel": 2
+      },
+      {
+        "name": "SPEAKER_INFO.OUTPUT_FIXED",
+        "channel": 2
+      },
+      {
+        "name": "SPEAKER_INFO.HEADPHONE_CONNECTED",
+        "channel": 2
+      },
+      {
+        "name": "SPEAKER_INFO.SPEAKER_SIZE",
+        "channel": 2
+      },
+      {
+        "name": "SPEAKER_INFO.SUB_GAIN",
+        "channel": 2
+      },
+      {
+        "name": "SPEAKER_INFO.SUB_CROSSOVER",
+        "channel": 2
+      },
+      {
+        "name": "SPEAKER_INFO.SUB_POLARITY",
+        "channel": 2
+      },
+      {
+        "name": "SPEAKER_INFO.SUB_ENABLED",
+        "channel": 2
+      },
+      {
+        "name": "SPEAKER_INFO.PRESET_NAME_LIST",
+        "channel": 2
+      },
+      {
+        "name": "SPEAKER_INFO.TRANSPORT_STATE",
+        "channel": 2,
+        "mapping": [
+          "STOPPED",
+          "PAUSED_PLAYBACK",
+          "TRANSITIONING",
+          "PLAYING"
+        ]
+      },
+      {
+        "name": "SPEAKER_INFO.CURRENT_PLAY_MODE",
+        "channel": 2,
+        "mapping": [
+          "NORMAL",
+          "SHUFFLE",
+          "REPEAT_ONE",
+          "REPEAT_ALL",
+          "SHUFFLE_NOREPEAT",
+          "SHUFFLE_REPEAT_ONE"
+        ]
+      },
+      {
+        "name": "SPEAKER_INFO.CURRENT_CROSSFADE_MODE",
+        "channel": 2
+      },
+      {
+        "name": "SPEAKER_INFO.NUMBER_OF_TRACKS",
+        "channel": 2
+      },
+      {
+        "name": "SPEAKER_INFO.CURRENT_TRACK",
+        "channel": 2
+      },
+      {
+        "name": "SPEAKER_INFO.CURRENT_SECTION",
+        "channel": 2
+      },
+      {
+        "name": "SPEAKER_INFO.CURRENT_TRACK_URI",
+        "channel": 2
+      },
+      {
+        "name": "SPEAKER_INFO.CURRENT_TRACK_METADATA",
+        "channel": 2
+      },
+      {
+        "name": "SPEAKER_INFO.CURRENT_TRACK_RELATIVE_TIME",
+        "channel": 2
+      },
+      {
+        "name": "SPEAKER_INFO.CURRENT_TRACK_ABSOLUTE_TIME",
+        "channel": 2
+      },
+      {
+        "name": "SPEAKER_INFO.CURRENT_TRACK_RELATIVE_COUNT",
+        "channel": 2
+      },
+      {
+        "name": "SPEAKER_INFO.CURRENT_TRACK_ABSOLUTE_COUNT",
+        "channel": 2
+      },
+      {
+        "name": "SPEAKER_INFO.CURRENT_TRACK_DURATION",
+        "channel": 2
+      },
+      {
+        "name": "SPEAKER_INFO.NEXT_TRACK_URI",
+        "channel": 2
+      },
+      {
+        "name": "SPEAKER_INFO.NEXT_TRACK_METADATA",
+        "channel": 2
+      },
+      {
+        "name": "SPEAKER_INFO.ENQUEUED_TRANSPORT_URI",
+        "channel": 2
+      },
+      {
+        "name": "SPEAKER_INFO.ENQUEUED_TRANSPORT_METADATA",
+        "channel": 2
+      },
+      {
+        "name": "SPEAKER_INFO.PLAYBACK_STORAGE_MEDIUM",
+        "channel": 2
+      },
+      {
+        "name": "SPEAKER_INFO.AV_TRANSPORT_URI",
+        "channel": 2
+      },
+      {
+        "name": "SPEAKER_INFO.AV_TRANSPORT_METADATA",
+        "channel": 2
+      },
+      {
+        "name": "SPEAKER_INFO.NEXT_AV_TRANSPORT_URI",
+        "channel": 2
+      },
+      {
+        "name": "SPEAKER_INFO.NEXT_AV_TRANSPORT_METADATA",
+        "channel": 2
+      },
+      {
+        "name": "SPEAKER_INFO.CURRENT_TRANSPORT_ACTIONS",
+        "channel": 2
+      },
+      {
+        "name": "SPEAKER_INFO.CURRENT_PLAY_MODES",
+        "channel": 2
+      },
+      {
+        "name": "SPEAKER_INFO.TRANSPORT_STATUS",
+        "channel": 2
+      },
+      {
+        "name": "SPEAKER_INFO.REMAINING_SLEEP_TIMER_DURATION",
+        "channel": 2
+      },
+      {
+        "name": "SPEAKER_INFO.SLEEP_TIMER_GENERATION",
+        "channel": 2
+      },
+      {
+        "name": "SPEAKER_INFO.ALARM_RUNNING",
+        "channel": 2
+      },
+      {
+        "name": "SPEAKER_INFO.SNOOZE_RUNNING",
+        "channel": 2
+      },
+      {
+        "name": "SPEAKER_INFO.RESTART_PENDING",
+        "channel": 2
+      },
+      {
+        "name": "SPEAKER_INFO.TRANSPORT_PLAY_SPEED",
+        "channel": 2
+      },
+      {
+        "name": "SPEAKER_INFO.CURRENT_MEDIA_DURATION",
+        "channel": 2
+      },
+      {
+        "name": "SPEAKER_INFO.RECORD_STORAGE_MEDIUM",
+        "channel": 2
+      },
+      {
+        "name": "SPEAKER_INFO.POSSIBLE_PLAYBACK_STORAGE_MEDIUM",
+        "channel": 2
+      },
+      {
+        "name": "SPEAKER_INFO.POSSIBLE_RECORD_STORAGE_MEDIUM",
+        "channel": 2
+      },
+      {
+        "name": "SPEAKER_INFO.RECORD_MEDIUM_WRITE_STATUS",
+        "channel": 2
+      },
+      {
+        "name": "SPEAKER_INFO.CURRENT_RECORD_QUALITY_MODE",
+        "channel": 2
+      },
+      {
+        "name": "SPEAKER_INFO.POSSIBLE_RECORD_QUALITY_MODES",
+        "channel": 2
+      },
+      {
+        "name": "SPEAKER_INFO.CURRENT_TRACK_ID",
+        "channel": 2
+      },
+      {
+        "name": "SPEAKER_INFO.CURRENT_TRACK_PARENT_ID",
+        "channel": 2
+      },
+      {
+        "name": "SPEAKER_INFO.CURRENT_TRACK_RESTRICTED",
+        "channel": 2
+      },
+      {
+        "name": "SPEAKER_INFO.CURRENT_TRACK_DURATION2",
+        "channel": 2
+      },
+      {
+        "name": "SPEAKER_INFO.CURRENT_TRACK_RESOURCE",
+        "channel": 2
+      },
+      {
+        "name": "SPEAKER_INFO.CURRENT_TRACK_PROTOCOL",
+        "channel": 2
+      },
+      {
+        "name": "SPEAKER_INFO.CURRENT_TRACK_CLASS",
+        "channel": 2
+      },
+      {
+        "name": "SPEAKER_INFO.CURRENT_TRACK_STREAM_CONTENT",
+        "channel": 2
+      },
+      {
+        "name": "SPEAKER_INFO.CURRENT_TRACK_RADIO_SHOW_MD",
+        "channel": 2
+      },
+      {
+        "name": "SPEAKER_INFO.CURRENT_ALBUM_ART",
+        "channel": 2
+      },
+      {
+        "name": "SPEAKER_INFO.CURRENT_ALBUM",
+        "channel": 2
+      },
+      {
+        "name": "SPEAKER_INFO.CURRENT_TITLE",
+        "channel": 2
+      },
+      {
+        "name": "SPEAKER_INFO.CURRENT_ARTIST",
+        "channel": 2
+      },
+      {
+        "name": "SPEAKER_INFO.NEXT_TRACK_ID",
+        "channel": 2
+      },
+      {
+        "name": "SPEAKER_INFO.NEXT_TRACK_PARENT_ID",
+        "channel": 2
+      },
+      {
+        "name": "SPEAKER_INFO.NEXT_TRACK_RESTRICTED",
+        "channel": 2
+      },
+      {
+        "name": "SPEAKER_INFO.NEXT_TRACK_DURATION",
+        "channel": 2
+      },
+      {
+        "name": "SPEAKER_INFO.NEXT_TRACK_RESOURCE",
+        "channel": 2
+      },
+      {
+        "name": "SPEAKER_INFO.NEXT_TRACK_PROTOCOL",
+        "channel": 2
+      },
+      {
+        "name": "SPEAKER_INFO.NEXT_TRACK_CLASS",
+        "channel": 2
+      },
+      {
+        "name": "SPEAKER_INFO.NEXT_TRACK_STREAM_CONTENT",
+        "channel": 2
+      },
+      {
+        "name": "SPEAKER_INFO.NEXT_TRACK_RADIO_SHOW_MD",
+        "channel": 2
+      },
+      {
+        "name": "SPEAKER_INFO.NEXT_ALBUM_ART",
+        "channel": 2
+      },
+      {
+        "name": "SPEAKER_INFO.NEXT_ALBUM",
+        "channel": 2
+      },
+      {
+        "name": "SPEAKER_INFO.NEXT_ALBUM",
+        "channel": 2
+      },
+      {
+        "name": "SPEAKER_INFO.NEXT_TITLE",
+        "channel": 2
+      },
+      {
+        "name": "SPEAKER_INFO.NEXT_ARTIST",
+        "channel": 2
+      },
+      {
+        "name": "SPEAKER_INFO.AV_TRANSPORT_ID",
+        "channel": 2
+      },
+      {
+        "name": "SPEAKER_INFO.AV_TRANSPORT_PARENT_ID",
+        "channel": 2
+      },
+      {
+        "name": "SPEAKER_INFO.AV_TRANSPORT_RESTRICTED",
+        "channel": 2
+      },
+      {
+        "name": "SPEAKER_INFO.AV_TRANSPORT_CLASS",
+        "channel": 2
+      },
+      {
+        "name": "SPEAKER_INFO.AV_TRANSPORT_TITLE",
+        "channel": 2
+      },
+      {
+        "name": "SPEAKER_INFO.AV_TRANSPORT_DESCRIPTION",
+        "channel": 2
+      },
+      {
+        "name": "SPEAKER_INFO.NEXT_AV_TRANSPORT_ID",
+        "channel": 2
+      },
+      {
+        "name": "SPEAKER_INFO.NEXT_AV_TRANSPORT_PARENT_ID",
+        "channel": 2
+      },
+      {
+        "name": "SPEAKER_INFO.NEXT_AV_TRANSPORT_RESTRICTED",
+        "channel": 2
+      },
+      {
+        "name": "SPEAKER_INFO.NEXT_AV_TRANSPORT_CLASS",
+        "channel": 2
+      },
+      {
+        "name": "SPEAKER_INFO.NEXT_AV_TRANSPORT_TITLE",
+        "channel": 2
+      },
+      {
+        "name": "SPEAKER_INFO.NEXT_AV_TRANSPORT_DESCRIPTION",
+        "channel": 2
+      },
+      {
+        "name": "SPEAKER_INFO.ENQUEUED_TRANSPORT_ID",
+        "channel": 2
+      },
+      {
+        "name": "SPEAKER_INFO.ENQUEUED_TRANSPORT_PARENT_ID",
+        "channel": 2
+      },
+      {
+        "name": "SPEAKER_INFO.ENQUEUED_TRANSPORT_RESTRICTED",
+        "channel": 2
+      },
+      {
+        "name": "SPEAKER_INFO.ENQUEUED_TRANSPORT_CLASS",
+        "channel": 2
+      },
+      {
+        "name": "SPEAKER_INFO.ENQUEUED_TRANSPORT_TITLE",
+        "channel": 2
+      },
+      {
+        "name": "SPEAKER_INFO.ENQUEUED_TRANSPORT_DESCRIPTION",
+        "channel": 2
+      },
+      {
+        "name": "SPEAKER_INFO.SYSTEM_UPDATE_ID",
+        "channel": 2
+      },
+      {
+        "name": "SPEAKER_INFO.CONTAINER_UPDATE_IDS",
+        "channel": 2
+      },
+      {
+        "name": "SPEAKER_INFO.SHARE_LIST_REFRESH_STATE",
+        "channel": 2
+      },
+      {
+        "name": "SPEAKER_INFO.SHARE_INDEX_IN_PROGRESS",
+        "channel": 2
+      },
+      {
+        "name": "SPEAKER_INFO.SHARE_INDEX_LAST_ERROR",
+        "channel": 2
+      },
+      {
+        "name": "SPEAKER_INFO.FAVORITES_UPDATE_ID",
+        "channel": 2
+      },
+      {
+        "name": "SPEAKER_INFO.FAVORITE_PRESETS_UPDATE_ID",
+        "channel": 2
+      },
+      {
+        "name": "SPEAKER_INFO.RADIO_FAVORITES_UPDATE_ID",
+        "channel": 2
+      },
+      {
+        "name": "SPEAKER_INFO.RADIO_LOCATION_UPDATE_ID",
+        "channel": 2
+      },
+      {
+        "name": "SPEAKER_INFO.SAVED_QUEUES_UPDATE_ID",
+        "channel": 2
+      },
+      {
+        "name": "SPEAKER_INFO.SHARE_LIST_UPDATE_ID",
+        "channel": 2
+      },
+      {
+        "name": "SPEAKER_INFO.RECENTLY_PLAYED_UPDATE_ID",
+        "channel": 2
+      },
+      {
+        "name": "SPEAKER_INFO.FAVORITES",
+        "channel": 2
+      },
+      {
+        "name": "SPEAKER_INFO.PLAYLISTS",
+        "channel": 2
+      },
+      {
+        "name": "SPEAKER_INFO.RADIO_FAVORITES",
+        "channel": 2
+      },
+      {
+        "name": "SPEAKER_INFO.QUEUE_TITLES",
+        "channel": 2
+      }
+    ],
+    "write": [
+      {
+        "name": "STOP",
+        "channel": 1,
+        "type": "action"
+      },
+      {
+        "name": "PAUSE",
+        "channel": 1,
+        "type": "action"
+      },
+      {
+        "name": "PLAY",
+        "channel": 1,
+        "type": "action"
+      },
+      {
+        "name": "PREVIOUS",
+        "channel": 1,
+        "type": "action"
+      },
+      {
+        "name": "NEXT",
+        "channel": 1,
+        "type": "action"
+      },
+      {
+        "name": "RAMP_TO_VOLUME",
+        "channel": 1,
+        "type": "integer"
+      },
+      {
+        "name": "LED_STATE",
+        "channel": 1,
+        "type": "boolean"
+      },
+      {
+        "name": "ADD_MEMBER",
+        "channel": 1,
+        "type": "string"
+      },
+      {
+        "name": "REMOVE_MEMBER",
+        "channel": 1,
+        "type": "string"
+      },
+      {
+        "name": "ADD_URI_TO_QUEUE",
+        "channel": 1,
+        "type": "string"
+      },
+      {
+        "name": "AV_TRANSPORT_URI",
+        "channel": 1,
+        "type": "string"
+      },
+      {
+        "name": "REMOVE_ALL_TRACKS_FROM_QUEUE",
+        "channel": 1,
+        "type": "action"
+      },
+      {
+        "name": "VOLUME",
+        "channel": 2,
+        "type": "integer"
+      },
+      {
+        "name": "MUTE",
+        "channel": 2,
+        "type": "boolean"
+      },
+      {
+        "name": "BASS",
+        "channel": 2,
+        "type": "integer"
+      },
+      {
+        "name": "TREBLE",
+        "channel": 2,
+        "type": "integer"
+      },
+      {
+        "name": "LOUDNESS",
+        "channel": 2,
+        "type": "integer"
+      },
+      {
+        "name": "SPEAKER_SIZE",
+        "channel": 2,
+        "type": "integer"
+      },
+      {
+        "name": "SUB_GAIN",
+        "channel": 2,
+        "type": "integer"
+      },
+      {
+        "name": "CURRENT_PLAY_MODE",
+        "channel": 2,
+        "type": "integer",
+        "mapping": [
+          "NORMAL",
+          "SHUFFLE",
+          "REPEAT_ONE",
+          "REPEAT_ALL",
+          "SHUFFLE_NOREPEAT",
+          "SHUFFLE_REPEAT_ONE"
+        ]
+      },
+      {
+        "name": "CURRENT_TRACK",
+        "channel": 2,
+        "type": "integer"
+      },
+      {
+        "name": "CURRENT_TRACK_RELATIVE_TIME",
+        "channel": 2,
+        "type": "integer"
+      }
+    ],
+    "names": [
+      "Sonos"
+    ]
+  }
+]
