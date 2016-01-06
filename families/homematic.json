@@ -640,10 +640,6 @@
         "channel": 1
       },
       {
-        "name": "INHIBIT",
-        "channel": 1
-      },
-      {
         "name": "WORKING",
         "channel": 1
       },
@@ -692,10 +688,6 @@
         "channel": 1
       },
       {
-        "name": "INHIBIT",
-        "channel": 1
-      },
-      {
         "name": "WORKING",
         "channel": 1
       },
@@ -741,10 +733,6 @@
     "read": [
       {
         "name": "LEVEL",
-        "channel": 1
-      },
-      {
-        "name": "INHIBIT",
         "channel": 1
       },
       {
@@ -835,6 +823,10 @@
         "channel": 4
       },
       {
+        "name": "ACTUAL_TEMPERATURE",
+        "channel": 4
+      },
+      {
         "name": "SET_TEMPERATURE",
         "channel": 4
       },
@@ -876,6 +868,11 @@
       }
     ],
     "write": [
+      {
+        "name": "WINDOW_STATE",
+        "channel": 3,
+        "type": "boolean"
+      },
       {
         "name": "CLEAR_WINDOW_OPEN_SYMBOL",
         "channel": 4,
@@ -920,46 +917,6 @@
         "name": "PARTY_TEMPERATURE",
         "channel": 4,
         "type": "float"
-      },
-      {
-        "name": "PARTY_START_TIME",
-        "channel": 4,
-        "type": "integer"
-      },
-      {
-        "name": "PARTY_START_DAY",
-        "channel": 4,
-        "type": "integer"
-      },
-      {
-        "name": "PARTY_START_MONTH",
-        "channel": 4,
-        "type": "integer"
-      },
-      {
-        "name": "PARTY_START_YEAR",
-        "channel": 4,
-        "type": "integer"
-      },
-      {
-        "name": "PARTY_STOP_TIME",
-        "channel": 4,
-        "type": "integer"
-      },
-      {
-        "name": "PARTY_STOP_DAY",
-        "channel": 4,
-        "type": "integer"
-      },
-      {
-        "name": "PARTY_STOP_MONTH",
-        "channel": 4,
-        "type": "integer"
-      },
-      {
-        "name": "PARTY_STOP_YEAR",
-        "channel": 4,
-        "type": "integer"
       }
     ],
     "names": [
@@ -1011,9 +968,50 @@
       {
         "name": "SET_TEMPERATURE",
         "channel": 4
+      },
+      {
+        "name": "PARTY_TEMPERATURE",
+        "channel": 4
+      },
+      {
+        "name": "PARTY_START_TIME",
+        "channel": 4
+      },
+      {
+        "name": "PARTY_START_DAY",
+        "channel": 4
+      },
+      {
+        "name": "PARTY_START_MONTH",
+        "channel": 4
+      },
+      {
+        "name": "PARTY_START_YEAR",
+        "channel": 4
+      },
+      {
+        "name": "PARTY_STOP_TIME",
+        "channel": 4
+      },
+      {
+        "name": "PARTY_STOP_DAY",
+        "channel": 4
+      },
+      {
+        "name": "PARTY_STOP_MONTH",
+        "channel": 4
+      },
+      {
+        "name": "PARTY_STOP_YEAR",
+        "channel": 4
       }
     ],
     "write": [
+      {
+        "name": "WINDOW_STATE",
+        "channel": 3,
+        "type": "boolean"
+      },
       {
         "name": "SET_TEMPERATURE",
         "channel": 4,
@@ -1053,46 +1051,6 @@
         "name": "PARTY_TEMPERATURE",
         "channel": 4,
         "type": "float"
-      },
-      {
-        "name": "PARTY_START_TIME",
-        "channel": 4,
-        "type": "integer"
-      },
-      {
-        "name": "PARTY_START_DAY",
-        "channel": 4,
-        "type": "integer"
-      },
-      {
-        "name": "PARTY_START_MONTH",
-        "channel": 4,
-        "type": "integer"
-      },
-      {
-        "name": "PARTY_START_YEAR",
-        "channel": 4,
-        "type": "integer"
-      },
-      {
-        "name": "PARTY_STOP_TIME",
-        "channel": 4,
-        "type": "integer"
-      },
-      {
-        "name": "PARTY_STOP_DAY",
-        "channel": 4,
-        "type": "integer"
-      },
-      {
-        "name": "PARTY_STOP_MONTH",
-        "channel": 4,
-        "type": "integer"
-      },
-      {
-        "name": "PARTY_STOP_YEAR",
-        "channel": 4,
-        "type": "integer"
       }
     ],
     "names": [
@@ -1203,1171 +1161,7 @@
   {
     "read": [
       {
-        "name": "VIRTUAL_KEY_1.PRESS_LONG",
-        "channel": 1
-      },
-      {
-        "name": "VIRTUAL_KEY_1.PRESS_SHORT",
-        "channel": 1
-      },
-      {
-        "name": "VIRTUAL_KEY_2.PRESS_LONG",
-        "channel": 2
-      },
-      {
-        "name": "VIRTUAL_KEY_2.PRESS_SHORT",
-        "channel": 2
-      },
-      {
-        "name": "VIRTUAL_KEY_3.PRESS_LONG",
-        "channel": 3
-      },
-      {
-        "name": "VIRTUAL_KEY_3.PRESS_SHORT",
-        "channel": 3
-      },
-      {
-        "name": "VIRTUAL_KEY_4.PRESS_LONG",
-        "channel": 4
-      },
-      {
-        "name": "VIRTUAL_KEY_4.PRESS_SHORT",
-        "channel": 4
-      },
-      {
-        "name": "VIRTUAL_KEY_5.PRESS_LONG",
-        "channel": 5
-      },
-      {
-        "name": "VIRTUAL_KEY_5.PRESS_SHORT",
-        "channel": 5
-      },
-      {
-        "name": "VIRTUAL_KEY_6.PRESS_LONG",
-        "channel": 6
-      },
-      {
-        "name": "VIRTUAL_KEY_6.PRESS_SHORT",
-        "channel": 6
-      },
-      {
-        "name": "VIRTUAL_KEY_7.PRESS_LONG",
-        "channel": 7
-      },
-      {
-        "name": "VIRTUAL_KEY_7.PRESS_SHORT",
-        "channel": 7
-      },
-      {
-        "name": "VIRTUAL_KEY_8.PRESS_LONG",
-        "channel": 8
-      },
-      {
-        "name": "VIRTUAL_KEY_8.PRESS_SHORT",
-        "channel": 8
-      },
-      {
-        "name": "VIRTUAL_KEY_9.PRESS_LONG",
-        "channel": 9
-      },
-      {
-        "name": "VIRTUAL_KEY_9.PRESS_SHORT",
-        "channel": 9
-      },
-      {
-        "name": "VIRTUAL_KEY_10.PRESS_LONG",
-        "channel": 10
-      },
-      {
-        "name": "VIRTUAL_KEY_10.PRESS_SHORT",
-        "channel": 10
-      },
-      {
-        "name": "VIRTUAL_KEY_11.PRESS_LONG",
-        "channel": 11
-      },
-      {
-        "name": "VIRTUAL_KEY_11.PRESS_SHORT",
-        "channel": 11
-      },
-      {
-        "name": "VIRTUAL_KEY_12.PRESS_LONG",
-        "channel": 12
-      },
-      {
-        "name": "VIRTUAL_KEY_12.PRESS_SHORT",
-        "channel": 12
-      },
-      {
-        "name": "VIRTUAL_KEY_13.PRESS_LONG",
-        "channel": 13
-      },
-      {
-        "name": "VIRTUAL_KEY_13.PRESS_SHORT",
-        "channel": 13
-      },
-      {
-        "name": "VIRTUAL_KEY_14.PRESS_LONG",
-        "channel": 14
-      },
-      {
-        "name": "VIRTUAL_KEY_14.PRESS_SHORT",
-        "channel": 14
-      },
-      {
-        "name": "VIRTUAL_KEY_15.PRESS_LONG",
-        "channel": 15
-      },
-      {
-        "name": "VIRTUAL_KEY_15.PRESS_SHORT",
-        "channel": 15
-      },
-      {
-        "name": "VIRTUAL_KEY_16.PRESS_LONG",
-        "channel": 16
-      },
-      {
-        "name": "VIRTUAL_KEY_16.PRESS_SHORT",
-        "channel": 16
-      },
-      {
-        "name": "VIRTUAL_KEY_17.PRESS_LONG",
-        "channel": 17
-      },
-      {
-        "name": "VIRTUAL_KEY_17.PRESS_SHORT",
-        "channel": 17
-      },
-      {
-        "name": "VIRTUAL_KEY_18.PRESS_LONG",
-        "channel": 18
-      },
-      {
-        "name": "VIRTUAL_KEY_18.PRESS_SHORT",
-        "channel": 18
-      },
-      {
-        "name": "VIRTUAL_KEY_19.PRESS_LONG",
-        "channel": 19
-      },
-      {
-        "name": "VIRTUAL_KEY_19.PRESS_SHORT",
-        "channel": 19
-      },
-      {
-        "name": "VIRTUAL_KEY_20.PRESS_LONG",
-        "channel": 20
-      },
-      {
-        "name": "VIRTUAL_KEY_20.PRESS_SHORT",
-        "channel": 20
-      },
-      {
-        "name": "VIRTUAL_KEY_21.PRESS_LONG",
-        "channel": 21
-      },
-      {
-        "name": "VIRTUAL_KEY_21.PRESS_SHORT",
-        "channel": 21
-      },
-      {
-        "name": "VIRTUAL_KEY_22.PRESS_LONG",
-        "channel": 22
-      },
-      {
-        "name": "VIRTUAL_KEY_22.PRESS_SHORT",
-        "channel": 22
-      },
-      {
-        "name": "VIRTUAL_KEY_23.PRESS_LONG",
-        "channel": 23
-      },
-      {
-        "name": "VIRTUAL_KEY_23.PRESS_SHORT",
-        "channel": 23
-      },
-      {
-        "name": "VIRTUAL_KEY_24.PRESS_LONG",
-        "channel": 24
-      },
-      {
-        "name": "VIRTUAL_KEY_24.PRESS_SHORT",
-        "channel": 24
-      },
-      {
-        "name": "VIRTUAL_KEY_25.PRESS_LONG",
-        "channel": 25
-      },
-      {
-        "name": "VIRTUAL_KEY_25.PRESS_SHORT",
-        "channel": 25
-      },
-      {
-        "name": "VIRTUAL_KEY_26.PRESS_LONG",
-        "channel": 26
-      },
-      {
-        "name": "VIRTUAL_KEY_26.PRESS_SHORT",
-        "channel": 26
-      },
-      {
-        "name": "VIRTUAL_KEY_27.PRESS_LONG",
-        "channel": 27
-      },
-      {
-        "name": "VIRTUAL_KEY_27.PRESS_SHORT",
-        "channel": 27
-      },
-      {
-        "name": "VIRTUAL_KEY_28.PRESS_LONG",
-        "channel": 28
-      },
-      {
-        "name": "VIRTUAL_KEY_28.PRESS_SHORT",
-        "channel": 28
-      },
-      {
-        "name": "VIRTUAL_KEY_29.PRESS_LONG",
-        "channel": 29
-      },
-      {
-        "name": "VIRTUAL_KEY_29.PRESS_SHORT",
-        "channel": 29
-      },
-      {
-        "name": "VIRTUAL_KEY_30.PRESS_LONG",
-        "channel": 30
-      },
-      {
-        "name": "VIRTUAL_KEY_30.PRESS_SHORT",
-        "channel": 30
-      },
-      {
-        "name": "VIRTUAL_KEY_31.PRESS_LONG",
-        "channel": 31
-      },
-      {
-        "name": "VIRTUAL_KEY_31.PRESS_SHORT",
-        "channel": 31
-      },
-      {
-        "name": "VIRTUAL_KEY_32.PRESS_LONG",
-        "channel": 32
-      },
-      {
-        "name": "VIRTUAL_KEY_32.PRESS_SHORT",
-        "channel": 32
-      },
-      {
-        "name": "VIRTUAL_KEY_33.PRESS_LONG",
-        "channel": 33
-      },
-      {
-        "name": "VIRTUAL_KEY_33.PRESS_SHORT",
-        "channel": 33
-      },
-      {
-        "name": "VIRTUAL_KEY_34.PRESS_LONG",
-        "channel": 34
-      },
-      {
-        "name": "VIRTUAL_KEY_34.PRESS_SHORT",
-        "channel": 34
-      },
-      {
-        "name": "VIRTUAL_KEY_35.PRESS_LONG",
-        "channel": 35
-      },
-      {
-        "name": "VIRTUAL_KEY_35.PRESS_SHORT",
-        "channel": 35
-      },
-      {
-        "name": "VIRTUAL_KEY_36.PRESS_LONG",
-        "channel": 36
-      },
-      {
-        "name": "VIRTUAL_KEY_36.PRESS_SHORT",
-        "channel": 36
-      },
-      {
-        "name": "VIRTUAL_KEY_37.PRESS_LONG",
-        "channel": 37
-      },
-      {
-        "name": "VIRTUAL_KEY_37.PRESS_SHORT",
-        "channel": 37
-      },
-      {
-        "name": "VIRTUAL_KEY_38.PRESS_LONG",
-        "channel": 38
-      },
-      {
-        "name": "VIRTUAL_KEY_38.PRESS_SHORT",
-        "channel": 38
-      },
-      {
-        "name": "VIRTUAL_KEY_39.PRESS_LONG",
-        "channel": 39
-      },
-      {
-        "name": "VIRTUAL_KEY_39.PRESS_SHORT",
-        "channel": 39
-      },
-      {
-        "name": "VIRTUAL_KEY_40.PRESS_LONG",
-        "channel": 40
-      },
-      {
-        "name": "VIRTUAL_KEY_40.PRESS_SHORT",
-        "channel": 40
-      },
-      {
-        "name": "VIRTUAL_KEY_41.PRESS_LONG",
-        "channel": 41
-      },
-      {
-        "name": "VIRTUAL_KEY_41.PRESS_SHORT",
-        "channel": 41
-      },
-      {
-        "name": "VIRTUAL_KEY_42.PRESS_LONG",
-        "channel": 42
-      },
-      {
-        "name": "VIRTUAL_KEY_42.PRESS_SHORT",
-        "channel": 42
-      },
-      {
-        "name": "VIRTUAL_KEY_43.PRESS_LONG",
-        "channel": 43
-      },
-      {
-        "name": "VIRTUAL_KEY_43.PRESS_SHORT",
-        "channel": 43
-      },
-      {
-        "name": "VIRTUAL_KEY_44.PRESS_LONG",
-        "channel": 44
-      },
-      {
-        "name": "VIRTUAL_KEY_44.PRESS_SHORT",
-        "channel": 44
-      },
-      {
-        "name": "VIRTUAL_KEY_45.PRESS_LONG",
-        "channel": 45
-      },
-      {
-        "name": "VIRTUAL_KEY_45.PRESS_SHORT",
-        "channel": 45
-      },
-      {
-        "name": "VIRTUAL_KEY_46.PRESS_LONG",
-        "channel": 46
-      },
-      {
-        "name": "VIRTUAL_KEY_46.PRESS_SHORT",
-        "channel": 46
-      },
-      {
-        "name": "VIRTUAL_KEY_47.PRESS_LONG",
-        "channel": 47
-      },
-      {
-        "name": "VIRTUAL_KEY_47.PRESS_SHORT",
-        "channel": 47
-      },
-      {
-        "name": "VIRTUAL_KEY_48.PRESS_LONG",
-        "channel": 48
-      },
-      {
-        "name": "VIRTUAL_KEY_48.PRESS_SHORT",
-        "channel": 48
-      },
-      {
-        "name": "VIRTUAL_KEY_49.PRESS_LONG",
-        "channel": 49
-      },
-      {
-        "name": "VIRTUAL_KEY_49.PRESS_SHORT",
-        "channel": 49
-      },
-      {
-        "name": "VIRTUAL_KEY_50.PRESS_LONG",
-        "channel": 50
-      },
-      {
-        "name": "VIRTUAL_KEY_50.PRESS_SHORT",
-        "channel": 50
-      }
-    ],
-    "write": [
-      {
-        "name": "VIRTUAL_KEY_1.PRESS_LONG",
-        "channel": 1,
-        "type": "action"
-      },
-      {
-        "name": "VIRTUAL_KEY_1.PRESS_SHORT",
-        "channel": 1,
-        "type": "action"
-      },
-      {
-        "name": "VIRTUAL_KEY_1.LEVEL",
-        "channel": 1,
-        "type": "float"
-      },
-      {
-        "name": "VIRTUAL_KEY_2.PRESS_LONG",
-        "channel": 2,
-        "type": "action"
-      },
-      {
-        "name": "VIRTUAL_KEY_2.PRESS_SHORT",
-        "channel": 2,
-        "type": "action"
-      },
-      {
-        "name": "VIRTUAL_KEY_2.LEVEL",
-        "channel": 2,
-        "type": "float"
-      },
-      {
-        "name": "VIRTUAL_KEY_3.PRESS_LONG",
-        "channel": 3,
-        "type": "action"
-      },
-      {
-        "name": "VIRTUAL_KEY_3.PRESS_SHORT",
-        "channel": 3,
-        "type": "action"
-      },
-      {
-        "name": "VIRTUAL_KEY_3.LEVEL",
-        "channel": 3,
-        "type": "float"
-      },
-      {
-        "name": "VIRTUAL_KEY_4.PRESS_LONG",
-        "channel": 4,
-        "type": "action"
-      },
-      {
-        "name": "VIRTUAL_KEY_4.PRESS_SHORT",
-        "channel": 4,
-        "type": "action"
-      },
-      {
-        "name": "VIRTUAL_KEY_4.LEVEL",
-        "channel": 4,
-        "type": "float"
-      },
-      {
-        "name": "VIRTUAL_KEY_5.PRESS_LONG",
-        "channel": 5,
-        "type": "action"
-      },
-      {
-        "name": "VIRTUAL_KEY_5.PRESS_SHORT",
-        "channel": 5,
-        "type": "action"
-      },
-      {
-        "name": "VIRTUAL_KEY_5.LEVEL",
-        "channel": 5,
-        "type": "float"
-      },
-      {
-        "name": "VIRTUAL_KEY_6.PRESS_LONG",
-        "channel": 6,
-        "type": "action"
-      },
-      {
-        "name": "VIRTUAL_KEY_6.PRESS_SHORT",
-        "channel": 6,
-        "type": "action"
-      },
-      {
-        "name": "VIRTUAL_KEY_6.LEVEL",
-        "channel": 6,
-        "type": "float"
-      },
-      {
-        "name": "VIRTUAL_KEY_7.PRESS_LONG",
-        "channel": 7,
-        "type": "action"
-      },
-      {
-        "name": "VIRTUAL_KEY_7.PRESS_SHORT",
-        "channel": 7,
-        "type": "action"
-      },
-      {
-        "name": "VIRTUAL_KEY_7.LEVEL",
-        "channel": 7,
-        "type": "float"
-      },
-      {
-        "name": "VIRTUAL_KEY_8.PRESS_LONG",
-        "channel": 8,
-        "type": "action"
-      },
-      {
-        "name": "VIRTUAL_KEY_8.PRESS_SHORT",
-        "channel": 8,
-        "type": "action"
-      },
-      {
-        "name": "VIRTUAL_KEY_8.LEVEL",
-        "channel": 8,
-        "type": "float"
-      },
-      {
-        "name": "VIRTUAL_KEY_9.PRESS_LONG",
-        "channel": 9,
-        "type": "action"
-      },
-      {
-        "name": "VIRTUAL_KEY_9.PRESS_SHORT",
-        "channel": 9,
-        "type": "action"
-      },
-      {
-        "name": "VIRTUAL_KEY_9.LEVEL",
-        "channel": 9,
-        "type": "float"
-      },
-      {
-        "name": "VIRTUAL_KEY_10.PRESS_LONG",
-        "channel": 10,
-        "type": "action"
-      },
-      {
-        "name": "VIRTUAL_KEY_10.PRESS_SHORT",
-        "channel": 10,
-        "type": "action"
-      },
-      {
-        "name": "VIRTUAL_KEY_10.LEVEL",
-        "channel": 10,
-        "type": "float"
-      },
-      {
-        "name": "VIRTUAL_KEY_11.PRESS_LONG",
-        "channel": 11,
-        "type": "action"
-      },
-      {
-        "name": "VIRTUAL_KEY_11.PRESS_SHORT",
-        "channel": 11,
-        "type": "action"
-      },
-      {
-        "name": "VIRTUAL_KEY_11.LEVEL",
-        "channel": 11,
-        "type": "float"
-      },
-      {
-        "name": "VIRTUAL_KEY_12.PRESS_LONG",
-        "channel": 12,
-        "type": "action"
-      },
-      {
-        "name": "VIRTUAL_KEY_12.PRESS_SHORT",
-        "channel": 12,
-        "type": "action"
-      },
-      {
-        "name": "VIRTUAL_KEY_12.LEVEL",
-        "channel": 12,
-        "type": "float"
-      },
-      {
-        "name": "VIRTUAL_KEY_13.PRESS_LONG",
-        "channel": 13,
-        "type": "action"
-      },
-      {
-        "name": "VIRTUAL_KEY_13.PRESS_SHORT",
-        "channel": 13,
-        "type": "action"
-      },
-      {
-        "name": "VIRTUAL_KEY_13.LEVEL",
-        "channel": 13,
-        "type": "float"
-      },
-      {
-        "name": "VIRTUAL_KEY_14.PRESS_LONG",
-        "channel": 14,
-        "type": "action"
-      },
-      {
-        "name": "VIRTUAL_KEY_14.PRESS_SHORT",
-        "channel": 14,
-        "type": "action"
-      },
-      {
-        "name": "VIRTUAL_KEY_14.LEVEL",
-        "channel": 14,
-        "type": "float"
-      },
-      {
-        "name": "VIRTUAL_KEY_15.PRESS_LONG",
-        "channel": 15,
-        "type": "action"
-      },
-      {
-        "name": "VIRTUAL_KEY_15.PRESS_SHORT",
-        "channel": 15,
-        "type": "action"
-      },
-      {
-        "name": "VIRTUAL_KEY_15.LEVEL",
-        "channel": 15,
-        "type": "float"
-      },
-      {
-        "name": "VIRTUAL_KEY_16.PRESS_LONG",
-        "channel": 16,
-        "type": "action"
-      },
-      {
-        "name": "VIRTUAL_KEY_16.PRESS_SHORT",
-        "channel": 16,
-        "type": "action"
-      },
-      {
-        "name": "VIRTUAL_KEY_16.LEVEL",
-        "channel": 16,
-        "type": "float"
-      },
-      {
-        "name": "VIRTUAL_KEY_17.PRESS_LONG",
-        "channel": 17,
-        "type": "action"
-      },
-      {
-        "name": "VIRTUAL_KEY_17.PRESS_SHORT",
-        "channel": 17,
-        "type": "action"
-      },
-      {
-        "name": "VIRTUAL_KEY_17.LEVEL",
-        "channel": 17,
-        "type": "float"
-      },
-      {
-        "name": "VIRTUAL_KEY_18.PRESS_LONG",
-        "channel": 18,
-        "type": "action"
-      },
-      {
-        "name": "VIRTUAL_KEY_18.PRESS_SHORT",
-        "channel": 18,
-        "type": "action"
-      },
-      {
-        "name": "VIRTUAL_KEY_18.LEVEL",
-        "channel": 18,
-        "type": "float"
-      },
-      {
-        "name": "VIRTUAL_KEY_19.PRESS_LONG",
-        "channel": 19,
-        "type": "action"
-      },
-      {
-        "name": "VIRTUAL_KEY_19.PRESS_SHORT",
-        "channel": 19,
-        "type": "action"
-      },
-      {
-        "name": "VIRTUAL_KEY_19.LEVEL",
-        "channel": 19,
-        "type": "float"
-      },
-      {
-        "name": "VIRTUAL_KEY_20.PRESS_LONG",
-        "channel": 20,
-        "type": "action"
-      },
-      {
-        "name": "VIRTUAL_KEY_20.PRESS_SHORT",
-        "channel": 20,
-        "type": "action"
-      },
-      {
-        "name": "VIRTUAL_KEY_20.LEVEL",
-        "channel": 20,
-        "type": "float"
-      },
-      {
-        "name": "VIRTUAL_KEY_21.PRESS_LONG",
-        "channel": 21,
-        "type": "action"
-      },
-      {
-        "name": "VIRTUAL_KEY_21.PRESS_SHORT",
-        "channel": 21,
-        "type": "action"
-      },
-      {
-        "name": "VIRTUAL_KEY_21.LEVEL",
-        "channel": 21,
-        "type": "float"
-      },
-      {
-        "name": "VIRTUAL_KEY_22.PRESS_LONG",
-        "channel": 22,
-        "type": "action"
-      },
-      {
-        "name": "VIRTUAL_KEY_22.PRESS_SHORT",
-        "channel": 22,
-        "type": "action"
-      },
-      {
-        "name": "VIRTUAL_KEY_22.LEVEL",
-        "channel": 22,
-        "type": "float"
-      },
-      {
-        "name": "VIRTUAL_KEY_23.PRESS_LONG",
-        "channel": 23,
-        "type": "action"
-      },
-      {
-        "name": "VIRTUAL_KEY_23.PRESS_SHORT",
-        "channel": 23,
-        "type": "action"
-      },
-      {
-        "name": "VIRTUAL_KEY_23.LEVEL",
-        "channel": 23,
-        "type": "float"
-      },
-      {
-        "name": "VIRTUAL_KEY_24.PRESS_LONG",
-        "channel": 24,
-        "type": "action"
-      },
-      {
-        "name": "VIRTUAL_KEY_24.PRESS_SHORT",
-        "channel": 24,
-        "type": "action"
-      },
-      {
-        "name": "VIRTUAL_KEY_24.LEVEL",
-        "channel": 24,
-        "type": "float"
-      },
-      {
-        "name": "VIRTUAL_KEY_25.PRESS_LONG",
-        "channel": 25,
-        "type": "action"
-      },
-      {
-        "name": "VIRTUAL_KEY_25.PRESS_SHORT",
-        "channel": 25,
-        "type": "action"
-      },
-      {
-        "name": "VIRTUAL_KEY_25.LEVEL",
-        "channel": 25,
-        "type": "float"
-      },
-      {
-        "name": "VIRTUAL_KEY_26.PRESS_LONG",
-        "channel": 26,
-        "type": "action"
-      },
-      {
-        "name": "VIRTUAL_KEY_26.PRESS_SHORT",
-        "channel": 26,
-        "type": "action"
-      },
-      {
-        "name": "VIRTUAL_KEY_26.LEVEL",
-        "channel": 26,
-        "type": "float"
-      },
-      {
-        "name": "VIRTUAL_KEY_27.PRESS_LONG",
-        "channel": 27,
-        "type": "action"
-      },
-      {
-        "name": "VIRTUAL_KEY_27.PRESS_SHORT",
-        "channel": 27,
-        "type": "action"
-      },
-      {
-        "name": "VIRTUAL_KEY_27.LEVEL",
-        "channel": 27,
-        "type": "float"
-      },
-      {
-        "name": "VIRTUAL_KEY_28.PRESS_LONG",
-        "channel": 28,
-        "type": "action"
-      },
-      {
-        "name": "VIRTUAL_KEY_28.PRESS_SHORT",
-        "channel": 28,
-        "type": "action"
-      },
-      {
-        "name": "VIRTUAL_KEY_28.LEVEL",
-        "channel": 28,
-        "type": "float"
-      },
-      {
-        "name": "VIRTUAL_KEY_29.PRESS_LONG",
-        "channel": 29,
-        "type": "action"
-      },
-      {
-        "name": "VIRTUAL_KEY_29.PRESS_SHORT",
-        "channel": 29,
-        "type": "action"
-      },
-      {
-        "name": "VIRTUAL_KEY_29.LEVEL",
-        "channel": 29,
-        "type": "float"
-      },
-      {
-        "name": "VIRTUAL_KEY_30.PRESS_LONG",
-        "channel": 30,
-        "type": "action"
-      },
-      {
-        "name": "VIRTUAL_KEY_30.PRESS_SHORT",
-        "channel": 30,
-        "type": "action"
-      },
-      {
-        "name": "VIRTUAL_KEY_30.LEVEL",
-        "channel": 30,
-        "type": "float"
-      },
-      {
-        "name": "VIRTUAL_KEY_31.PRESS_LONG",
-        "channel": 31,
-        "type": "action"
-      },
-      {
-        "name": "VIRTUAL_KEY_31.PRESS_SHORT",
-        "channel": 31,
-        "type": "action"
-      },
-      {
-        "name": "VIRTUAL_KEY_31.LEVEL",
-        "channel": 31,
-        "type": "float"
-      },
-      {
-        "name": "VIRTUAL_KEY_32.PRESS_LONG",
-        "channel": 32,
-        "type": "action"
-      },
-      {
-        "name": "VIRTUAL_KEY_32.PRESS_SHORT",
-        "channel": 32,
-        "type": "action"
-      },
-      {
-        "name": "VIRTUAL_KEY_32.LEVEL",
-        "channel": 32,
-        "type": "float"
-      },
-      {
-        "name": "VIRTUAL_KEY_33.PRESS_LONG",
-        "channel": 33,
-        "type": "action"
-      },
-      {
-        "name": "VIRTUAL_KEY_33.PRESS_SHORT",
-        "channel": 33,
-        "type": "action"
-      },
-      {
-        "name": "VIRTUAL_KEY_33.LEVEL",
-        "channel": 33,
-        "type": "float"
-      },
-      {
-        "name": "VIRTUAL_KEY_34.PRESS_LONG",
-        "channel": 34,
-        "type": "action"
-      },
-      {
-        "name": "VIRTUAL_KEY_34.PRESS_SHORT",
-        "channel": 34,
-        "type": "action"
-      },
-      {
-        "name": "VIRTUAL_KEY_34.LEVEL",
-        "channel": 34,
-        "type": "float"
-      },
-      {
-        "name": "VIRTUAL_KEY_35.PRESS_LONG",
-        "channel": 35,
-        "type": "action"
-      },
-      {
-        "name": "VIRTUAL_KEY_35.PRESS_SHORT",
-        "channel": 35,
-        "type": "action"
-      },
-      {
-        "name": "VIRTUAL_KEY_35.LEVEL",
-        "channel": 35,
-        "type": "float"
-      },
-      {
-        "name": "VIRTUAL_KEY_36.PRESS_LONG",
-        "channel": 36,
-        "type": "action"
-      },
-      {
-        "name": "VIRTUAL_KEY_36.PRESS_SHORT",
-        "channel": 36,
-        "type": "action"
-      },
-      {
-        "name": "VIRTUAL_KEY_36.LEVEL",
-        "channel": 36,
-        "type": "float"
-      },
-      {
-        "name": "VIRTUAL_KEY_37.PRESS_LONG",
-        "channel": 37,
-        "type": "action"
-      },
-      {
-        "name": "VIRTUAL_KEY_37.PRESS_SHORT",
-        "channel": 37,
-        "type": "action"
-      },
-      {
-        "name": "VIRTUAL_KEY_37.LEVEL",
-        "channel": 37,
-        "type": "float"
-      },
-      {
-        "name": "VIRTUAL_KEY_38.PRESS_LONG",
-        "channel": 38,
-        "type": "action"
-      },
-      {
-        "name": "VIRTUAL_KEY_38.PRESS_SHORT",
-        "channel": 38,
-        "type": "action"
-      },
-      {
-        "name": "VIRTUAL_KEY_38.LEVEL",
-        "channel": 38,
-        "type": "float"
-      },
-      {
-        "name": "VIRTUAL_KEY_39.PRESS_LONG",
-        "channel": 39,
-        "type": "action"
-      },
-      {
-        "name": "VIRTUAL_KEY_39.PRESS_SHORT",
-        "channel": 39,
-        "type": "action"
-      },
-      {
-        "name": "VIRTUAL_KEY_39.LEVEL",
-        "channel": 39,
-        "type": "float"
-      },
-      {
-        "name": "VIRTUAL_KEY_40.PRESS_LONG",
-        "channel": 40,
-        "type": "action"
-      },
-      {
-        "name": "VIRTUAL_KEY_40.PRESS_SHORT",
-        "channel": 40,
-        "type": "action"
-      },
-      {
-        "name": "VIRTUAL_KEY_40.LEVEL",
-        "channel": 40,
-        "type": "float"
-      },
-      {
-        "name": "VIRTUAL_KEY_41.PRESS_LONG",
-        "channel": 41,
-        "type": "action"
-      },
-      {
-        "name": "VIRTUAL_KEY_41.PRESS_SHORT",
-        "channel": 41,
-        "type": "action"
-      },
-      {
-        "name": "VIRTUAL_KEY_41.LEVEL",
-        "channel": 41,
-        "type": "float"
-      },
-      {
-        "name": "VIRTUAL_KEY_42.PRESS_LONG",
-        "channel": 42,
-        "type": "action"
-      },
-      {
-        "name": "VIRTUAL_KEY_42.PRESS_SHORT",
-        "channel": 42,
-        "type": "action"
-      },
-      {
-        "name": "VIRTUAL_KEY_42.LEVEL",
-        "channel": 42,
-        "type": "float"
-      },
-      {
-        "name": "VIRTUAL_KEY_43.PRESS_LONG",
-        "channel": 43,
-        "type": "action"
-      },
-      {
-        "name": "VIRTUAL_KEY_43.PRESS_SHORT",
-        "channel": 43,
-        "type": "action"
-      },
-      {
-        "name": "VIRTUAL_KEY_43.LEVEL",
-        "channel": 43,
-        "type": "float"
-      },
-      {
-        "name": "VIRTUAL_KEY_44.PRESS_LONG",
-        "channel": 44,
-        "type": "action"
-      },
-      {
-        "name": "VIRTUAL_KEY_44.PRESS_SHORT",
-        "channel": 44,
-        "type": "action"
-      },
-      {
-        "name": "VIRTUAL_KEY_44.LEVEL",
-        "channel": 44,
-        "type": "float"
-      },
-      {
-        "name": "VIRTUAL_KEY_45.PRESS_LONG",
-        "channel": 45,
-        "type": "action"
-      },
-      {
-        "name": "VIRTUAL_KEY_45.PRESS_SHORT",
-        "channel": 45,
-        "type": "action"
-      },
-      {
-        "name": "VIRTUAL_KEY_45.LEVEL",
-        "channel": 45,
-        "type": "float"
-      },
-      {
-        "name": "VIRTUAL_KEY_46.PRESS_LONG",
-        "channel": 46,
-        "type": "action"
-      },
-      {
-        "name": "VIRTUAL_KEY_46.PRESS_SHORT",
-        "channel": 46,
-        "type": "action"
-      },
-      {
-        "name": "VIRTUAL_KEY_46.LEVEL",
-        "channel": 46,
-        "type": "float"
-      },
-      {
-        "name": "VIRTUAL_KEY_47.PRESS_LONG",
-        "channel": 47,
-        "type": "action"
-      },
-      {
-        "name": "VIRTUAL_KEY_47.PRESS_SHORT",
-        "channel": 47,
-        "type": "action"
-      },
-      {
-        "name": "VIRTUAL_KEY_47.LEVEL",
-        "channel": 47,
-        "type": "float"
-      },
-      {
-        "name": "VIRTUAL_KEY_48.PRESS_LONG",
-        "channel": 48,
-        "type": "action"
-      },
-      {
-        "name": "VIRTUAL_KEY_48.PRESS_SHORT",
-        "channel": 48,
-        "type": "action"
-      },
-      {
-        "name": "VIRTUAL_KEY_48.LEVEL",
-        "channel": 48,
-        "type": "float"
-      },
-      {
-        "name": "VIRTUAL_KEY_49.PRESS_LONG",
-        "channel": 49,
-        "type": "action"
-      },
-      {
-        "name": "VIRTUAL_KEY_49.PRESS_SHORT",
-        "channel": 49,
-        "type": "action"
-      },
-      {
-        "name": "VIRTUAL_KEY_49.LEVEL",
-        "channel": 49,
-        "type": "float"
-      },
-      {
-        "name": "VIRTUAL_KEY_50.PRESS_LONG",
-        "channel": 50,
-        "type": "action"
-      },
-      {
-        "name": "VIRTUAL_KEY_50.PRESS_SHORT",
-        "channel": 50,
-        "type": "action"
-      },
-      {
-        "name": "VIRTUAL_KEY_50.LEVEL",
-        "channel": 50,
-        "type": "float"
-      }
-    ],
-    "names": [
-      "CENTRAL",
-      "HM-RCV-50"
-    ]
-  },
-  {
-    "read": [
-      {
         "name": "SIGNAL_LED.STATE",
-        "channel": 1
-      },
-      {
-        "name": "SIGNAL_LED.INHIBIT",
         "channel": 1
       },
       {
@@ -2376,10 +1170,6 @@
       },
       {
         "name": "SIGNAL_CHIME.STATE",
-        "channel": 2
-      },
-      {
-        "name": "SIGNAL_CHIME.INHIBIT",
         "channel": 2
       },
       {
@@ -2392,11 +1182,6 @@
         "name": "SIGNAL_LED.STATE",
         "channel": 1,
         "type": "boolean"
-      },
-      {
-        "name": "SIGNAL_LED.ON_TIME",
-        "channel": 1,
-        "type": "float"
       },
       {
         "name": "SIGNAL_LED.INHIBIT",
@@ -2417,11 +1202,6 @@
         "name": "SIGNAL_CHIME.STATE",
         "channel": 2,
         "type": "boolean"
-      },
-      {
-        "name": "SIGNAL_CHIME.ON_TIME",
-        "channel": 2,
-        "type": "float"
       },
       {
         "name": "SIGNAL_CHIME.INHIBIT",
@@ -2450,19 +1230,11 @@
         "channel": 1
       },
       {
-        "name": "SIGNAL_LED.INHIBIT",
-        "channel": 1
-      },
-      {
         "name": "SIGNAL_LED.WORKING",
         "channel": 1
       },
       {
         "name": "SIGNAL_CHIME.STATE",
-        "channel": 2
-      },
-      {
-        "name": "SIGNAL_CHIME.INHIBIT",
         "channel": 2
       },
       {
@@ -2475,11 +1247,6 @@
         "name": "SIGNAL_LED.STATE",
         "channel": 1,
         "type": "boolean"
-      },
-      {
-        "name": "SIGNAL_LED.ON_TIME",
-        "channel": 1,
-        "type": "float"
       },
       {
         "name": "SIGNAL_LED.INHIBIT",
@@ -2495,11 +1262,6 @@
         "name": "SIGNAL_CHIME.STATE",
         "channel": 2,
         "type": "boolean"
-      },
-      {
-        "name": "SIGNAL_CHIME.ON_TIME",
-        "channel": 2,
-        "type": "float"
       },
       {
         "name": "SIGNAL_CHIME.INHIBIT",
@@ -2519,30 +1281,7 @@
   {
     "read": [
       {
-        "name": "ENERGY_MANAGMENT_1.COUNTERREADING10",
-        "channel": 1
-      },
-      {
-        "name": "ENERGY_MANAGMENT_2.COUNTERREADING10",
-        "channel": 2
-      },
-      {
-        "name": "ENERGY_MANAGMENT_3.COUNTERREADING10",
-        "channel": 3
-      }
-    ],
-    "names": [
-      "CMM"
-    ]
-  },
-  {
-    "read": [
-      {
         "name": "STATE",
-        "channel": 1
-      },
-      {
-        "name": "INHIBIT",
         "channel": 1
       },
       {
@@ -2555,11 +1294,6 @@
         "name": "STATE",
         "channel": 1,
         "type": "boolean"
-      },
-      {
-        "name": "ON_TIME",
-        "channel": 1,
-        "type": "float"
       },
       {
         "name": "INHIBIT",
@@ -2588,10 +1322,6 @@
         "channel": 1
       },
       {
-        "name": "INHIBIT",
-        "channel": 1
-      },
-      {
         "name": "WORKING",
         "channel": 1
       }
@@ -2601,11 +1331,6 @@
         "name": "STATE",
         "channel": 1,
         "type": "action"
-      },
-      {
-        "name": "ON_TIME",
-        "channel": 1,
-        "type": "float"
       },
       {
         "name": "INHIBIT",
@@ -2625,23 +1350,23 @@
   {
     "read": [
       {
-        "name": "LEVEL",
+        "name": "DIMMER.LEVEL",
         "channel": 1
       },
       {
-        "name": "LEVEL_REAL",
+        "name": "DIMMER.LEVEL_REAL",
         "channel": 1
       },
       {
-        "name": "INHIBIT",
+        "name": "DIMMER.INHIBIT",
         "channel": 1
       },
       {
-        "name": "WORKING",
+        "name": "DIMMER.WORKING",
         "channel": 1
       },
       {
-        "name": "DIRECTION",
+        "name": "DIMMER.DIRECTION",
         "channel": 1,
         "mapping": [
           "NONE",
@@ -2651,48 +1376,162 @@
         ]
       },
       {
-        "name": "ERROR",
+        "name": "DIMMER.ERROR",
         "channel": 1,
         "mapping": [
           "NO_ERROR",
+          "",
+          "",
+          "LOAD_FAILURE"
+        ]
+      },
+      {
+        "name": "VIRTUAL_DIMMER_1.LEVEL",
+        "channel": 2
+      },
+      {
+        "name": "VIRTUAL_DIMMER_1.LEVEL_REAL",
+        "channel": 2
+      },
+      {
+        "name": "VIRTUAL_DIMMER_1.INHIBIT",
+        "channel": 2
+      },
+      {
+        "name": "VIRTUAL_DIMMER_1.WORKING",
+        "channel": 2
+      },
+      {
+        "name": "VIRTUAL_DIMMER_1.DIRECTION",
+        "channel": 2,
+        "mapping": [
+          "NONE",
+          "UP",
+          "DOWN",
+          "UNDEFINED"
+        ]
+      },
+      {
+        "name": "VIRTUAL_DIMMER_1.ERROR",
+        "channel": 2,
+        "mapping": [
+          "NO_ERROR",
+          "",
+          "",
+          "LOAD_FAILURE"
+        ]
+      },
+      {
+        "name": "VIRTUAL_DIMMER_2.LEVEL",
+        "channel": 3
+      },
+      {
+        "name": "VIRTUAL_DIMMER_2.LEVEL_REAL",
+        "channel": 3
+      },
+      {
+        "name": "VIRTUAL_DIMMER_2.INHIBIT",
+        "channel": 3
+      },
+      {
+        "name": "VIRTUAL_DIMMER_2.WORKING",
+        "channel": 3
+      },
+      {
+        "name": "VIRTUAL_DIMMER_2.DIRECTION",
+        "channel": 3,
+        "mapping": [
+          "NONE",
+          "UP",
+          "DOWN",
+          "UNDEFINED"
+        ]
+      },
+      {
+        "name": "VIRTUAL_DIMMER_2.ERROR",
+        "channel": 3,
+        "mapping": [
+          "NO_ERROR",
+          "",
+          "",
           "LOAD_FAILURE"
         ]
       }
     ],
     "write": [
       {
-        "name": "LEVEL",
+        "name": "DIMMER.LEVEL",
         "channel": 1,
         "type": "float"
       },
       {
-        "name": "OLD_LEVEL",
+        "name": "DIMMER.OLD_LEVEL",
         "channel": 1,
         "type": "action"
       },
       {
-        "name": "RAMP_TIME",
-        "channel": 1,
-        "type": "float"
-      },
-      {
-        "name": "ON_TIME",
-        "channel": 1,
-        "type": "float"
-      },
-      {
-        "name": "RAMP_STOP",
+        "name": "DIMMER.RAMP_STOP",
         "channel": 1,
         "type": "action"
       },
       {
-        "name": "INHIBIT",
+        "name": "DIMMER.INHIBIT",
         "channel": 1,
         "type": "boolean"
       },
       {
-        "name": "INSTALL_TEST",
+        "name": "DIMMER.INSTALL_TEST",
         "channel": 1,
+        "type": "action"
+      },
+      {
+        "name": "VIRTUAL_DIMMER_1.LEVEL",
+        "channel": 2,
+        "type": "float"
+      },
+      {
+        "name": "VIRTUAL_DIMMER_1.OLD_LEVEL",
+        "channel": 2,
+        "type": "action"
+      },
+      {
+        "name": "VIRTUAL_DIMMER_1.RAMP_STOP",
+        "channel": 2,
+        "type": "action"
+      },
+      {
+        "name": "VIRTUAL_DIMMER_1.INHIBIT",
+        "channel": 2,
+        "type": "boolean"
+      },
+      {
+        "name": "VIRTUAL_DIMMER_1.INSTALL_TEST",
+        "channel": 2,
+        "type": "action"
+      },
+      {
+        "name": "VIRTUAL_DIMMER_2.LEVEL",
+        "channel": 3,
+        "type": "float"
+      },
+      {
+        "name": "VIRTUAL_DIMMER_2.OLD_LEVEL",
+        "channel": 3,
+        "type": "action"
+      },
+      {
+        "name": "VIRTUAL_DIMMER_2.RAMP_STOP",
+        "channel": 3,
+        "type": "action"
+      },
+      {
+        "name": "VIRTUAL_DIMMER_2.INHIBIT",
+        "channel": 3,
+        "type": "boolean"
+      },
+      {
+        "name": "VIRTUAL_DIMMER_2.INSTALL_TEST",
+        "channel": 3,
         "type": "action"
       }
     ],
@@ -2704,23 +1543,23 @@
   {
     "read": [
       {
-        "name": "LEVEL",
+        "name": "DIMMER.LEVEL",
         "channel": 1
       },
       {
-        "name": "LEVEL_REAL",
+        "name": "DIMMER.LEVEL_REAL",
         "channel": 1
       },
       {
-        "name": "INHIBIT",
+        "name": "DIMMER.INHIBIT",
         "channel": 1
       },
       {
-        "name": "WORKING",
+        "name": "DIMMER.WORKING",
         "channel": 1
       },
       {
-        "name": "DIRECTION",
+        "name": "DIMMER.DIRECTION",
         "channel": 1,
         "mapping": [
           "NONE",
@@ -2730,48 +1569,162 @@
         ]
       },
       {
-        "name": "ERROR",
+        "name": "DIMMER.ERROR",
         "channel": 1,
         "mapping": [
           "NO_ERROR",
+          "",
+          "",
+          "LOAD_FAILURE"
+        ]
+      },
+      {
+        "name": "VIRTUAL_DIMMER_1.LEVEL",
+        "channel": 2
+      },
+      {
+        "name": "VIRTUAL_DIMMER_1.LEVEL_REAL",
+        "channel": 2
+      },
+      {
+        "name": "VIRTUAL_DIMMER_1.INHIBIT",
+        "channel": 2
+      },
+      {
+        "name": "VIRTUAL_DIMMER_1.WORKING",
+        "channel": 2
+      },
+      {
+        "name": "VIRTUAL_DIMMER_1.DIRECTION",
+        "channel": 2,
+        "mapping": [
+          "NONE",
+          "UP",
+          "DOWN",
+          "UNDEFINED"
+        ]
+      },
+      {
+        "name": "VIRTUAL_DIMMER_1.ERROR",
+        "channel": 2,
+        "mapping": [
+          "NO_ERROR",
+          "",
+          "",
+          "LOAD_FAILURE"
+        ]
+      },
+      {
+        "name": "VIRTUAL_DIMMER_2.LEVEL",
+        "channel": 3
+      },
+      {
+        "name": "VIRTUAL_DIMMER_2.LEVEL_REAL",
+        "channel": 3
+      },
+      {
+        "name": "VIRTUAL_DIMMER_2.INHIBIT",
+        "channel": 3
+      },
+      {
+        "name": "VIRTUAL_DIMMER_2.WORKING",
+        "channel": 3
+      },
+      {
+        "name": "VIRTUAL_DIMMER_2.DIRECTION",
+        "channel": 3,
+        "mapping": [
+          "NONE",
+          "UP",
+          "DOWN",
+          "UNDEFINED"
+        ]
+      },
+      {
+        "name": "VIRTUAL_DIMMER_2.ERROR",
+        "channel": 3,
+        "mapping": [
+          "NO_ERROR",
+          "",
+          "",
           "LOAD_FAILURE"
         ]
       }
     ],
     "write": [
       {
-        "name": "LEVEL",
+        "name": "DIMMER.LEVEL",
         "channel": 1,
         "type": "float"
       },
       {
-        "name": "OLD_LEVEL",
+        "name": "DIMMER.OLD_LEVEL",
         "channel": 1,
         "type": "action"
       },
       {
-        "name": "RAMP_TIME",
-        "channel": 1,
-        "type": "float"
-      },
-      {
-        "name": "ON_TIME",
-        "channel": 1,
-        "type": "float"
-      },
-      {
-        "name": "RAMP_STOP",
+        "name": "DIMMER.RAMP_STOP",
         "channel": 1,
         "type": "action"
       },
       {
-        "name": "INHIBIT",
+        "name": "DIMMER.INHIBIT",
         "channel": 1,
         "type": "boolean"
       },
       {
-        "name": "INSTALL_TEST",
+        "name": "DIMMER.INSTALL_TEST",
         "channel": 1,
+        "type": "action"
+      },
+      {
+        "name": "VIRTUAL_DIMMER_1.LEVEL",
+        "channel": 2,
+        "type": "float"
+      },
+      {
+        "name": "VIRTUAL_DIMMER_1.OLD_LEVEL",
+        "channel": 2,
+        "type": "action"
+      },
+      {
+        "name": "VIRTUAL_DIMMER_1.RAMP_STOP",
+        "channel": 2,
+        "type": "action"
+      },
+      {
+        "name": "VIRTUAL_DIMMER_1.INHIBIT",
+        "channel": 2,
+        "type": "boolean"
+      },
+      {
+        "name": "VIRTUAL_DIMMER_1.INSTALL_TEST",
+        "channel": 2,
+        "type": "action"
+      },
+      {
+        "name": "VIRTUAL_DIMMER_2.LEVEL",
+        "channel": 3,
+        "type": "float"
+      },
+      {
+        "name": "VIRTUAL_DIMMER_2.OLD_LEVEL",
+        "channel": 3,
+        "type": "action"
+      },
+      {
+        "name": "VIRTUAL_DIMMER_2.RAMP_STOP",
+        "channel": 3,
+        "type": "action"
+      },
+      {
+        "name": "VIRTUAL_DIMMER_2.INHIBIT",
+        "channel": 3,
+        "type": "boolean"
+      },
+      {
+        "name": "VIRTUAL_DIMMER_2.INSTALL_TEST",
+        "channel": 3,
         "type": "action"
       }
     ],
@@ -2783,23 +1736,23 @@
   {
     "read": [
       {
-        "name": "LEVEL",
+        "name": "DIMMER.LEVEL",
         "channel": 1
       },
       {
-        "name": "LEVEL_REAL",
+        "name": "DIMMER.LEVEL_REAL",
         "channel": 1
       },
       {
-        "name": "INHIBIT",
+        "name": "DIMMER.INHIBIT",
         "channel": 1
       },
       {
-        "name": "WORKING",
+        "name": "DIMMER.WORKING",
         "channel": 1
       },
       {
-        "name": "DIRECTION",
+        "name": "DIMMER.DIRECTION",
         "channel": 1,
         "mapping": [
           "NONE",
@@ -2809,48 +1762,156 @@
         ]
       },
       {
-        "name": "ERROR_REDUCED",
+        "name": "DIMMER.ERROR_REDUCED",
         "channel": 1
       },
       {
-        "name": "ERROR_OVERHEAT",
+        "name": "DIMMER.ERROR_OVERHEAT",
         "channel": 1
+      },
+      {
+        "name": "VIRTUAL_DIMMER_1.LEVEL",
+        "channel": 2
+      },
+      {
+        "name": "VIRTUAL_DIMMER_1.LEVEL_REAL",
+        "channel": 2
+      },
+      {
+        "name": "VIRTUAL_DIMMER_1.INHIBIT",
+        "channel": 2
+      },
+      {
+        "name": "VIRTUAL_DIMMER_1.WORKING",
+        "channel": 2
+      },
+      {
+        "name": "VIRTUAL_DIMMER_1.DIRECTION",
+        "channel": 2,
+        "mapping": [
+          "NONE",
+          "UP",
+          "DOWN",
+          "UNDEFINED"
+        ]
+      },
+      {
+        "name": "VIRTUAL_DIMMER_1.ERROR_REDUCED",
+        "channel": 2
+      },
+      {
+        "name": "VIRTUAL_DIMMER_1.ERROR_OVERHEAT",
+        "channel": 2
+      },
+      {
+        "name": "VIRTUAL_DIMMER_2.LEVEL",
+        "channel": 3
+      },
+      {
+        "name": "VIRTUAL_DIMMER_2.LEVEL_REAL",
+        "channel": 3
+      },
+      {
+        "name": "VIRTUAL_DIMMER_2.INHIBIT",
+        "channel": 3
+      },
+      {
+        "name": "VIRTUAL_DIMMER_2.WORKING",
+        "channel": 3
+      },
+      {
+        "name": "VIRTUAL_DIMMER_2.DIRECTION",
+        "channel": 3,
+        "mapping": [
+          "NONE",
+          "UP",
+          "DOWN",
+          "UNDEFINED"
+        ]
+      },
+      {
+        "name": "VIRTUAL_DIMMER_2.ERROR_REDUCED",
+        "channel": 3
+      },
+      {
+        "name": "VIRTUAL_DIMMER_2.ERROR_OVERHEAT",
+        "channel": 3
       }
     ],
     "write": [
       {
-        "name": "LEVEL",
+        "name": "DIMMER.LEVEL",
         "channel": 1,
         "type": "float"
       },
       {
-        "name": "OLD_LEVEL",
+        "name": "DIMMER.OLD_LEVEL",
         "channel": 1,
         "type": "action"
       },
       {
-        "name": "RAMP_TIME",
-        "channel": 1,
-        "type": "float"
-      },
-      {
-        "name": "ON_TIME",
-        "channel": 1,
-        "type": "float"
-      },
-      {
-        "name": "RAMP_STOP",
+        "name": "DIMMER.RAMP_STOP",
         "channel": 1,
         "type": "action"
       },
       {
-        "name": "INHIBIT",
+        "name": "DIMMER.INHIBIT",
         "channel": 1,
         "type": "boolean"
       },
       {
-        "name": "INSTALL_TEST",
+        "name": "DIMMER.INSTALL_TEST",
         "channel": 1,
+        "type": "action"
+      },
+      {
+        "name": "VIRTUAL_DIMMER_1.LEVEL",
+        "channel": 2,
+        "type": "float"
+      },
+      {
+        "name": "VIRTUAL_DIMMER_1.OLD_LEVEL",
+        "channel": 2,
+        "type": "action"
+      },
+      {
+        "name": "VIRTUAL_DIMMER_1.RAMP_STOP",
+        "channel": 2,
+        "type": "action"
+      },
+      {
+        "name": "VIRTUAL_DIMMER_1.INHIBIT",
+        "channel": 2,
+        "type": "boolean"
+      },
+      {
+        "name": "VIRTUAL_DIMMER_1.INSTALL_TEST",
+        "channel": 2,
+        "type": "action"
+      },
+      {
+        "name": "VIRTUAL_DIMMER_2.LEVEL",
+        "channel": 3,
+        "type": "float"
+      },
+      {
+        "name": "VIRTUAL_DIMMER_2.OLD_LEVEL",
+        "channel": 3,
+        "type": "action"
+      },
+      {
+        "name": "VIRTUAL_DIMMER_2.RAMP_STOP",
+        "channel": 3,
+        "type": "action"
+      },
+      {
+        "name": "VIRTUAL_DIMMER_2.INHIBIT",
+        "channel": 3,
+        "type": "boolean"
+      },
+      {
+        "name": "VIRTUAL_DIMMER_2.INSTALL_TEST",
+        "channel": 3,
         "type": "action"
       }
     ],
@@ -2861,23 +1922,23 @@
   {
     "read": [
       {
-        "name": "LEVEL",
+        "name": "DIMMER.LEVEL",
         "channel": 1
       },
       {
-        "name": "LEVEL_REAL",
+        "name": "DIMMER.LEVEL_REAL",
         "channel": 1
       },
       {
-        "name": "INHIBIT",
+        "name": "DIMMER.INHIBIT",
         "channel": 1
       },
       {
-        "name": "WORKING",
+        "name": "DIMMER.WORKING",
         "channel": 1
       },
       {
-        "name": "DIRECTION",
+        "name": "DIMMER.DIRECTION",
         "channel": 1,
         "mapping": [
           "NONE",
@@ -2887,48 +1948,156 @@
         ]
       },
       {
-        "name": "ERROR_REDUCED",
+        "name": "DIMMER.ERROR_REDUCED",
         "channel": 1
       },
       {
-        "name": "ERROR_OVERHEAT",
+        "name": "DIMMER.ERROR_OVERHEAT",
         "channel": 1
+      },
+      {
+        "name": "VIRTUAL_DIMMER_1.LEVEL",
+        "channel": 2
+      },
+      {
+        "name": "VIRTUAL_DIMMER_1.LEVEL_REAL",
+        "channel": 2
+      },
+      {
+        "name": "VIRTUAL_DIMMER_1.INHIBIT",
+        "channel": 2
+      },
+      {
+        "name": "VIRTUAL_DIMMER_1.WORKING",
+        "channel": 2
+      },
+      {
+        "name": "VIRTUAL_DIMMER_1.DIRECTION",
+        "channel": 2,
+        "mapping": [
+          "NONE",
+          "UP",
+          "DOWN",
+          "UNDEFINED"
+        ]
+      },
+      {
+        "name": "VIRTUAL_DIMMER_1.ERROR_REDUCED",
+        "channel": 2
+      },
+      {
+        "name": "VIRTUAL_DIMMER_1.ERROR_OVERHEAT",
+        "channel": 2
+      },
+      {
+        "name": "VIRTUAL_DIMMER_2.LEVEL",
+        "channel": 3
+      },
+      {
+        "name": "VIRTUAL_DIMMER_2.LEVEL_REAL",
+        "channel": 3
+      },
+      {
+        "name": "VIRTUAL_DIMMER_2.INHIBIT",
+        "channel": 3
+      },
+      {
+        "name": "VIRTUAL_DIMMER_2.WORKING",
+        "channel": 3
+      },
+      {
+        "name": "VIRTUAL_DIMMER_2.DIRECTION",
+        "channel": 3,
+        "mapping": [
+          "NONE",
+          "UP",
+          "DOWN",
+          "UNDEFINED"
+        ]
+      },
+      {
+        "name": "VIRTUAL_DIMMER_2.ERROR_REDUCED",
+        "channel": 3
+      },
+      {
+        "name": "VIRTUAL_DIMMER_2.ERROR_OVERHEAT",
+        "channel": 3
       }
     ],
     "write": [
       {
-        "name": "LEVEL",
+        "name": "DIMMER.LEVEL",
         "channel": 1,
         "type": "float"
       },
       {
-        "name": "OLD_LEVEL",
+        "name": "DIMMER.OLD_LEVEL",
         "channel": 1,
         "type": "action"
       },
       {
-        "name": "RAMP_TIME",
-        "channel": 1,
-        "type": "float"
-      },
-      {
-        "name": "ON_TIME",
-        "channel": 1,
-        "type": "float"
-      },
-      {
-        "name": "RAMP_STOP",
+        "name": "DIMMER.RAMP_STOP",
         "channel": 1,
         "type": "action"
       },
       {
-        "name": "INHIBIT",
+        "name": "DIMMER.INHIBIT",
         "channel": 1,
         "type": "boolean"
       },
       {
-        "name": "INSTALL_TEST",
+        "name": "DIMMER.INSTALL_TEST",
         "channel": 1,
+        "type": "action"
+      },
+      {
+        "name": "VIRTUAL_DIMMER_1.LEVEL",
+        "channel": 2,
+        "type": "float"
+      },
+      {
+        "name": "VIRTUAL_DIMMER_1.OLD_LEVEL",
+        "channel": 2,
+        "type": "action"
+      },
+      {
+        "name": "VIRTUAL_DIMMER_1.RAMP_STOP",
+        "channel": 2,
+        "type": "action"
+      },
+      {
+        "name": "VIRTUAL_DIMMER_1.INHIBIT",
+        "channel": 2,
+        "type": "boolean"
+      },
+      {
+        "name": "VIRTUAL_DIMMER_1.INSTALL_TEST",
+        "channel": 2,
+        "type": "action"
+      },
+      {
+        "name": "VIRTUAL_DIMMER_2.LEVEL",
+        "channel": 3,
+        "type": "float"
+      },
+      {
+        "name": "VIRTUAL_DIMMER_2.OLD_LEVEL",
+        "channel": 3,
+        "type": "action"
+      },
+      {
+        "name": "VIRTUAL_DIMMER_2.RAMP_STOP",
+        "channel": 3,
+        "type": "action"
+      },
+      {
+        "name": "VIRTUAL_DIMMER_2.INHIBIT",
+        "channel": 3,
+        "type": "boolean"
+      },
+      {
+        "name": "VIRTUAL_DIMMER_2.INSTALL_TEST",
+        "channel": 3,
         "type": "action"
       }
     ],
@@ -2939,23 +2108,23 @@
   {
     "read": [
       {
-        "name": "LEVEL",
+        "name": "DIMMER.LEVEL",
         "channel": 1
       },
       {
-        "name": "LEVEL_REAL",
+        "name": "DIMMER.LEVEL_REAL",
         "channel": 1
       },
       {
-        "name": "INHIBIT",
+        "name": "DIMMER.INHIBIT",
         "channel": 1
       },
       {
-        "name": "WORKING",
+        "name": "DIMMER.WORKING",
         "channel": 1
       },
       {
-        "name": "DIRECTION",
+        "name": "DIMMER.DIRECTION",
         "channel": 1,
         "mapping": [
           "NONE",
@@ -2965,52 +2134,168 @@
         ]
       },
       {
-        "name": "ERROR_REDUCED",
+        "name": "DIMMER.ERROR_REDUCED",
         "channel": 1
       },
       {
-        "name": "ERROR_OVERLOAD",
+        "name": "DIMMER.ERROR_OVERLOAD",
         "channel": 1
       },
       {
-        "name": "ERROR_OVERHEAT",
+        "name": "DIMMER.ERROR_OVERHEAT",
         "channel": 1
+      },
+      {
+        "name": "VIRTUAL_DIMMER_1.LEVEL",
+        "channel": 2
+      },
+      {
+        "name": "VIRTUAL_DIMMER_1.LEVEL_REAL",
+        "channel": 2
+      },
+      {
+        "name": "VIRTUAL_DIMMER_1.INHIBIT",
+        "channel": 2
+      },
+      {
+        "name": "VIRTUAL_DIMMER_1.WORKING",
+        "channel": 2
+      },
+      {
+        "name": "VIRTUAL_DIMMER_1.DIRECTION",
+        "channel": 2,
+        "mapping": [
+          "NONE",
+          "UP",
+          "DOWN",
+          "UNDEFINED"
+        ]
+      },
+      {
+        "name": "VIRTUAL_DIMMER_1.ERROR_REDUCED",
+        "channel": 2
+      },
+      {
+        "name": "VIRTUAL_DIMMER_1.ERROR_OVERLOAD",
+        "channel": 2
+      },
+      {
+        "name": "VIRTUAL_DIMMER_1.ERROR_OVERHEAT",
+        "channel": 2
+      },
+      {
+        "name": "VIRTUAL_DIMMER_2.LEVEL",
+        "channel": 3
+      },
+      {
+        "name": "VIRTUAL_DIMMER_2.LEVEL_REAL",
+        "channel": 3
+      },
+      {
+        "name": "VIRTUAL_DIMMER_2.INHIBIT",
+        "channel": 3
+      },
+      {
+        "name": "VIRTUAL_DIMMER_2.WORKING",
+        "channel": 3
+      },
+      {
+        "name": "VIRTUAL_DIMMER_2.DIRECTION",
+        "channel": 3,
+        "mapping": [
+          "NONE",
+          "UP",
+          "DOWN",
+          "UNDEFINED"
+        ]
+      },
+      {
+        "name": "VIRTUAL_DIMMER_2.ERROR_REDUCED",
+        "channel": 3
+      },
+      {
+        "name": "VIRTUAL_DIMMER_2.ERROR_OVERLOAD",
+        "channel": 3
+      },
+      {
+        "name": "VIRTUAL_DIMMER_2.ERROR_OVERHEAT",
+        "channel": 3
       }
     ],
     "write": [
       {
-        "name": "LEVEL",
+        "name": "DIMMER.LEVEL",
         "channel": 1,
         "type": "float"
       },
       {
-        "name": "OLD_LEVEL",
+        "name": "DIMMER.OLD_LEVEL",
         "channel": 1,
         "type": "action"
       },
       {
-        "name": "RAMP_TIME",
-        "channel": 1,
-        "type": "float"
-      },
-      {
-        "name": "ON_TIME",
-        "channel": 1,
-        "type": "float"
-      },
-      {
-        "name": "RAMP_STOP",
+        "name": "DIMMER.RAMP_STOP",
         "channel": 1,
         "type": "action"
       },
       {
-        "name": "INHIBIT",
+        "name": "DIMMER.INHIBIT",
         "channel": 1,
         "type": "boolean"
       },
       {
-        "name": "INSTALL_TEST",
+        "name": "DIMMER.INSTALL_TEST",
         "channel": 1,
+        "type": "action"
+      },
+      {
+        "name": "VIRTUAL_DIMMER_1.LEVEL",
+        "channel": 2,
+        "type": "float"
+      },
+      {
+        "name": "VIRTUAL_DIMMER_1.OLD_LEVEL",
+        "channel": 2,
+        "type": "action"
+      },
+      {
+        "name": "VIRTUAL_DIMMER_1.RAMP_STOP",
+        "channel": 2,
+        "type": "action"
+      },
+      {
+        "name": "VIRTUAL_DIMMER_1.INHIBIT",
+        "channel": 2,
+        "type": "boolean"
+      },
+      {
+        "name": "VIRTUAL_DIMMER_1.INSTALL_TEST",
+        "channel": 2,
+        "type": "action"
+      },
+      {
+        "name": "VIRTUAL_DIMMER_2.LEVEL",
+        "channel": 3,
+        "type": "float"
+      },
+      {
+        "name": "VIRTUAL_DIMMER_2.OLD_LEVEL",
+        "channel": 3,
+        "type": "action"
+      },
+      {
+        "name": "VIRTUAL_DIMMER_2.RAMP_STOP",
+        "channel": 3,
+        "type": "action"
+      },
+      {
+        "name": "VIRTUAL_DIMMER_2.INHIBIT",
+        "channel": 3,
+        "type": "boolean"
+      },
+      {
+        "name": "VIRTUAL_DIMMER_2.INSTALL_TEST",
+        "channel": 3,
         "type": "action"
       }
     ],
@@ -3023,23 +2308,23 @@
   {
     "read": [
       {
-        "name": "LEVEL",
+        "name": "DIMMER.LEVEL",
         "channel": 1
       },
       {
-        "name": "LEVEL_REAL",
+        "name": "DIMMER.LEVEL_REAL",
         "channel": 1
       },
       {
-        "name": "INHIBIT",
+        "name": "DIMMER.INHIBIT",
         "channel": 1
       },
       {
-        "name": "WORKING",
+        "name": "DIMMER.WORKING",
         "channel": 1
       },
       {
-        "name": "DIRECTION",
+        "name": "DIMMER.DIRECTION",
         "channel": 1,
         "mapping": [
           "NONE",
@@ -3049,52 +2334,168 @@
         ]
       },
       {
-        "name": "ERROR_REDUCED",
+        "name": "DIMMER.ERROR_REDUCED",
         "channel": 1
       },
       {
-        "name": "ERROR_OVERLOAD",
+        "name": "DIMMER.ERROR_OVERLOAD",
         "channel": 1
       },
       {
-        "name": "ERROR_OVERHEAT",
+        "name": "DIMMER.ERROR_OVERHEAT",
         "channel": 1
+      },
+      {
+        "name": "VIRTUAL_DIMMER_1.LEVEL",
+        "channel": 2
+      },
+      {
+        "name": "VIRTUAL_DIMMER_1.LEVEL_REAL",
+        "channel": 2
+      },
+      {
+        "name": "VIRTUAL_DIMMER_1.INHIBIT",
+        "channel": 2
+      },
+      {
+        "name": "VIRTUAL_DIMMER_1.WORKING",
+        "channel": 2
+      },
+      {
+        "name": "VIRTUAL_DIMMER_1.DIRECTION",
+        "channel": 2,
+        "mapping": [
+          "NONE",
+          "UP",
+          "DOWN",
+          "UNDEFINED"
+        ]
+      },
+      {
+        "name": "VIRTUAL_DIMMER_1.ERROR_REDUCED",
+        "channel": 2
+      },
+      {
+        "name": "VIRTUAL_DIMMER_1.ERROR_OVERLOAD",
+        "channel": 2
+      },
+      {
+        "name": "VIRTUAL_DIMMER_1.ERROR_OVERHEAT",
+        "channel": 2
+      },
+      {
+        "name": "VIRTUAL_DIMMER_2.LEVEL",
+        "channel": 3
+      },
+      {
+        "name": "VIRTUAL_DIMMER_2.LEVEL_REAL",
+        "channel": 3
+      },
+      {
+        "name": "VIRTUAL_DIMMER_2.INHIBIT",
+        "channel": 3
+      },
+      {
+        "name": "VIRTUAL_DIMMER_2.WORKING",
+        "channel": 3
+      },
+      {
+        "name": "VIRTUAL_DIMMER_2.DIRECTION",
+        "channel": 3,
+        "mapping": [
+          "NONE",
+          "UP",
+          "DOWN",
+          "UNDEFINED"
+        ]
+      },
+      {
+        "name": "VIRTUAL_DIMMER_2.ERROR_REDUCED",
+        "channel": 3
+      },
+      {
+        "name": "VIRTUAL_DIMMER_2.ERROR_OVERLOAD",
+        "channel": 3
+      },
+      {
+        "name": "VIRTUAL_DIMMER_2.ERROR_OVERHEAT",
+        "channel": 3
       }
     ],
     "write": [
       {
-        "name": "LEVEL",
+        "name": "DIMMER.LEVEL",
         "channel": 1,
         "type": "float"
       },
       {
-        "name": "OLD_LEVEL",
+        "name": "DIMMER.OLD_LEVEL",
         "channel": 1,
         "type": "action"
       },
       {
-        "name": "RAMP_TIME",
-        "channel": 1,
-        "type": "float"
-      },
-      {
-        "name": "ON_TIME",
-        "channel": 1,
-        "type": "float"
-      },
-      {
-        "name": "RAMP_STOP",
+        "name": "DIMMER.RAMP_STOP",
         "channel": 1,
         "type": "action"
       },
       {
-        "name": "INHIBIT",
+        "name": "DIMMER.INHIBIT",
         "channel": 1,
         "type": "boolean"
       },
       {
-        "name": "INSTALL_TEST",
+        "name": "DIMMER.INSTALL_TEST",
         "channel": 1,
+        "type": "action"
+      },
+      {
+        "name": "VIRTUAL_DIMMER_1.LEVEL",
+        "channel": 2,
+        "type": "float"
+      },
+      {
+        "name": "VIRTUAL_DIMMER_1.OLD_LEVEL",
+        "channel": 2,
+        "type": "action"
+      },
+      {
+        "name": "VIRTUAL_DIMMER_1.RAMP_STOP",
+        "channel": 2,
+        "type": "action"
+      },
+      {
+        "name": "VIRTUAL_DIMMER_1.INHIBIT",
+        "channel": 2,
+        "type": "boolean"
+      },
+      {
+        "name": "VIRTUAL_DIMMER_1.INSTALL_TEST",
+        "channel": 2,
+        "type": "action"
+      },
+      {
+        "name": "VIRTUAL_DIMMER_2.LEVEL",
+        "channel": 3,
+        "type": "float"
+      },
+      {
+        "name": "VIRTUAL_DIMMER_2.OLD_LEVEL",
+        "channel": 3,
+        "type": "action"
+      },
+      {
+        "name": "VIRTUAL_DIMMER_2.RAMP_STOP",
+        "channel": 3,
+        "type": "action"
+      },
+      {
+        "name": "VIRTUAL_DIMMER_2.INHIBIT",
+        "channel": 3,
+        "type": "boolean"
+      },
+      {
+        "name": "VIRTUAL_DIMMER_2.INSTALL_TEST",
+        "channel": 3,
         "type": "action"
       }
     ],
@@ -3107,23 +2508,23 @@
   {
     "read": [
       {
-        "name": "LEVEL",
+        "name": "DIMMER.LEVEL",
         "channel": 1
       },
       {
-        "name": "LEVEL_REAL",
+        "name": "DIMMER.LEVEL_REAL",
         "channel": 1
       },
       {
-        "name": "INHIBIT",
+        "name": "DIMMER.INHIBIT",
         "channel": 1
       },
       {
-        "name": "WORKING",
+        "name": "DIMMER.WORKING",
         "channel": 1
       },
       {
-        "name": "DIRECTION",
+        "name": "DIMMER.DIRECTION",
         "channel": 1,
         "mapping": [
           "NONE",
@@ -3133,52 +2534,168 @@
         ]
       },
       {
-        "name": "ERROR_REDUCED",
+        "name": "DIMMER.ERROR_REDUCED",
         "channel": 1
       },
       {
-        "name": "ERROR_OVERLOAD",
+        "name": "DIMMER.ERROR_OVERLOAD",
         "channel": 1
       },
       {
-        "name": "ERROR_OVERHEAT",
+        "name": "DIMMER.ERROR_OVERHEAT",
         "channel": 1
+      },
+      {
+        "name": "VIRTUAL_DIMMER_1.LEVEL",
+        "channel": 2
+      },
+      {
+        "name": "VIRTUAL_DIMMER_1.LEVEL_REAL",
+        "channel": 2
+      },
+      {
+        "name": "VIRTUAL_DIMMER_1.INHIBIT",
+        "channel": 2
+      },
+      {
+        "name": "VIRTUAL_DIMMER_1.WORKING",
+        "channel": 2
+      },
+      {
+        "name": "VIRTUAL_DIMMER_1.DIRECTION",
+        "channel": 2,
+        "mapping": [
+          "NONE",
+          "UP",
+          "DOWN",
+          "UNDEFINED"
+        ]
+      },
+      {
+        "name": "VIRTUAL_DIMMER_1.ERROR_REDUCED",
+        "channel": 2
+      },
+      {
+        "name": "VIRTUAL_DIMMER_1.ERROR_OVERLOAD",
+        "channel": 2
+      },
+      {
+        "name": "VIRTUAL_DIMMER_1.ERROR_OVERHEAT",
+        "channel": 2
+      },
+      {
+        "name": "VIRTUAL_DIMMER_2.LEVEL",
+        "channel": 3
+      },
+      {
+        "name": "VIRTUAL_DIMMER_2.LEVEL_REAL",
+        "channel": 3
+      },
+      {
+        "name": "VIRTUAL_DIMMER_2.INHIBIT",
+        "channel": 3
+      },
+      {
+        "name": "VIRTUAL_DIMMER_2.WORKING",
+        "channel": 3
+      },
+      {
+        "name": "VIRTUAL_DIMMER_2.DIRECTION",
+        "channel": 3,
+        "mapping": [
+          "NONE",
+          "UP",
+          "DOWN",
+          "UNDEFINED"
+        ]
+      },
+      {
+        "name": "VIRTUAL_DIMMER_2.ERROR_REDUCED",
+        "channel": 3
+      },
+      {
+        "name": "VIRTUAL_DIMMER_2.ERROR_OVERLOAD",
+        "channel": 3
+      },
+      {
+        "name": "VIRTUAL_DIMMER_2.ERROR_OVERHEAT",
+        "channel": 3
       }
     ],
     "write": [
       {
-        "name": "LEVEL",
+        "name": "DIMMER.LEVEL",
         "channel": 1,
         "type": "float"
       },
       {
-        "name": "OLD_LEVEL",
+        "name": "DIMMER.OLD_LEVEL",
         "channel": 1,
         "type": "action"
       },
       {
-        "name": "RAMP_TIME",
-        "channel": 1,
-        "type": "float"
-      },
-      {
-        "name": "ON_TIME",
-        "channel": 1,
-        "type": "float"
-      },
-      {
-        "name": "RAMP_STOP",
+        "name": "DIMMER.RAMP_STOP",
         "channel": 1,
         "type": "action"
       },
       {
-        "name": "INHIBIT",
+        "name": "DIMMER.INHIBIT",
         "channel": 1,
         "type": "boolean"
       },
       {
-        "name": "INSTALL_TEST",
+        "name": "DIMMER.INSTALL_TEST",
         "channel": 1,
+        "type": "action"
+      },
+      {
+        "name": "VIRTUAL_DIMMER_1.LEVEL",
+        "channel": 2,
+        "type": "float"
+      },
+      {
+        "name": "VIRTUAL_DIMMER_1.OLD_LEVEL",
+        "channel": 2,
+        "type": "action"
+      },
+      {
+        "name": "VIRTUAL_DIMMER_1.RAMP_STOP",
+        "channel": 2,
+        "type": "action"
+      },
+      {
+        "name": "VIRTUAL_DIMMER_1.INHIBIT",
+        "channel": 2,
+        "type": "boolean"
+      },
+      {
+        "name": "VIRTUAL_DIMMER_1.INSTALL_TEST",
+        "channel": 2,
+        "type": "action"
+      },
+      {
+        "name": "VIRTUAL_DIMMER_2.LEVEL",
+        "channel": 3,
+        "type": "float"
+      },
+      {
+        "name": "VIRTUAL_DIMMER_2.OLD_LEVEL",
+        "channel": 3,
+        "type": "action"
+      },
+      {
+        "name": "VIRTUAL_DIMMER_2.RAMP_STOP",
+        "channel": 3,
+        "type": "action"
+      },
+      {
+        "name": "VIRTUAL_DIMMER_2.INHIBIT",
+        "channel": 3,
+        "type": "boolean"
+      },
+      {
+        "name": "VIRTUAL_DIMMER_2.INSTALL_TEST",
+        "channel": 3,
         "type": "action"
       }
     ],
@@ -3190,11 +2707,205 @@
   {
     "read": [
       {
-        "name": "LEVEL",
+        "name": "DIMMER.LEVEL",
         "channel": 1
       },
       {
-        "name": "LEVEL_REAL",
+        "name": "DIMMER.LEVEL_REAL",
+        "channel": 1
+      },
+      {
+        "name": "DIMMER.INHIBIT",
+        "channel": 1
+      },
+      {
+        "name": "DIMMER.WORKING",
+        "channel": 1
+      },
+      {
+        "name": "DIMMER.DIRECTION",
+        "channel": 1,
+        "mapping": [
+          "NONE",
+          "UP",
+          "DOWN",
+          "UNDEFINED"
+        ]
+      },
+      {
+        "name": "DIMMER.ERROR_REDUCED",
+        "channel": 1
+      },
+      {
+        "name": "DIMMER.ERROR_OVERLOAD",
+        "channel": 1
+      },
+      {
+        "name": "DIMMER.ERROR_OVERHEAT",
+        "channel": 1
+      },
+      {
+        "name": "VIRTUAL_DIMMER_1.LEVEL",
+        "channel": 2
+      },
+      {
+        "name": "VIRTUAL_DIMMER_1.LEVEL_REAL",
+        "channel": 2
+      },
+      {
+        "name": "VIRTUAL_DIMMER_1.INHIBIT",
+        "channel": 2
+      },
+      {
+        "name": "VIRTUAL_DIMMER_1.WORKING",
+        "channel": 2
+      },
+      {
+        "name": "VIRTUAL_DIMMER_1.DIRECTION",
+        "channel": 2,
+        "mapping": [
+          "NONE",
+          "UP",
+          "DOWN",
+          "UNDEFINED"
+        ]
+      },
+      {
+        "name": "VIRTUAL_DIMMER_1.ERROR_REDUCED",
+        "channel": 2
+      },
+      {
+        "name": "VIRTUAL_DIMMER_1.ERROR_OVERLOAD",
+        "channel": 2
+      },
+      {
+        "name": "VIRTUAL_DIMMER_1.ERROR_OVERHEAT",
+        "channel": 2
+      },
+      {
+        "name": "VIRTUAL_DIMMER_2.LEVEL",
+        "channel": 3
+      },
+      {
+        "name": "VIRTUAL_DIMMER_2.LEVEL_REAL",
+        "channel": 3
+      },
+      {
+        "name": "VIRTUAL_DIMMER_2.INHIBIT",
+        "channel": 3
+      },
+      {
+        "name": "VIRTUAL_DIMMER_2.WORKING",
+        "channel": 3
+      },
+      {
+        "name": "VIRTUAL_DIMMER_2.DIRECTION",
+        "channel": 3,
+        "mapping": [
+          "NONE",
+          "UP",
+          "DOWN",
+          "UNDEFINED"
+        ]
+      },
+      {
+        "name": "VIRTUAL_DIMMER_2.ERROR_REDUCED",
+        "channel": 3
+      },
+      {
+        "name": "VIRTUAL_DIMMER_2.ERROR_OVERLOAD",
+        "channel": 3
+      },
+      {
+        "name": "VIRTUAL_DIMMER_2.ERROR_OVERHEAT",
+        "channel": 3
+      }
+    ],
+    "write": [
+      {
+        "name": "DIMMER.LEVEL",
+        "channel": 1,
+        "type": "float"
+      },
+      {
+        "name": "DIMMER.OLD_LEVEL",
+        "channel": 1,
+        "type": "action"
+      },
+      {
+        "name": "DIMMER.RAMP_STOP",
+        "channel": 1,
+        "type": "action"
+      },
+      {
+        "name": "DIMMER.INHIBIT",
+        "channel": 1,
+        "type": "boolean"
+      },
+      {
+        "name": "DIMMER.INSTALL_TEST",
+        "channel": 1,
+        "type": "action"
+      },
+      {
+        "name": "VIRTUAL_DIMMER_1.LEVEL",
+        "channel": 2,
+        "type": "float"
+      },
+      {
+        "name": "VIRTUAL_DIMMER_1.OLD_LEVEL",
+        "channel": 2,
+        "type": "action"
+      },
+      {
+        "name": "VIRTUAL_DIMMER_1.RAMP_STOP",
+        "channel": 2,
+        "type": "action"
+      },
+      {
+        "name": "VIRTUAL_DIMMER_1.INHIBIT",
+        "channel": 2,
+        "type": "boolean"
+      },
+      {
+        "name": "VIRTUAL_DIMMER_1.INSTALL_TEST",
+        "channel": 2,
+        "type": "action"
+      },
+      {
+        "name": "VIRTUAL_DIMMER_2.LEVEL",
+        "channel": 3,
+        "type": "float"
+      },
+      {
+        "name": "VIRTUAL_DIMMER_2.OLD_LEVEL",
+        "channel": 3,
+        "type": "action"
+      },
+      {
+        "name": "VIRTUAL_DIMMER_2.RAMP_STOP",
+        "channel": 3,
+        "type": "action"
+      },
+      {
+        "name": "VIRTUAL_DIMMER_2.INHIBIT",
+        "channel": 3,
+        "type": "boolean"
+      },
+      {
+        "name": "VIRTUAL_DIMMER_2.INSTALL_TEST",
+        "channel": 3,
+        "type": "action"
+      }
+    ],
+    "names": [
+      "HM-LC-Dim1TPBU-FM-2"
+    ]
+  },
+  {
+    "read": [
+      {
+        "name": "LEVEL",
         "channel": 1
       },
       {
@@ -3240,16 +2951,6 @@
         "type": "action"
       },
       {
-        "name": "RAMP_TIME",
-        "channel": 1,
-        "type": "float"
-      },
-      {
-        "name": "ON_TIME",
-        "channel": 1,
-        "type": "float"
-      },
-      {
         "name": "RAMP_STOP",
         "channel": 1,
         "type": "action"
@@ -3266,7 +2967,7 @@
       }
     ],
     "names": [
-      "HM-LC-Dim1TPBU-FM-2"
+      "HM-LC-Dim1T-FM-LF"
     ]
   },
   {
@@ -3302,6 +3003,8 @@
         "channel": 1,
         "mapping": [
           "NO_ERROR",
+          "",
+          "",
           "LOAD_FAILURE"
         ]
       },
@@ -3336,6 +3039,152 @@
         "channel": 2,
         "mapping": [
           "NO_ERROR",
+          "",
+          "",
+          "LOAD_FAILURE"
+        ]
+      },
+      {
+        "name": "VIRTUAL_DIMMER_1.LEVEL",
+        "channel": 3
+      },
+      {
+        "name": "VIRTUAL_DIMMER_1.LEVEL_REAL",
+        "channel": 3
+      },
+      {
+        "name": "VIRTUAL_DIMMER_1.INHIBIT",
+        "channel": 3
+      },
+      {
+        "name": "VIRTUAL_DIMMER_1.WORKING",
+        "channel": 3
+      },
+      {
+        "name": "VIRTUAL_DIMMER_1.DIRECTION",
+        "channel": 3,
+        "mapping": [
+          "NONE",
+          "UP",
+          "DOWN",
+          "UNDEFINED"
+        ]
+      },
+      {
+        "name": "VIRTUAL_DIMMER_1.ERROR",
+        "channel": 3,
+        "mapping": [
+          "NO_ERROR",
+          "",
+          "",
+          "LOAD_FAILURE"
+        ]
+      },
+      {
+        "name": "VIRTUAL_DIMMER_2.LEVEL",
+        "channel": 4
+      },
+      {
+        "name": "VIRTUAL_DIMMER_2.LEVEL_REAL",
+        "channel": 4
+      },
+      {
+        "name": "VIRTUAL_DIMMER_2.INHIBIT",
+        "channel": 4
+      },
+      {
+        "name": "VIRTUAL_DIMMER_2.WORKING",
+        "channel": 4
+      },
+      {
+        "name": "VIRTUAL_DIMMER_2.DIRECTION",
+        "channel": 4,
+        "mapping": [
+          "NONE",
+          "UP",
+          "DOWN",
+          "UNDEFINED"
+        ]
+      },
+      {
+        "name": "VIRTUAL_DIMMER_2.ERROR",
+        "channel": 4,
+        "mapping": [
+          "NO_ERROR",
+          "",
+          "",
+          "LOAD_FAILURE"
+        ]
+      },
+      {
+        "name": "VIRTUAL_DIMMER_3.LEVEL",
+        "channel": 5
+      },
+      {
+        "name": "VIRTUAL_DIMMER_3.LEVEL_REAL",
+        "channel": 5
+      },
+      {
+        "name": "VIRTUAL_DIMMER_3.INHIBIT",
+        "channel": 5
+      },
+      {
+        "name": "VIRTUAL_DIMMER_3.WORKING",
+        "channel": 5
+      },
+      {
+        "name": "VIRTUAL_DIMMER_3.DIRECTION",
+        "channel": 5,
+        "mapping": [
+          "NONE",
+          "UP",
+          "DOWN",
+          "UNDEFINED"
+        ]
+      },
+      {
+        "name": "VIRTUAL_DIMMER_3.ERROR",
+        "channel": 5,
+        "mapping": [
+          "NO_ERROR",
+          "",
+          "",
+          "LOAD_FAILURE"
+        ]
+      },
+      {
+        "name": "VIRTUAL_DIMMER_4.LEVEL",
+        "channel": 6
+      },
+      {
+        "name": "VIRTUAL_DIMMER_4.LEVEL_REAL",
+        "channel": 6
+      },
+      {
+        "name": "VIRTUAL_DIMMER_4.INHIBIT",
+        "channel": 6
+      },
+      {
+        "name": "VIRTUAL_DIMMER_4.WORKING",
+        "channel": 6
+      },
+      {
+        "name": "VIRTUAL_DIMMER_4.DIRECTION",
+        "channel": 6,
+        "mapping": [
+          "NONE",
+          "UP",
+          "DOWN",
+          "UNDEFINED"
+        ]
+      },
+      {
+        "name": "VIRTUAL_DIMMER_4.ERROR",
+        "channel": 6,
+        "mapping": [
+          "NO_ERROR",
+          "",
+          "",
           "LOAD_FAILURE"
         ]
       }
@@ -3350,16 +3199,6 @@
         "name": "DIMMER_1.OLD_LEVEL",
         "channel": 1,
         "type": "action"
-      },
-      {
-        "name": "DIMMER_1.RAMP_TIME",
-        "channel": 1,
-        "type": "float"
-      },
-      {
-        "name": "DIMMER_1.ON_TIME",
-        "channel": 1,
-        "type": "float"
       },
       {
         "name": "DIMMER_1.RAMP_STOP",
@@ -3387,16 +3226,6 @@
         "type": "action"
       },
       {
-        "name": "DIMMER_2.RAMP_TIME",
-        "channel": 2,
-        "type": "float"
-      },
-      {
-        "name": "DIMMER_2.ON_TIME",
-        "channel": 2,
-        "type": "float"
-      },
-      {
         "name": "DIMMER_2.RAMP_STOP",
         "channel": 2,
         "type": "action"
@@ -3409,6 +3238,106 @@
       {
         "name": "DIMMER_2.INSTALL_TEST",
         "channel": 2,
+        "type": "action"
+      },
+      {
+        "name": "VIRTUAL_DIMMER_1.LEVEL",
+        "channel": 3,
+        "type": "float"
+      },
+      {
+        "name": "VIRTUAL_DIMMER_1.OLD_LEVEL",
+        "channel": 3,
+        "type": "action"
+      },
+      {
+        "name": "VIRTUAL_DIMMER_1.RAMP_STOP",
+        "channel": 3,
+        "type": "action"
+      },
+      {
+        "name": "VIRTUAL_DIMMER_1.INHIBIT",
+        "channel": 3,
+        "type": "boolean"
+      },
+      {
+        "name": "VIRTUAL_DIMMER_1.INSTALL_TEST",
+        "channel": 3,
+        "type": "action"
+      },
+      {
+        "name": "VIRTUAL_DIMMER_2.LEVEL",
+        "channel": 4,
+        "type": "float"
+      },
+      {
+        "name": "VIRTUAL_DIMMER_2.OLD_LEVEL",
+        "channel": 4,
+        "type": "action"
+      },
+      {
+        "name": "VIRTUAL_DIMMER_2.RAMP_STOP",
+        "channel": 4,
+        "type": "action"
+      },
+      {
+        "name": "VIRTUAL_DIMMER_2.INHIBIT",
+        "channel": 4,
+        "type": "boolean"
+      },
+      {
+        "name": "VIRTUAL_DIMMER_2.INSTALL_TEST",
+        "channel": 4,
+        "type": "action"
+      },
+      {
+        "name": "VIRTUAL_DIMMER_3.LEVEL",
+        "channel": 5,
+        "type": "float"
+      },
+      {
+        "name": "VIRTUAL_DIMMER_3.OLD_LEVEL",
+        "channel": 5,
+        "type": "action"
+      },
+      {
+        "name": "VIRTUAL_DIMMER_3.RAMP_STOP",
+        "channel": 5,
+        "type": "action"
+      },
+      {
+        "name": "VIRTUAL_DIMMER_3.INHIBIT",
+        "channel": 5,
+        "type": "boolean"
+      },
+      {
+        "name": "VIRTUAL_DIMMER_3.INSTALL_TEST",
+        "channel": 5,
+        "type": "action"
+      },
+      {
+        "name": "VIRTUAL_DIMMER_4.LEVEL",
+        "channel": 6,
+        "type": "float"
+      },
+      {
+        "name": "VIRTUAL_DIMMER_4.OLD_LEVEL",
+        "channel": 6,
+        "type": "action"
+      },
+      {
+        "name": "VIRTUAL_DIMMER_4.RAMP_STOP",
+        "channel": 6,
+        "type": "action"
+      },
+      {
+        "name": "VIRTUAL_DIMMER_4.INHIBIT",
+        "channel": 6,
+        "type": "boolean"
+      },
+      {
+        "name": "VIRTUAL_DIMMER_4.INSTALL_TEST",
+        "channel": 6,
         "type": "action"
       }
     ],
@@ -3449,6 +3378,8 @@
         "channel": 1,
         "mapping": [
           "NO_ERROR",
+          "",
+          "",
           "LOAD_FAILURE"
         ]
       },
@@ -3483,6 +3414,152 @@
         "channel": 2,
         "mapping": [
           "NO_ERROR",
+          "",
+          "",
+          "LOAD_FAILURE"
+        ]
+      },
+      {
+        "name": "VIRTUAL_DIMMER_1.LEVEL",
+        "channel": 3
+      },
+      {
+        "name": "VIRTUAL_DIMMER_1.LEVEL_REAL",
+        "channel": 3
+      },
+      {
+        "name": "VIRTUAL_DIMMER_1.INHIBIT",
+        "channel": 3
+      },
+      {
+        "name": "VIRTUAL_DIMMER_1.WORKING",
+        "channel": 3
+      },
+      {
+        "name": "VIRTUAL_DIMMER_1.DIRECTION",
+        "channel": 3,
+        "mapping": [
+          "NONE",
+          "UP",
+          "DOWN",
+          "UNDEFINED"
+        ]
+      },
+      {
+        "name": "VIRTUAL_DIMMER_1.ERROR",
+        "channel": 3,
+        "mapping": [
+          "NO_ERROR",
+          "",
+          "",
+          "LOAD_FAILURE"
+        ]
+      },
+      {
+        "name": "VIRTUAL_DIMMER_2.LEVEL",
+        "channel": 4
+      },
+      {
+        "name": "VIRTUAL_DIMMER_2.LEVEL_REAL",
+        "channel": 4
+      },
+      {
+        "name": "VIRTUAL_DIMMER_2.INHIBIT",
+        "channel": 4
+      },
+      {
+        "name": "VIRTUAL_DIMMER_2.WORKING",
+        "channel": 4
+      },
+      {
+        "name": "VIRTUAL_DIMMER_2.DIRECTION",
+        "channel": 4,
+        "mapping": [
+          "NONE",
+          "UP",
+          "DOWN",
+          "UNDEFINED"
+        ]
+      },
+      {
+        "name": "VIRTUAL_DIMMER_2.ERROR",
+        "channel": 4,
+        "mapping": [
+          "NO_ERROR",
+          "",
+          "",
+          "LOAD_FAILURE"
+        ]
+      },
+      {
+        "name": "VIRTUAL_DIMMER_3.LEVEL",
+        "channel": 5
+      },
+      {
+        "name": "VIRTUAL_DIMMER_3.LEVEL_REAL",
+        "channel": 5
+      },
+      {
+        "name": "VIRTUAL_DIMMER_3.INHIBIT",
+        "channel": 5
+      },
+      {
+        "name": "VIRTUAL_DIMMER_3.WORKING",
+        "channel": 5
+      },
+      {
+        "name": "VIRTUAL_DIMMER_3.DIRECTION",
+        "channel": 5,
+        "mapping": [
+          "NONE",
+          "UP",
+          "DOWN",
+          "UNDEFINED"
+        ]
+      },
+      {
+        "name": "VIRTUAL_DIMMER_3.ERROR",
+        "channel": 5,
+        "mapping": [
+          "NO_ERROR",
+          "",
+          "",
+          "LOAD_FAILURE"
+        ]
+      },
+      {
+        "name": "VIRTUAL_DIMMER_4.LEVEL",
+        "channel": 6
+      },
+      {
+        "name": "VIRTUAL_DIMMER_4.LEVEL_REAL",
+        "channel": 6
+      },
+      {
+        "name": "VIRTUAL_DIMMER_4.INHIBIT",
+        "channel": 6
+      },
+      {
+        "name": "VIRTUAL_DIMMER_4.WORKING",
+        "channel": 6
+      },
+      {
+        "name": "VIRTUAL_DIMMER_4.DIRECTION",
+        "channel": 6,
+        "mapping": [
+          "NONE",
+          "UP",
+          "DOWN",
+          "UNDEFINED"
+        ]
+      },
+      {
+        "name": "VIRTUAL_DIMMER_4.ERROR",
+        "channel": 6,
+        "mapping": [
+          "NO_ERROR",
+          "",
+          "",
           "LOAD_FAILURE"
         ]
       }
@@ -3497,16 +3574,6 @@
         "name": "DIMMER_1.OLD_LEVEL",
         "channel": 1,
         "type": "action"
-      },
-      {
-        "name": "DIMMER_1.RAMP_TIME",
-        "channel": 1,
-        "type": "float"
-      },
-      {
-        "name": "DIMMER_1.ON_TIME",
-        "channel": 1,
-        "type": "float"
       },
       {
         "name": "DIMMER_1.RAMP_STOP",
@@ -3534,16 +3601,6 @@
         "type": "action"
       },
       {
-        "name": "DIMMER_2.RAMP_TIME",
-        "channel": 2,
-        "type": "float"
-      },
-      {
-        "name": "DIMMER_2.ON_TIME",
-        "channel": 2,
-        "type": "float"
-      },
-      {
         "name": "DIMMER_2.RAMP_STOP",
         "channel": 2,
         "type": "action"
@@ -3556,6 +3613,106 @@
       {
         "name": "DIMMER_2.INSTALL_TEST",
         "channel": 2,
+        "type": "action"
+      },
+      {
+        "name": "VIRTUAL_DIMMER_1.LEVEL",
+        "channel": 3,
+        "type": "float"
+      },
+      {
+        "name": "VIRTUAL_DIMMER_1.OLD_LEVEL",
+        "channel": 3,
+        "type": "action"
+      },
+      {
+        "name": "VIRTUAL_DIMMER_1.RAMP_STOP",
+        "channel": 3,
+        "type": "action"
+      },
+      {
+        "name": "VIRTUAL_DIMMER_1.INHIBIT",
+        "channel": 3,
+        "type": "boolean"
+      },
+      {
+        "name": "VIRTUAL_DIMMER_1.INSTALL_TEST",
+        "channel": 3,
+        "type": "action"
+      },
+      {
+        "name": "VIRTUAL_DIMMER_2.LEVEL",
+        "channel": 4,
+        "type": "float"
+      },
+      {
+        "name": "VIRTUAL_DIMMER_2.OLD_LEVEL",
+        "channel": 4,
+        "type": "action"
+      },
+      {
+        "name": "VIRTUAL_DIMMER_2.RAMP_STOP",
+        "channel": 4,
+        "type": "action"
+      },
+      {
+        "name": "VIRTUAL_DIMMER_2.INHIBIT",
+        "channel": 4,
+        "type": "boolean"
+      },
+      {
+        "name": "VIRTUAL_DIMMER_2.INSTALL_TEST",
+        "channel": 4,
+        "type": "action"
+      },
+      {
+        "name": "VIRTUAL_DIMMER_3.LEVEL",
+        "channel": 5,
+        "type": "float"
+      },
+      {
+        "name": "VIRTUAL_DIMMER_3.OLD_LEVEL",
+        "channel": 5,
+        "type": "action"
+      },
+      {
+        "name": "VIRTUAL_DIMMER_3.RAMP_STOP",
+        "channel": 5,
+        "type": "action"
+      },
+      {
+        "name": "VIRTUAL_DIMMER_3.INHIBIT",
+        "channel": 5,
+        "type": "boolean"
+      },
+      {
+        "name": "VIRTUAL_DIMMER_3.INSTALL_TEST",
+        "channel": 5,
+        "type": "action"
+      },
+      {
+        "name": "VIRTUAL_DIMMER_4.LEVEL",
+        "channel": 6,
+        "type": "float"
+      },
+      {
+        "name": "VIRTUAL_DIMMER_4.OLD_LEVEL",
+        "channel": 6,
+        "type": "action"
+      },
+      {
+        "name": "VIRTUAL_DIMMER_4.RAMP_STOP",
+        "channel": 6,
+        "type": "action"
+      },
+      {
+        "name": "VIRTUAL_DIMMER_4.INHIBIT",
+        "channel": 6,
+        "type": "boolean"
+      },
+      {
+        "name": "VIRTUAL_DIMMER_4.INSTALL_TEST",
+        "channel": 6,
         "type": "action"
       }
     ],
@@ -3640,6 +3797,158 @@
       {
         "name": "DIMMER_2.ERROR_OVERHEAT",
         "channel": 2
+      },
+      {
+        "name": "VIRTUAL_DIMMER_1.LEVEL",
+        "channel": 3
+      },
+      {
+        "name": "VIRTUAL_DIMMER_1.LEVEL_REAL",
+        "channel": 3
+      },
+      {
+        "name": "VIRTUAL_DIMMER_1.INHIBIT",
+        "channel": 3
+      },
+      {
+        "name": "VIRTUAL_DIMMER_1.WORKING",
+        "channel": 3
+      },
+      {
+        "name": "VIRTUAL_DIMMER_1.DIRECTION",
+        "channel": 3,
+        "mapping": [
+          "NONE",
+          "UP",
+          "DOWN",
+          "UNDEFINED"
+        ]
+      },
+      {
+        "name": "VIRTUAL_DIMMER_1.ERROR_REDUCED",
+        "channel": 3
+      },
+      {
+        "name": "VIRTUAL_DIMMER_1.ERROR_OVERLOAD",
+        "channel": 3
+      },
+      {
+        "name": "VIRTUAL_DIMMER_1.ERROR_OVERHEAT",
+        "channel": 3
+      },
+      {
+        "name": "VIRTUAL_DIMMER_2.LEVEL",
+        "channel": 4
+      },
+      {
+        "name": "VIRTUAL_DIMMER_2.LEVEL_REAL",
+        "channel": 4
+      },
+      {
+        "name": "VIRTUAL_DIMMER_2.INHIBIT",
+        "channel": 4
+      },
+      {
+        "name": "VIRTUAL_DIMMER_2.WORKING",
+        "channel": 4
+      },
+      {
+        "name": "VIRTUAL_DIMMER_2.DIRECTION",
+        "channel": 4,
+        "mapping": [
+          "NONE",
+          "UP",
+          "DOWN",
+          "UNDEFINED"
+        ]
+      },
+      {
+        "name": "VIRTUAL_DIMMER_2.ERROR_REDUCED",
+        "channel": 4
+      },
+      {
+        "name": "VIRTUAL_DIMMER_2.ERROR_OVERLOAD",
+        "channel": 4
+      },
+      {
+        "name": "VIRTUAL_DIMMER_2.ERROR_OVERHEAT",
+        "channel": 4
+      },
+      {
+        "name": "VIRTUAL_DIMMER_3.LEVEL",
+        "channel": 5
+      },
+      {
+        "name": "VIRTUAL_DIMMER_3.LEVEL_REAL",
+        "channel": 5
+      },
+      {
+        "name": "VIRTUAL_DIMMER_3.INHIBIT",
+        "channel": 5
+      },
+      {
+        "name": "VIRTUAL_DIMMER_3.WORKING",
+        "channel": 5
+      },
+      {
+        "name": "VIRTUAL_DIMMER_3.DIRECTION",
+        "channel": 5,
+        "mapping": [
+          "NONE",
+          "UP",
+          "DOWN",
+          "UNDEFINED"
+        ]
+      },
+      {
+        "name": "VIRTUAL_DIMMER_3.ERROR_REDUCED",
+        "channel": 5
+      },
+      {
+        "name": "VIRTUAL_DIMMER_3.ERROR_OVERLOAD",
+        "channel": 5
+      },
+      {
+        "name": "VIRTUAL_DIMMER_3.ERROR_OVERHEAT",
+        "channel": 5
+      },
+      {
+        "name": "VIRTUAL_DIMMER_4.LEVEL",
+        "channel": 6
+      },
+      {
+        "name": "VIRTUAL_DIMMER_4.LEVEL_REAL",
+        "channel": 6
+      },
+      {
+        "name": "VIRTUAL_DIMMER_4.INHIBIT",
+        "channel": 6
+      },
+      {
+        "name": "VIRTUAL_DIMMER_4.WORKING",
+        "channel": 6
+      },
+      {
+        "name": "VIRTUAL_DIMMER_4.DIRECTION",
+        "channel": 6,
+        "mapping": [
+          "NONE",
+          "UP",
+          "DOWN",
+          "UNDEFINED"
+        ]
+      },
+      {
+        "name": "VIRTUAL_DIMMER_4.ERROR_REDUCED",
+        "channel": 6
+      },
+      {
+        "name": "VIRTUAL_DIMMER_4.ERROR_OVERLOAD",
+        "channel": 6
+      },
+      {
+        "name": "VIRTUAL_DIMMER_4.ERROR_OVERHEAT",
+        "channel": 6
       }
     ],
     "write": [
@@ -3652,16 +3961,6 @@
         "name": "DIMMER_1.OLD_LEVEL",
         "channel": 1,
         "type": "action"
-      },
-      {
-        "name": "DIMMER_1.RAMP_TIME",
-        "channel": 1,
-        "type": "float"
-      },
-      {
-        "name": "DIMMER_1.ON_TIME",
-        "channel": 1,
-        "type": "float"
       },
       {
         "name": "DIMMER_1.RAMP_STOP",
@@ -3689,16 +3988,6 @@
         "type": "action"
       },
       {
-        "name": "DIMMER_2.RAMP_TIME",
-        "channel": 2,
-        "type": "float"
-      },
-      {
-        "name": "DIMMER_2.ON_TIME",
-        "channel": 2,
-        "type": "float"
-      },
-      {
         "name": "DIMMER_2.RAMP_STOP",
         "channel": 2,
         "type": "action"
@@ -3711,6 +4000,106 @@
       {
         "name": "DIMMER_2.INSTALL_TEST",
         "channel": 2,
+        "type": "action"
+      },
+      {
+        "name": "VIRTUAL_DIMMER_1.LEVEL",
+        "channel": 3,
+        "type": "float"
+      },
+      {
+        "name": "VIRTUAL_DIMMER_1.OLD_LEVEL",
+        "channel": 3,
+        "type": "action"
+      },
+      {
+        "name": "VIRTUAL_DIMMER_1.RAMP_STOP",
+        "channel": 3,
+        "type": "action"
+      },
+      {
+        "name": "VIRTUAL_DIMMER_1.INHIBIT",
+        "channel": 3,
+        "type": "boolean"
+      },
+      {
+        "name": "VIRTUAL_DIMMER_1.INSTALL_TEST",
+        "channel": 3,
+        "type": "action"
+      },
+      {
+        "name": "VIRTUAL_DIMMER_2.LEVEL",
+        "channel": 4,
+        "type": "float"
+      },
+      {
+        "name": "VIRTUAL_DIMMER_2.OLD_LEVEL",
+        "channel": 4,
+        "type": "action"
+      },
+      {
+        "name": "VIRTUAL_DIMMER_2.RAMP_STOP",
+        "channel": 4,
+        "type": "action"
+      },
+      {
+        "name": "VIRTUAL_DIMMER_2.INHIBIT",
+        "channel": 4,
+        "type": "boolean"
+      },
+      {
+        "name": "VIRTUAL_DIMMER_2.INSTALL_TEST",
+        "channel": 4,
+        "type": "action"
+      },
+      {
+        "name": "VIRTUAL_DIMMER_3.LEVEL",
+        "channel": 5,
+        "type": "float"
+      },
+      {
+        "name": "VIRTUAL_DIMMER_3.OLD_LEVEL",
+        "channel": 5,
+        "type": "action"
+      },
+      {
+        "name": "VIRTUAL_DIMMER_3.RAMP_STOP",
+        "channel": 5,
+        "type": "action"
+      },
+      {
+        "name": "VIRTUAL_DIMMER_3.INHIBIT",
+        "channel": 5,
+        "type": "boolean"
+      },
+      {
+        "name": "VIRTUAL_DIMMER_3.INSTALL_TEST",
+        "channel": 5,
+        "type": "action"
+      },
+      {
+        "name": "VIRTUAL_DIMMER_4.LEVEL",
+        "channel": 6,
+        "type": "float"
+      },
+      {
+        "name": "VIRTUAL_DIMMER_4.OLD_LEVEL",
+        "channel": 6,
+        "type": "action"
+      },
+      {
+        "name": "VIRTUAL_DIMMER_4.RAMP_STOP",
+        "channel": 6,
+        "type": "action"
+      },
+      {
+        "name": "VIRTUAL_DIMMER_4.INHIBIT",
+        "channel": 6,
+        "type": "boolean"
+      },
+      {
+        "name": "VIRTUAL_DIMMER_4.INSTALL_TEST",
+        "channel": 6,
         "type": "action"
       }
     ],
@@ -3795,6 +4184,158 @@
       {
         "name": "DIMMER_2.ERROR_OVERHEAT",
         "channel": 2
+      },
+      {
+        "name": "VIRTUAL_DIMMER_1.LEVEL",
+        "channel": 3
+      },
+      {
+        "name": "VIRTUAL_DIMMER_1.LEVEL_REAL",
+        "channel": 3
+      },
+      {
+        "name": "VIRTUAL_DIMMER_1.INHIBIT",
+        "channel": 3
+      },
+      {
+        "name": "VIRTUAL_DIMMER_1.WORKING",
+        "channel": 3
+      },
+      {
+        "name": "VIRTUAL_DIMMER_1.DIRECTION",
+        "channel": 3,
+        "mapping": [
+          "NONE",
+          "UP",
+          "DOWN",
+          "UNDEFINED"
+        ]
+      },
+      {
+        "name": "VIRTUAL_DIMMER_1.ERROR_REDUCED",
+        "channel": 3
+      },
+      {
+        "name": "VIRTUAL_DIMMER_1.ERROR_OVERLOAD",
+        "channel": 3
+      },
+      {
+        "name": "VIRTUAL_DIMMER_1.ERROR_OVERHEAT",
+        "channel": 3
+      },
+      {
+        "name": "VIRTUAL_DIMMER_2.LEVEL",
+        "channel": 4
+      },
+      {
+        "name": "VIRTUAL_DIMMER_2.LEVEL_REAL",
+        "channel": 4
+      },
+      {
+        "name": "VIRTUAL_DIMMER_2.INHIBIT",
+        "channel": 4
+      },
+      {
+        "name": "VIRTUAL_DIMMER_2.WORKING",
+        "channel": 4
+      },
+      {
+        "name": "VIRTUAL_DIMMER_2.DIRECTION",
+        "channel": 4,
+        "mapping": [
+          "NONE",
+          "UP",
+          "DOWN",
+          "UNDEFINED"
+        ]
+      },
+      {
+        "name": "VIRTUAL_DIMMER_2.ERROR_REDUCED",
+        "channel": 4
+      },
+      {
+        "name": "VIRTUAL_DIMMER_2.ERROR_OVERLOAD",
+        "channel": 4
+      },
+      {
+        "name": "VIRTUAL_DIMMER_2.ERROR_OVERHEAT",
+        "channel": 4
+      },
+      {
+        "name": "VIRTUAL_DIMMER_3.LEVEL",
+        "channel": 5
+      },
+      {
+        "name": "VIRTUAL_DIMMER_3.LEVEL_REAL",
+        "channel": 5
+      },
+      {
+        "name": "VIRTUAL_DIMMER_3.INHIBIT",
+        "channel": 5
+      },
+      {
+        "name": "VIRTUAL_DIMMER_3.WORKING",
+        "channel": 5
+      },
+      {
+        "name": "VIRTUAL_DIMMER_3.DIRECTION",
+        "channel": 5,
+        "mapping": [
+          "NONE",
+          "UP",
+          "DOWN",
+          "UNDEFINED"
+        ]
+      },
+      {
+        "name": "VIRTUAL_DIMMER_3.ERROR_REDUCED",
+        "channel": 5
+      },
+      {
+        "name": "VIRTUAL_DIMMER_3.ERROR_OVERLOAD",
+        "channel": 5
+      },
+      {
+        "name": "VIRTUAL_DIMMER_3.ERROR_OVERHEAT",
+        "channel": 5
+      },
+      {
+        "name": "VIRTUAL_DIMMER_4.LEVEL",
+        "channel": 6
+      },
+      {
+        "name": "VIRTUAL_DIMMER_4.LEVEL_REAL",
+        "channel": 6
+      },
+      {
+        "name": "VIRTUAL_DIMMER_4.INHIBIT",
+        "channel": 6
+      },
+      {
+        "name": "VIRTUAL_DIMMER_4.WORKING",
+        "channel": 6
+      },
+      {
+        "name": "VIRTUAL_DIMMER_4.DIRECTION",
+        "channel": 6,
+        "mapping": [
+          "NONE",
+          "UP",
+          "DOWN",
+          "UNDEFINED"
+        ]
+      },
+      {
+        "name": "VIRTUAL_DIMMER_4.ERROR_REDUCED",
+        "channel": 6
+      },
+      {
+        "name": "VIRTUAL_DIMMER_4.ERROR_OVERLOAD",
+        "channel": 6
+      },
+      {
+        "name": "VIRTUAL_DIMMER_4.ERROR_OVERHEAT",
+        "channel": 6
       }
     ],
     "write": [
@@ -3807,16 +4348,6 @@
         "name": "DIMMER_1.OLD_LEVEL",
         "channel": 1,
         "type": "action"
-      },
-      {
-        "name": "DIMMER_1.RAMP_TIME",
-        "channel": 1,
-        "type": "float"
-      },
-      {
-        "name": "DIMMER_1.ON_TIME",
-        "channel": 1,
-        "type": "float"
       },
       {
         "name": "DIMMER_1.RAMP_STOP",
@@ -3844,16 +4375,6 @@
         "type": "action"
       },
       {
-        "name": "DIMMER_2.RAMP_TIME",
-        "channel": 2,
-        "type": "float"
-      },
-      {
-        "name": "DIMMER_2.ON_TIME",
-        "channel": 2,
-        "type": "float"
-      },
-      {
         "name": "DIMMER_2.RAMP_STOP",
         "channel": 2,
         "type": "action"
@@ -3867,6 +4388,106 @@
         "name": "DIMMER_2.INSTALL_TEST",
         "channel": 2,
         "type": "action"
+      },
+      {
+        "name": "VIRTUAL_DIMMER_1.LEVEL",
+        "channel": 3,
+        "type": "float"
+      },
+      {
+        "name": "VIRTUAL_DIMMER_1.OLD_LEVEL",
+        "channel": 3,
+        "type": "action"
+      },
+      {
+        "name": "VIRTUAL_DIMMER_1.RAMP_STOP",
+        "channel": 3,
+        "type": "action"
+      },
+      {
+        "name": "VIRTUAL_DIMMER_1.INHIBIT",
+        "channel": 3,
+        "type": "boolean"
+      },
+      {
+        "name": "VIRTUAL_DIMMER_1.INSTALL_TEST",
+        "channel": 3,
+        "type": "action"
+      },
+      {
+        "name": "VIRTUAL_DIMMER_2.LEVEL",
+        "channel": 4,
+        "type": "float"
+      },
+      {
+        "name": "VIRTUAL_DIMMER_2.OLD_LEVEL",
+        "channel": 4,
+        "type": "action"
+      },
+      {
+        "name": "VIRTUAL_DIMMER_2.RAMP_STOP",
+        "channel": 4,
+        "type": "action"
+      },
+      {
+        "name": "VIRTUAL_DIMMER_2.INHIBIT",
+        "channel": 4,
+        "type": "boolean"
+      },
+      {
+        "name": "VIRTUAL_DIMMER_2.INSTALL_TEST",
+        "channel": 4,
+        "type": "action"
+      },
+      {
+        "name": "VIRTUAL_DIMMER_3.LEVEL",
+        "channel": 5,
+        "type": "float"
+      },
+      {
+        "name": "VIRTUAL_DIMMER_3.OLD_LEVEL",
+        "channel": 5,
+        "type": "action"
+      },
+      {
+        "name": "VIRTUAL_DIMMER_3.RAMP_STOP",
+        "channel": 5,
+        "type": "action"
+      },
+      {
+        "name": "VIRTUAL_DIMMER_3.INHIBIT",
+        "channel": 5,
+        "type": "boolean"
+      },
+      {
+        "name": "VIRTUAL_DIMMER_3.INSTALL_TEST",
+        "channel": 5,
+        "type": "action"
+      },
+      {
+        "name": "VIRTUAL_DIMMER_4.LEVEL",
+        "channel": 6,
+        "type": "float"
+      },
+      {
+        "name": "VIRTUAL_DIMMER_4.OLD_LEVEL",
+        "channel": 6,
+        "type": "action"
+      },
+      {
+        "name": "VIRTUAL_DIMMER_4.RAMP_STOP",
+        "channel": 6,
+        "type": "action"
+      },
+      {
+        "name": "VIRTUAL_DIMMER_4.INHIBIT",
+        "channel": 6,
+        "type": "boolean"
+      },
+      {
+        "name": "VIRTUAL_DIMMER_4.INSTALL_TEST",
+        "channel": 6,
+        "type": "action"
       }
     ],
     "names": [
@@ -3874,8 +4495,284 @@
     ]
   },
   {
+    "read": [
+      {
+        "name": "LEVEL",
+        "channel": 1
+      },
+      {
+        "name": "INHIBIT",
+        "channel": 1
+      },
+      {
+        "name": "WORKING",
+        "channel": 1
+      },
+      {
+        "name": "DIRECTION",
+        "channel": 1,
+        "mapping": [
+          "NONE",
+          "UP",
+          "DOWN",
+          "UNDEFINED"
+        ]
+      },
+      {
+        "name": "ERROR_REDUCED",
+        "channel": 1
+      },
+      {
+        "name": "ERROR_OVERLOAD",
+        "channel": 1
+      },
+      {
+        "name": "ERROR_OVERHEAT",
+        "channel": 1
+      }
+    ],
+    "write": [
+      {
+        "name": "LEVEL",
+        "channel": 1,
+        "type": "float"
+      },
+      {
+        "name": "OLD_LEVEL",
+        "channel": 1,
+        "type": "action"
+      },
+      {
+        "name": "RAMP_STOP",
+        "channel": 1,
+        "type": "action"
+      },
+      {
+        "name": "INHIBIT",
+        "channel": 1,
+        "type": "boolean"
+      },
+      {
+        "name": "INSTALL_TEST",
+        "channel": 1,
+        "type": "action"
+      }
+    ],
+    "names": [
+      "HM-LC-Dim1T-Pl-2",
+      "263 134"
+    ]
+  },
+  {
+    "read": [
+      {
+        "name": "KEY_1.PRESS_SHORT",
+        "channel": 1
+      },
+      {
+        "name": "KEY_1.PRESS_LONG",
+        "channel": 1
+      },
+      {
+        "name": "KEY_1.PRESS_LONG_RELEASE",
+        "channel": 1
+      },
+      {
+        "name": "KEY_1.PRESS_CONT",
+        "channel": 1
+      },
+      {
+        "name": "KEY_1.INSTALL_TEST",
+        "channel": 1
+      },
+      {
+        "name": "KEY_2.PRESS_SHORT",
+        "channel": 2
+      },
+      {
+        "name": "KEY_2.PRESS_LONG",
+        "channel": 2
+      },
+      {
+        "name": "KEY_2.PRESS_LONG_RELEASE",
+        "channel": 2
+      },
+      {
+        "name": "KEY_2.PRESS_CONT",
+        "channel": 2
+      },
+      {
+        "name": "KEY_2.INSTALL_TEST",
+        "channel": 2
+      }
+    ],
+    "write": [
+      {
+        "name": "KEY_1.PRESS_SHORT",
+        "channel": 1,
+        "type": "action"
+      },
+      {
+        "name": "KEY_1.PRESS_LONG",
+        "channel": 1,
+        "type": "action"
+      },
+      {
+        "name": "KEY_1.SUBMIT",
+        "channel": 1,
+        "type": "string"
+      },
+      {
+        "name": "KEY_2.PRESS_SHORT",
+        "channel": 2,
+        "type": "action"
+      },
+      {
+        "name": "KEY_2.PRESS_LONG",
+        "channel": 2,
+        "type": "action"
+      },
+      {
+        "name": "KEY_2.SUBMIT",
+        "channel": 2,
+        "type": "string"
+      }
+    ],
     "names": [
       "HM-Dis-WM55"
+    ]
+  },
+  {
+    "read": [
+      {
+        "name": "LEVEL",
+        "channel": 1
+      },
+      {
+        "name": "INHIBIT",
+        "channel": 1
+      },
+      {
+        "name": "WORKING",
+        "channel": 1
+      },
+      {
+        "name": "DIRECTION",
+        "channel": 1,
+        "mapping": [
+          "NONE",
+          "UP",
+          "DOWN",
+          "UNDEFINED"
+        ]
+      },
+      {
+        "name": "ERROR",
+        "channel": 1,
+        "mapping": [
+          "NO_ERROR",
+          "",
+          "",
+          "LOAD_FAILURE"
+        ]
+      }
+    ],
+    "write": [
+      {
+        "name": "LEVEL",
+        "channel": 1,
+        "type": "float"
+      },
+      {
+        "name": "OLD_LEVEL",
+        "channel": 1,
+        "type": "action"
+      },
+      {
+        "name": "RAMP_STOP",
+        "channel": 1,
+        "type": "action"
+      },
+      {
+        "name": "INHIBIT",
+        "channel": 1,
+        "type": "boolean"
+      },
+      {
+        "name": "INSTALL_TEST",
+        "channel": 1,
+        "type": "action"
+      }
+    ],
+    "names": [
+      "HM-LC-Dim2L-CV"
+    ]
+  },
+  {
+    "read": [
+      {
+        "name": "LEVEL",
+        "channel": 1
+      },
+      {
+        "name": "INHIBIT",
+        "channel": 1
+      },
+      {
+        "name": "WORKING",
+        "channel": 1
+      },
+      {
+        "name": "DIRECTION",
+        "channel": 1,
+        "mapping": [
+          "NONE",
+          "UP",
+          "DOWN",
+          "UNDEFINED"
+        ]
+      },
+      {
+        "name": "ERROR",
+        "channel": 1,
+        "mapping": [
+          "NO_ERROR",
+          "",
+          "",
+          "LOAD_FAILURE"
+        ]
+      }
+    ],
+    "write": [
+      {
+        "name": "LEVEL",
+        "channel": 1,
+        "type": "float"
+      },
+      {
+        "name": "OLD_LEVEL",
+        "channel": 1,
+        "type": "action"
+      },
+      {
+        "name": "RAMP_STOP",
+        "channel": 1,
+        "type": "action"
+      },
+      {
+        "name": "INHIBIT",
+        "channel": 1,
+        "type": "boolean"
+      },
+      {
+        "name": "INSTALL_TEST",
+        "channel": 1,
+        "type": "action"
+      }
+    ],
+    "names": [
+      "HM-LC-Dim1L-Pl-2",
+      "263 132"
     ]
   },
   {
@@ -3920,40 +4817,52 @@
   {
     "read": [
       {
-        "name": "STATE",
+        "name": "SWITCH.STATE",
         "channel": 1
       },
       {
-        "name": "INHIBIT",
+        "name": "SWITCH.WORKING",
         "channel": 1
       },
       {
-        "name": "WORKING",
-        "channel": 1
-      },
-      {
-        "name": "BOOT",
+        "name": "POWERMETER.BOOT",
         "channel": 2
       },
       {
-        "name": "ENERGY_COUNTER",
+        "name": "POWERMETER.ENERGY_COUNTER",
         "channel": 2
       },
       {
-        "name": "POWER",
+        "name": "POWERMETER.POWER",
         "channel": 2
       },
       {
-        "name": "CURRENT",
+        "name": "POWERMETER.CURRENT",
         "channel": 2
       },
       {
-        "name": "VOLTAGE",
+        "name": "POWERMETER.VOLTAGE",
         "channel": 2
       },
       {
-        "name": "FREQUENCY",
+        "name": "POWERMETER.FREQUENCY",
         "channel": 2
+      },
+      {
+        "name": "CONDITION_POWER.DECISION_VALUE",
+        "channel": 3
+      },
+      {
+        "name": "CONDITION_CURRENT.DECISION_VALUE",
+        "channel": 4
+      },
+      {
+        "name": "CONDITION_VOLTAGE.DECISION_VALUE",
+        "channel": 5
+      },
+      {
+        "name": "CONDITION_FREQUENCY.DECISION_VALUE",
+        "channel": 6
       }
     ],
     "write": [
@@ -3961,11 +4870,6 @@
         "name": "STATE",
         "channel": 1,
         "type": "boolean"
-      },
-      {
-        "name": "ON_TIME",
-        "channel": 1,
-        "type": "float"
       },
       {
         "name": "INHIBIT",
@@ -3979,47 +4883,58 @@
       }
     ],
     "names": [
-      "HM-ES-PMSw1-Pl",
-      "HM-ES-PMSwX"
+      "HM-ES-PMSw1-Pl"
     ]
   },
   {
     "read": [
       {
-        "name": "STATE",
+        "name": "SWITCH.STATE",
         "channel": 1
       },
       {
-        "name": "INHIBIT",
+        "name": "SWITCH.WORKING",
         "channel": 1
       },
       {
-        "name": "WORKING",
-        "channel": 1
-      },
-      {
-        "name": "BOOT",
+        "name": "POWERMETER.BOOT",
         "channel": 2
       },
       {
-        "name": "ENERGY_COUNTER",
+        "name": "POWERMETER.ENERGY_COUNTER",
         "channel": 2
       },
       {
-        "name": "POWER",
+        "name": "POWERMETER.POWER",
         "channel": 2
       },
       {
-        "name": "CURRENT",
+        "name": "POWERMETER.CURRENT",
         "channel": 2
       },
       {
-        "name": "VOLTAGE",
+        "name": "POWERMETER.VOLTAGE",
         "channel": 2
       },
       {
-        "name": "FREQUENCY",
+        "name": "POWERMETER.FREQUENCY",
         "channel": 2
+      },
+      {
+        "name": "CONDITION_POWER.DECISION_VALUE",
+        "channel": 3
+      },
+      {
+        "name": "CONDITION_CURRENT.DECISION_VALUE",
+        "channel": 4
+      },
+      {
+        "name": "CONDITION_VOLTAGE.DECISION_VALUE",
+        "channel": 5
+      },
+      {
+        "name": "CONDITION_FREQUENCY.DECISION_VALUE",
+        "channel": 6
       }
     ],
     "write": [
@@ -4027,11 +4942,6 @@
         "name": "STATE",
         "channel": 1,
         "type": "boolean"
-      },
-      {
-        "name": "ON_TIME",
-        "channel": 1,
-        "type": "float"
       },
       {
         "name": "INHIBIT",
@@ -4050,7 +4960,8 @@
       "HM-ES-PMSw1-Pl-DN-R3",
       "HM-ES-PMSw1-Pl-DN-R4",
       "HM-ES-PMSw1-Pl-DN-R5",
-      "HM-ES-PMSw1-DR"
+      "HM-ES-PMSw1-DR",
+      "HM-ES-PMSw1-SM"
     ]
   },
   {
@@ -4081,6 +4992,33 @@
     ]
   },
   {
+    "read": [
+      {
+        "name": "STATE",
+        "channel": 1
+      },
+      {
+        "name": "WORKING",
+        "channel": 1
+      }
+    ],
+    "write": [
+      {
+        "name": "STATE",
+        "channel": 1,
+        "type": "boolean"
+      },
+      {
+        "name": "INHIBIT",
+        "channel": 1,
+        "type": "boolean"
+      },
+      {
+        "name": "INSTALL_TEST",
+        "channel": 1,
+        "type": "action"
+      }
+    ],
     "names": [
       "HM-Dis-TD-T"
     ]
@@ -4106,10 +5044,6 @@
         ]
       },
       {
-        "name": "INHIBIT",
-        "channel": 1
-      },
-      {
         "name": "ERROR",
         "channel": 1,
         "mapping": [
@@ -4131,11 +5065,6 @@
         "type": "action"
       },
       {
-        "name": "RELOCK_DELAY",
-        "channel": 1,
-        "type": "float"
-      },
-      {
         "name": "INHIBIT",
         "channel": 1,
         "type": "boolean"
@@ -4149,8 +5078,7 @@
     "names": [
       "HM-Sec-Key",
       "HM-Sec-Key-S",
-      "HM-Sec-Key-O",
-      "HM-Sec-Key-Generic"
+      "HM-Sec-Key-O"
     ]
   },
   {
@@ -4203,65 +5131,93 @@
   {
     "read": [
       {
-        "name": "KEY_1.PRESS_SHORT",
+        "name": "PRESS_SHORT",
         "channel": 1
       },
       {
-        "name": "KEY_1.PRESS_LONG",
-        "channel": 1
-      },
-      {
-        "name": "KEY_1.PRESS_LONG_RELEASE",
-        "channel": 1
-      },
-      {
-        "name": "KEY_1.PRESS_CONT",
-        "channel": 1
-      },
-      {
-        "name": "KEY_1.INSTALL_TEST",
-        "channel": 1
-      },
-      {
-        "name": "KEY_2.PRESS_SHORT",
-        "channel": 2
-      },
-      {
-        "name": "KEY_2.PRESS_LONG",
-        "channel": 2
-      },
-      {
-        "name": "KEY_2.PRESS_LONG_RELEASE",
-        "channel": 2
-      },
-      {
-        "name": "KEY_2.PRESS_CONT",
-        "channel": 2
-      },
-      {
-        "name": "KEY_2.INSTALL_TEST",
-        "channel": 2
+        "name": "LED_STATUS",
+        "channel": 1,
+        "mapping": [
+          "OFF",
+          "RED",
+          "GREEN",
+          "ORANGE"
+        ]
       }
     ],
     "write": [
       {
-        "name": "KEY_1.PRESS_SHORT",
+        "name": "PRESS_SHORT",
         "channel": 1,
         "type": "action"
       },
       {
-        "name": "KEY_1.PRESS_LONG",
+        "name": "LED_STATUS",
+        "channel": 1,
+        "type": "integer",
+        "mapping": [
+          "OFF",
+          "RED",
+          "GREEN",
+          "ORANGE"
+        ]
+      },
+      {
+        "name": "ALL_LEDS",
+        "channel": 1,
+        "type": "string"
+      },
+      {
+        "name": "LED_SLEEP_MODE",
+        "channel": 1,
+        "type": "integer",
+        "mapping": [
+          "OFF",
+          "ON"
+        ]
+      },
+      {
+        "name": "INSTALL_TEST",
+        "channel": 1,
+        "type": "action"
+      }
+    ],
+    "names": [
+      "HM-OU-LED16"
+    ]
+  },
+  {
+    "read": [
+      {
+        "name": "PRESS_SHORT",
+        "channel": 1
+      },
+      {
+        "name": "PRESS_LONG",
+        "channel": 1
+      },
+      {
+        "name": "PRESS_LONG_RELEASE",
+        "channel": 1
+      },
+      {
+        "name": "PRESS_CONT",
+        "channel": 1
+      },
+      {
+        "name": "INSTALL_TEST",
+        "channel": 1
+      }
+    ],
+    "write": [
+      {
+        "name": "PRESS_SHORT",
         "channel": 1,
         "type": "action"
       },
       {
-        "name": "KEY_2.PRESS_SHORT",
-        "channel": 2,
-        "type": "action"
-      },
-      {
-        "name": "KEY_2.PRESS_LONG",
-        "channel": 2,
+        "name": "PRESS_LONG",
+        "channel": 1,
         "type": "action"
       }
     ],
@@ -4275,65 +5231,35 @@
   {
     "read": [
       {
-        "name": "KEY_1.PRESS_SHORT",
+        "name": "PRESS_SHORT",
         "channel": 1
       },
       {
-        "name": "KEY_1.PRESS_LONG",
+        "name": "PRESS_LONG",
         "channel": 1
       },
       {
-        "name": "KEY_1.PRESS_LONG_RELEASE",
+        "name": "PRESS_LONG_RELEASE",
         "channel": 1
       },
       {
-        "name": "KEY_1.PRESS_CONT",
+        "name": "PRESS_CONT",
         "channel": 1
       },
       {
-        "name": "KEY_1.INSTALL_TEST",
+        "name": "INSTALL_TEST",
         "channel": 1
-      },
-      {
-        "name": "KEY_2.PRESS_SHORT",
-        "channel": 2
-      },
-      {
-        "name": "KEY_2.PRESS_LONG",
-        "channel": 2
-      },
-      {
-        "name": "KEY_2.PRESS_LONG_RELEASE",
-        "channel": 2
-      },
-      {
-        "name": "KEY_2.PRESS_CONT",
-        "channel": 2
-      },
-      {
-        "name": "KEY_2.INSTALL_TEST",
-        "channel": 2
       }
     ],
     "write": [
       {
-        "name": "KEY_1.PRESS_SHORT",
+        "name": "PRESS_SHORT",
         "channel": 1,
         "type": "action"
       },
       {
-        "name": "KEY_1.PRESS_LONG",
+        "name": "PRESS_LONG",
         "channel": 1,
-        "type": "action"
-      },
-      {
-        "name": "KEY_2.PRESS_SHORT",
-        "channel": 2,
-        "type": "action"
-      },
-      {
-        "name": "KEY_2.PRESS_LONG",
-        "channel": 2,
         "type": "action"
       }
     ],
@@ -4379,372 +5305,49 @@
     "names": [
       "HM-PBI-4-FM",
       "ZEL STG RM FST UP4",
-      "263 145",
-      "HM-PBI-X"
+      "263 145"
     ]
   },
   {
     "read": [
       {
-        "name": "KEY_1.PRESS_SHORT",
+        "name": "PRESS_SHORT",
         "channel": 1
       },
       {
-        "name": "KEY_1.PRESS_LONG",
+        "name": "PRESS_LONG",
         "channel": 1
       },
       {
-        "name": "KEY_1.PRESS_LONG_RELEASE",
+        "name": "PRESS_LONG_RELEASE",
         "channel": 1
       },
       {
-        "name": "KEY_1.PRESS_CONT",
+        "name": "PRESS_CONT",
         "channel": 1
       },
       {
-        "name": "KEY_1.INSTALL_TEST",
+        "name": "INSTALL_TEST",
         "channel": 1
       },
       {
-        "name": "KEY_2.PRESS_SHORT",
-        "channel": 2
+        "name": "TEST_COUNTER",
+        "channel": 1
       },
       {
-        "name": "KEY_2.PRESS_LONG",
-        "channel": 2
-      },
-      {
-        "name": "KEY_2.PRESS_LONG_RELEASE",
-        "channel": 2
-      },
-      {
-        "name": "KEY_2.PRESS_CONT",
-        "channel": 2
-      },
-      {
-        "name": "KEY_2.INSTALL_TEST",
-        "channel": 2
-      },
-      {
-        "name": "KEY_3.PRESS_SHORT",
-        "channel": 3
-      },
-      {
-        "name": "KEY_3.PRESS_LONG",
-        "channel": 3
-      },
-      {
-        "name": "KEY_3.PRESS_LONG_RELEASE",
-        "channel": 3
-      },
-      {
-        "name": "KEY_3.PRESS_CONT",
-        "channel": 3
-      },
-      {
-        "name": "KEY_3.INSTALL_TEST",
-        "channel": 3
-      },
-      {
-        "name": "KEY_4.PRESS_SHORT",
-        "channel": 4
-      },
-      {
-        "name": "KEY_4.PRESS_LONG",
-        "channel": 4
-      },
-      {
-        "name": "KEY_4.PRESS_LONG_RELEASE",
-        "channel": 4
-      },
-      {
-        "name": "KEY_4.PRESS_CONT",
-        "channel": 4
-      },
-      {
-        "name": "KEY_4.INSTALL_TEST",
-        "channel": 4
-      },
-      {
-        "name": "KEY_5.PRESS_SHORT",
-        "channel": 5
-      },
-      {
-        "name": "KEY_5.PRESS_LONG",
-        "channel": 5
-      },
-      {
-        "name": "KEY_5.PRESS_LONG_RELEASE",
-        "channel": 5
-      },
-      {
-        "name": "KEY_5.PRESS_CONT",
-        "channel": 5
-      },
-      {
-        "name": "KEY_5.INSTALL_TEST",
-        "channel": 5
-      },
-      {
-        "name": "KEY_6.PRESS_SHORT",
-        "channel": 6
-      },
-      {
-        "name": "KEY_6.PRESS_LONG",
-        "channel": 6
-      },
-      {
-        "name": "KEY_6.PRESS_LONG_RELEASE",
-        "channel": 6
-      },
-      {
-        "name": "KEY_6.PRESS_CONT",
-        "channel": 6
-      },
-      {
-        "name": "KEY_6.INSTALL_TEST",
-        "channel": 6
-      },
-      {
-        "name": "KEY_7.PRESS_SHORT",
-        "channel": 7
-      },
-      {
-        "name": "KEY_7.PRESS_LONG",
-        "channel": 7
-      },
-      {
-        "name": "KEY_7.PRESS_LONG_RELEASE",
-        "channel": 7
-      },
-      {
-        "name": "KEY_7.PRESS_CONT",
-        "channel": 7
-      },
-      {
-        "name": "KEY_7.INSTALL_TEST",
-        "channel": 7
-      },
-      {
-        "name": "KEY_8.PRESS_SHORT",
-        "channel": 8
-      },
-      {
-        "name": "KEY_8.PRESS_LONG",
-        "channel": 8
-      },
-      {
-        "name": "KEY_8.PRESS_LONG_RELEASE",
-        "channel": 8
-      },
-      {
-        "name": "KEY_8.PRESS_CONT",
-        "channel": 8
-      },
-      {
-        "name": "KEY_8.INSTALL_TEST",
-        "channel": 8
-      },
-      {
-        "name": "KEY_9.PRESS_SHORT",
-        "channel": 9
-      },
-      {
-        "name": "KEY_9.PRESS_LONG",
-        "channel": 9
-      },
-      {
-        "name": "KEY_9.PRESS_LONG_RELEASE",
-        "channel": 9
-      },
-      {
-        "name": "KEY_9.PRESS_CONT",
-        "channel": 9
-      },
-      {
-        "name": "KEY_9.INSTALL_TEST",
-        "channel": 9
-      },
-      {
-        "name": "KEY_10.PRESS_SHORT",
-        "channel": 10
-      },
-      {
-        "name": "KEY_10.PRESS_LONG",
-        "channel": 10
-      },
-      {
-        "name": "KEY_10.PRESS_LONG_RELEASE",
-        "channel": 10
-      },
-      {
-        "name": "KEY_10.PRESS_CONT",
-        "channel": 10
-      },
-      {
-        "name": "KEY_10.INSTALL_TEST",
-        "channel": 10
-      },
-      {
-        "name": "KEY_11.PRESS_SHORT",
-        "channel": 11
-      },
-      {
-        "name": "KEY_11.PRESS_LONG",
-        "channel": 11
-      },
-      {
-        "name": "KEY_11.PRESS_LONG_RELEASE",
-        "channel": 11
-      },
-      {
-        "name": "KEY_11.PRESS_CONT",
-        "channel": 11
-      },
-      {
-        "name": "KEY_11.INSTALL_TEST",
-        "channel": 11
-      },
-      {
-        "name": "KEY_12.PRESS_SHORT",
-        "channel": 12
-      },
-      {
-        "name": "KEY_12.PRESS_LONG",
-        "channel": 12
-      },
-      {
-        "name": "KEY_12.PRESS_LONG_RELEASE",
-        "channel": 12
-      },
-      {
-        "name": "KEY_12.PRESS_CONT",
-        "channel": 12
-      },
-      {
-        "name": "KEY_12.INSTALL_TEST",
-        "channel": 12
+        "name": "SIM_COUNTER",
+        "channel": 1
       }
     ],
     "write": [
       {
-        "name": "KEY_1.PRESS_SHORT",
+        "name": "PRESS_SHORT",
         "channel": 1,
         "type": "action"
       },
       {
-        "name": "KEY_1.PRESS_LONG",
+        "name": "PRESS_LONG",
         "channel": 1,
-        "type": "action"
-      },
-      {
-        "name": "KEY_2.PRESS_SHORT",
-        "channel": 2,
-        "type": "action"
-      },
-      {
-        "name": "KEY_2.PRESS_LONG",
-        "channel": 2,
-        "type": "action"
-      },
-      {
-        "name": "KEY_3.PRESS_SHORT",
-        "channel": 3,
-        "type": "action"
-      },
-      {
-        "name": "KEY_3.PRESS_LONG",
-        "channel": 3,
-        "type": "action"
-      },
-      {
-        "name": "KEY_4.PRESS_SHORT",
-        "channel": 4,
-        "type": "action"
-      },
-      {
-        "name": "KEY_4.PRESS_LONG",
-        "channel": 4,
-        "type": "action"
-      },
-      {
-        "name": "KEY_5.PRESS_SHORT",
-        "channel": 5,
-        "type": "action"
-      },
-      {
-        "name": "KEY_5.PRESS_LONG",
-        "channel": 5,
-        "type": "action"
-      },
-      {
-        "name": "KEY_6.PRESS_SHORT",
-        "channel": 6,
-        "type": "action"
-      },
-      {
-        "name": "KEY_6.PRESS_LONG",
-        "channel": 6,
-        "type": "action"
-      },
-      {
-        "name": "KEY_7.PRESS_SHORT",
-        "channel": 7,
-        "type": "action"
-      },
-      {
-        "name": "KEY_7.PRESS_LONG",
-        "channel": 7,
-        "type": "action"
-      },
-      {
-        "name": "KEY_8.PRESS_SHORT",
-        "channel": 8,
-        "type": "action"
-      },
-      {
-        "name": "KEY_8.PRESS_LONG",
-        "channel": 8,
-        "type": "action"
-      },
-      {
-        "name": "KEY_9.PRESS_SHORT",
-        "channel": 9,
-        "type": "action"
-      },
-      {
-        "name": "KEY_9.PRESS_LONG",
-        "channel": 9,
-        "type": "action"
-      },
-      {
-        "name": "KEY_10.PRESS_SHORT",
-        "channel": 10,
-        "type": "action"
-      },
-      {
-        "name": "KEY_10.PRESS_LONG",
-        "channel": 10,
-        "type": "action"
-      },
-      {
-        "name": "KEY_11.PRESS_SHORT",
-        "channel": 11,
-        "type": "action"
-      },
-      {
-        "name": "KEY_11.PRESS_LONG",
-        "channel": 11,
-        "type": "action"
-      },
-      {
-        "name": "KEY_12.PRESS_SHORT",
-        "channel": 12,
-        "type": "action"
-      },
-      {
-        "name": "KEY_12.PRESS_LONG",
-        "channel": 12,
         "type": "action"
       }
     ],
@@ -4777,6 +5380,14 @@
         "channel": 1
       },
       {
+        "name": "KEY_1.TEST_COUNTER",
+        "channel": 1
+      },
+      {
+        "name": "KEY_1.SIM_COUNTER",
+        "channel": 1
+      },
+      {
         "name": "KEY_2.PRESS_SHORT",
         "channel": 2
       },
@@ -4794,6 +5405,14 @@
       },
       {
         "name": "KEY_2.INSTALL_TEST",
+        "channel": 2
+      },
+      {
+        "name": "KEY_2.TEST_COUNTER",
+        "channel": 2
+      },
+      {
+        "name": "KEY_2.SIM_COUNTER",
         "channel": 2
       },
       {
@@ -4817,6 +5436,14 @@
         "channel": 3
       },
       {
+        "name": "KEY_3.TEST_COUNTER",
+        "channel": 3
+      },
+      {
+        "name": "KEY_3.SIM_COUNTER",
+        "channel": 3
+      },
+      {
         "name": "KEY_4.PRESS_SHORT",
         "channel": 4
       },
@@ -4834,6 +5461,14 @@
       },
       {
         "name": "KEY_4.INSTALL_TEST",
+        "channel": 4
+      },
+      {
+        "name": "KEY_4.TEST_COUNTER",
+        "channel": 4
+      },
+      {
+        "name": "KEY_4.SIM_COUNTER",
         "channel": 4
       },
       {
@@ -4857,6 +5492,14 @@
         "channel": 5
       },
       {
+        "name": "KEY_5.TEST_COUNTER",
+        "channel": 5
+      },
+      {
+        "name": "KEY_5.SIM_COUNTER",
+        "channel": 5
+      },
+      {
         "name": "KEY_6.PRESS_SHORT",
         "channel": 6
       },
@@ -4874,6 +5517,14 @@
       },
       {
         "name": "KEY_6.INSTALL_TEST",
+        "channel": 6
+      },
+      {
+        "name": "KEY_6.TEST_COUNTER",
+        "channel": 6
+      },
+      {
+        "name": "KEY_6.SIM_COUNTER",
         "channel": 6
       },
       {
@@ -4897,6 +5548,14 @@
         "channel": 7
       },
       {
+        "name": "KEY_7.TEST_COUNTER",
+        "channel": 7
+      },
+      {
+        "name": "KEY_7.SIM_COUNTER",
+        "channel": 7
+      },
+      {
         "name": "KEY_8.PRESS_SHORT",
         "channel": 8
       },
@@ -4914,6 +5573,14 @@
       },
       {
         "name": "KEY_8.INSTALL_TEST",
+        "channel": 8
+      },
+      {
+        "name": "KEY_8.TEST_COUNTER",
+        "channel": 8
+      },
+      {
+        "name": "KEY_8.SIM_COUNTER",
         "channel": 8
       },
       {
@@ -4937,6 +5604,14 @@
         "channel": 9
       },
       {
+        "name": "KEY_9.TEST_COUNTER",
+        "channel": 9
+      },
+      {
+        "name": "KEY_9.SIM_COUNTER",
+        "channel": 9
+      },
+      {
         "name": "KEY_10.PRESS_SHORT",
         "channel": 10
       },
@@ -4954,6 +5629,14 @@
       },
       {
         "name": "KEY_10.INSTALL_TEST",
+        "channel": 10
+      },
+      {
+        "name": "KEY_10.TEST_COUNTER",
+        "channel": 10
+      },
+      {
+        "name": "KEY_10.SIM_COUNTER",
         "channel": 10
       },
       {
@@ -4977,6 +5660,14 @@
         "channel": 11
       },
       {
+        "name": "KEY_11.TEST_COUNTER",
+        "channel": 11
+      },
+      {
+        "name": "KEY_11.SIM_COUNTER",
+        "channel": 11
+      },
+      {
         "name": "KEY_12.PRESS_SHORT",
         "channel": 12
       },
@@ -4994,6 +5685,14 @@
       },
       {
         "name": "KEY_12.INSTALL_TEST",
+        "channel": 12
+      },
+      {
+        "name": "KEY_12.TEST_COUNTER",
+        "channel": 12
+      },
+      {
+        "name": "KEY_12.SIM_COUNTER",
         "channel": 12
       },
       {
@@ -5017,6 +5716,14 @@
         "channel": 13
       },
       {
+        "name": "KEY_13.TEST_COUNTER",
+        "channel": 13
+      },
+      {
+        "name": "KEY_13.SIM_COUNTER",
+        "channel": 13
+      },
+      {
         "name": "KEY_14.PRESS_SHORT",
         "channel": 14
       },
@@ -5034,6 +5741,14 @@
       },
       {
         "name": "KEY_14.INSTALL_TEST",
+        "channel": 14
+      },
+      {
+        "name": "KEY_14.TEST_COUNTER",
+        "channel": 14
+      },
+      {
+        "name": "KEY_14.SIM_COUNTER",
         "channel": 14
       },
       {
@@ -5057,6 +5772,14 @@
         "channel": 15
       },
       {
+        "name": "KEY_15.TEST_COUNTER",
+        "channel": 15
+      },
+      {
+        "name": "KEY_15.SIM_COUNTER",
+        "channel": 15
+      },
+      {
         "name": "KEY_16.PRESS_SHORT",
         "channel": 16
       },
@@ -5077,6 +5800,14 @@
         "channel": 16
       },
       {
+        "name": "KEY_16.TEST_COUNTER",
+        "channel": 16
+      },
+      {
+        "name": "KEY_16.SIM_COUNTER",
+        "channel": 16
+      },
+      {
         "name": "CENTRAL_KEY.PRESS_SHORT",
         "channel": 17
       },
@@ -5094,6 +5825,14 @@
       },
       {
         "name": "CENTRAL_KEY.INSTALL_TEST",
+        "channel": 17
+      },
+      {
+        "name": "CENTRAL_KEY.TEST_COUNTER",
+        "channel": 17
+      },
+      {
+        "name": "CENTRAL_KEY.SIM_COUNTER",
         "channel": 17
       }
     ],
@@ -5257,100 +5996,6 @@
         "name": "KEY_16.PRESS_LONG",
         "channel": 16,
         "type": "action"
-      },
-      {
-        "name": "DISPLAY.TEXT",
-        "channel": 18,
-        "type": "string"
-      },
-      {
-        "name": "DISPLAY.BULB",
-        "channel": 18,
-        "type": "action"
-      },
-      {
-        "name": "DISPLAY.SWITCH",
-        "channel": 18,
-        "type": "action"
-      },
-      {
-        "name": "DISPLAY.WINDOW",
-        "channel": 18,
-        "type": "action"
-      },
-      {
-        "name": "DISPLAY.DOOR",
-        "channel": 18,
-        "type": "action"
-      },
-      {
-        "name": "DISPLAY.BLIND",
-        "channel": 18,
-        "type": "action"
-      },
-      {
-        "name": "DISPLAY.SCENE",
-        "channel": 18,
-        "type": "action"
-      },
-      {
-        "name": "DISPLAY.PHONE",
-        "channel": 18,
-        "type": "action"
-      },
-      {
-        "name": "DISPLAY.BELL",
-        "channel": 18,
-        "type": "action"
-      },
-      {
-        "name": "DISPLAY.CLOCK",
-        "channel": 18,
-        "type": "action"
-      },
-      {
-        "name": "DISPLAY.ARROW_UP",
-        "channel": 18,
-        "type": "action"
-      },
-      {
-        "name": "DISPLAY.ARROW_DOWN",
-        "channel": 18,
-        "type": "action"
-      },
-      {
-        "name": "DISPLAY.UNIT",
-        "channel": 18,
-        "type": "option",
-        "mapping": [
-          "NONE",
-          "PERCENT",
-          "WATT",
-          "CELSIUS",
-          "FAHRENHEIT"
-        ]
-      },
-      {
-        "name": "DISPLAY.BEEP",
-        "channel": 18,
-        "type": "option",
-        "mapping": [
-          "NONE",
-          "TONE1",
-          "TONE2",
-          "TONE3"
-        ]
-      },
-      {
-        "name": "DISPLAY.BACKLIGHT",
-        "channel": 18,
-        "type": "option",
-        "mapping": [
-          "OFF",
-          "ON",
-          "BLINK_SLOW",
-          "BLINK_FAST"
-        ]
       },
       {
         "name": "DISPLAY.SUBMIT",
@@ -5382,65 +6027,43 @@
   {
     "read": [
       {
-        "name": "KEY_1.PRESS_SHORT",
+        "name": "PRESS_SHORT",
         "channel": 1
       },
       {
-        "name": "KEY_1.PRESS_LONG",
+        "name": "PRESS_LONG",
         "channel": 1
       },
       {
-        "name": "KEY_1.PRESS_LONG_RELEASE",
+        "name": "PRESS_LONG_RELEASE",
         "channel": 1
       },
       {
-        "name": "KEY_1.PRESS_CONT",
+        "name": "PRESS_CONT",
         "channel": 1
       },
       {
-        "name": "KEY_1.INSTALL_TEST",
+        "name": "INSTALL_TEST",
         "channel": 1
       },
       {
-        "name": "KEY_2.PRESS_SHORT",
-        "channel": 2
+        "name": "TEST_COUNTER",
+        "channel": 1
       },
       {
-        "name": "KEY_2.PRESS_LONG",
-        "channel": 2
-      },
-      {
-        "name": "KEY_2.PRESS_LONG_RELEASE",
-        "channel": 2
-      },
-      {
-        "name": "KEY_2.PRESS_CONT",
-        "channel": 2
-      },
-      {
-        "name": "KEY_2.INSTALL_TEST",
-        "channel": 2
+        "name": "SIM_COUNTER",
+        "channel": 1
       }
     ],
     "write": [
       {
-        "name": "KEY_1.PRESS_SHORT",
+        "name": "PRESS_SHORT",
         "channel": 1,
         "type": "action"
       },
       {
-        "name": "KEY_1.PRESS_LONG",
+        "name": "PRESS_LONG",
         "channel": 1,
-        "type": "action"
-      },
-      {
-        "name": "KEY_2.PRESS_SHORT",
-        "channel": 2,
-        "type": "action"
-      },
-      {
-        "name": "KEY_2.PRESS_LONG",
-        "channel": 2,
         "type": "action"
       }
     ],
@@ -5451,320 +6074,98 @@
   {
     "read": [
       {
-        "name": "KEY_1.PRESS_SHORT",
+        "name": "PRESS_SHORT",
         "channel": 1
       },
       {
-        "name": "KEY_1.PRESS_LONG",
+        "name": "PRESS_LONG",
         "channel": 1
       },
       {
-        "name": "KEY_1.PRESS_LONG_RELEASE",
+        "name": "PRESS_LONG_RELEASE",
         "channel": 1
       },
       {
-        "name": "KEY_1.PRESS_CONT",
+        "name": "PRESS_CONT",
         "channel": 1
       },
       {
-        "name": "KEY_1.INSTALL_TEST",
+        "name": "INSTALL_TEST",
         "channel": 1
       },
       {
-        "name": "KEY_2.PRESS_SHORT",
-        "channel": 2
+        "name": "TEST_COUNTER",
+        "channel": 1
       },
       {
-        "name": "KEY_2.PRESS_LONG",
-        "channel": 2
-      },
-      {
-        "name": "KEY_2.PRESS_LONG_RELEASE",
-        "channel": 2
-      },
-      {
-        "name": "KEY_2.PRESS_CONT",
-        "channel": 2
-      },
-      {
-        "name": "KEY_2.INSTALL_TEST",
-        "channel": 2
-      },
-      {
-        "name": "KEY_3.PRESS_SHORT",
-        "channel": 3
-      },
-      {
-        "name": "KEY_3.PRESS_LONG",
-        "channel": 3
-      },
-      {
-        "name": "KEY_3.PRESS_LONG_RELEASE",
-        "channel": 3
-      },
-      {
-        "name": "KEY_3.PRESS_CONT",
-        "channel": 3
-      },
-      {
-        "name": "KEY_3.INSTALL_TEST",
-        "channel": 3
-      },
-      {
-        "name": "KEY_4.PRESS_SHORT",
-        "channel": 4
-      },
-      {
-        "name": "KEY_4.PRESS_LONG",
-        "channel": 4
-      },
-      {
-        "name": "KEY_4.PRESS_LONG_RELEASE",
-        "channel": 4
-      },
-      {
-        "name": "KEY_4.PRESS_CONT",
-        "channel": 4
-      },
-      {
-        "name": "KEY_4.INSTALL_TEST",
-        "channel": 4
+        "name": "SIM_COUNTER",
+        "channel": 1
       }
     ],
     "write": [
       {
-        "name": "KEY_1.PRESS_SHORT",
+        "name": "PRESS_SHORT",
         "channel": 1,
         "type": "action"
       },
       {
-        "name": "KEY_1.PRESS_LONG",
+        "name": "PRESS_LONG",
         "channel": 1,
-        "type": "action"
-      },
-      {
-        "name": "KEY_2.PRESS_SHORT",
-        "channel": 2,
-        "type": "action"
-      },
-      {
-        "name": "KEY_2.PRESS_LONG",
-        "channel": 2,
-        "type": "action"
-      },
-      {
-        "name": "KEY_3.PRESS_SHORT",
-        "channel": 3,
-        "type": "action"
-      },
-      {
-        "name": "KEY_3.PRESS_LONG",
-        "channel": 3,
-        "type": "action"
-      },
-      {
-        "name": "KEY_4.PRESS_SHORT",
-        "channel": 4,
-        "type": "action"
-      },
-      {
-        "name": "KEY_4.PRESS_LONG",
-        "channel": 4,
         "type": "action"
       }
     ],
     "names": [
       "HM-RC-4-2",
+      "HM-PB-6-WM55",
+      "HM-RC-8",
       "HM-RC-4-3"
     ]
   },
   {
     "read": [
       {
-        "name": "KEY_1.PRESS_SHORT",
+        "name": "PRESS_SHORT",
         "channel": 1
       },
       {
-        "name": "KEY_1.PRESS_LONG",
+        "name": "PRESS_LONG",
         "channel": 1
       },
       {
-        "name": "KEY_1.PRESS_LONG_RELEASE",
+        "name": "PRESS_LONG_RELEASE",
         "channel": 1
       },
       {
-        "name": "KEY_1.PRESS_CONT",
+        "name": "PRESS_CONT",
         "channel": 1
       },
       {
-        "name": "KEY_1.INSTALL_TEST",
+        "name": "INSTALL_TEST",
         "channel": 1
       },
       {
-        "name": "KEY_2.PRESS_SHORT",
-        "channel": 2
+        "name": "TEST_COUNTER",
+        "channel": 1
       },
       {
-        "name": "KEY_2.PRESS_LONG",
-        "channel": 2
-      },
-      {
-        "name": "KEY_2.PRESS_LONG_RELEASE",
-        "channel": 2
-      },
-      {
-        "name": "KEY_2.PRESS_CONT",
-        "channel": 2
-      },
-      {
-        "name": "KEY_2.INSTALL_TEST",
-        "channel": 2
-      },
-      {
-        "name": "KEY_3.PRESS_SHORT",
-        "channel": 3
-      },
-      {
-        "name": "KEY_3.PRESS_LONG",
-        "channel": 3
-      },
-      {
-        "name": "KEY_3.PRESS_LONG_RELEASE",
-        "channel": 3
-      },
-      {
-        "name": "KEY_3.PRESS_CONT",
-        "channel": 3
-      },
-      {
-        "name": "KEY_3.INSTALL_TEST",
-        "channel": 3
-      },
-      {
-        "name": "KEY_4.PRESS_SHORT",
-        "channel": 4
-      },
-      {
-        "name": "KEY_4.PRESS_LONG",
-        "channel": 4
-      },
-      {
-        "name": "KEY_4.PRESS_LONG_RELEASE",
-        "channel": 4
-      },
-      {
-        "name": "KEY_4.PRESS_CONT",
-        "channel": 4
-      },
-      {
-        "name": "KEY_4.INSTALL_TEST",
-        "channel": 4
-      },
-      {
-        "name": "KEY_5.PRESS_SHORT",
-        "channel": 5
-      },
-      {
-        "name": "KEY_5.PRESS_LONG",
-        "channel": 5
-      },
-      {
-        "name": "KEY_5.PRESS_LONG_RELEASE",
-        "channel": 5
-      },
-      {
-        "name": "KEY_5.PRESS_CONT",
-        "channel": 5
-      },
-      {
-        "name": "KEY_5.INSTALL_TEST",
-        "channel": 5
-      },
-      {
-        "name": "KEY_6.PRESS_SHORT",
-        "channel": 6
-      },
-      {
-        "name": "KEY_6.PRESS_LONG",
-        "channel": 6
-      },
-      {
-        "name": "KEY_6.PRESS_LONG_RELEASE",
-        "channel": 6
-      },
-      {
-        "name": "KEY_6.PRESS_CONT",
-        "channel": 6
-      },
-      {
-        "name": "KEY_6.INSTALL_TEST",
-        "channel": 6
+        "name": "SIM_COUNTER",
+        "channel": 1
       }
     ],
     "write": [
       {
-        "name": "KEY_1.PRESS_SHORT",
+        "name": "PRESS_SHORT",
         "channel": 1,
         "type": "action"
       },
       {
-        "name": "KEY_1.PRESS_LONG",
+        "name": "PRESS_LONG",
         "channel": 1,
-        "type": "action"
-      },
-      {
-        "name": "KEY_2.PRESS_SHORT",
-        "channel": 2,
-        "type": "action"
-      },
-      {
-        "name": "KEY_2.PRESS_LONG",
-        "channel": 2,
-        "type": "action"
-      },
-      {
-        "name": "KEY_3.PRESS_SHORT",
-        "channel": 3,
-        "type": "action"
-      },
-      {
-        "name": "KEY_3.PRESS_LONG",
-        "channel": 3,
-        "type": "action"
-      },
-      {
-        "name": "KEY_4.PRESS_SHORT",
-        "channel": 4,
-        "type": "action"
-      },
-      {
-        "name": "KEY_4.PRESS_LONG",
-        "channel": 4,
-        "type": "action"
-      },
-      {
-        "name": "KEY_5.PRESS_SHORT",
-        "channel": 5,
-        "type": "action"
-      },
-      {
-        "name": "KEY_5.PRESS_LONG",
-        "channel": 5,
-        "type": "action"
-      },
-      {
-        "name": "KEY_6.PRESS_SHORT",
-        "channel": 6,
-        "type": "action"
-      },
-      {
-        "name": "KEY_6.PRESS_LONG",
-        "channel": 6,
         "type": "action"
       }
     ],
     "names": [
-      "HM-PB-6-WM55"
+      "HM-RC-4-3-D"
     ]
   },
   {
@@ -5790,252 +6191,11 @@
         "channel": 1
       },
       {
-        "name": "KEY_2.PRESS_SHORT",
-        "channel": 2
-      },
-      {
-        "name": "KEY_2.PRESS_LONG",
-        "channel": 2
-      },
-      {
-        "name": "KEY_2.PRESS_LONG_RELEASE",
-        "channel": 2
-      },
-      {
-        "name": "KEY_2.PRESS_CONT",
-        "channel": 2
-      },
-      {
-        "name": "KEY_2.INSTALL_TEST",
-        "channel": 2
-      },
-      {
-        "name": "KEY_3.PRESS_SHORT",
-        "channel": 3
-      },
-      {
-        "name": "KEY_3.PRESS_LONG",
-        "channel": 3
-      },
-      {
-        "name": "KEY_3.PRESS_LONG_RELEASE",
-        "channel": 3
-      },
-      {
-        "name": "KEY_3.PRESS_CONT",
-        "channel": 3
-      },
-      {
-        "name": "KEY_3.INSTALL_TEST",
-        "channel": 3
-      },
-      {
-        "name": "KEY_4.PRESS_SHORT",
-        "channel": 4
-      },
-      {
-        "name": "KEY_4.PRESS_LONG",
-        "channel": 4
-      },
-      {
-        "name": "KEY_4.PRESS_LONG_RELEASE",
-        "channel": 4
-      },
-      {
-        "name": "KEY_4.PRESS_CONT",
-        "channel": 4
-      },
-      {
-        "name": "KEY_4.INSTALL_TEST",
-        "channel": 4
-      },
-      {
-        "name": "KEY_5.PRESS_SHORT",
-        "channel": 5
-      },
-      {
-        "name": "KEY_5.PRESS_LONG",
-        "channel": 5
-      },
-      {
-        "name": "KEY_5.PRESS_LONG_RELEASE",
-        "channel": 5
-      },
-      {
-        "name": "KEY_5.PRESS_CONT",
-        "channel": 5
-      },
-      {
-        "name": "KEY_5.INSTALL_TEST",
-        "channel": 5
-      },
-      {
-        "name": "KEY_6.PRESS_SHORT",
-        "channel": 6
-      },
-      {
-        "name": "KEY_6.PRESS_LONG",
-        "channel": 6
-      },
-      {
-        "name": "KEY_6.PRESS_LONG_RELEASE",
-        "channel": 6
-      },
-      {
-        "name": "KEY_6.PRESS_CONT",
-        "channel": 6
-      },
-      {
-        "name": "KEY_6.INSTALL_TEST",
-        "channel": 6
-      },
-      {
-        "name": "KEY_7.PRESS_SHORT",
-        "channel": 7
-      },
-      {
-        "name": "KEY_7.PRESS_LONG",
-        "channel": 7
-      },
-      {
-        "name": "KEY_7.PRESS_LONG_RELEASE",
-        "channel": 7
-      },
-      {
-        "name": "KEY_7.PRESS_CONT",
-        "channel": 7
-      },
-      {
-        "name": "KEY_7.INSTALL_TEST",
-        "channel": 7
-      },
-      {
-        "name": "KEY_8.PRESS_SHORT",
-        "channel": 8
-      },
-      {
-        "name": "KEY_8.PRESS_LONG",
-        "channel": 8
-      },
-      {
-        "name": "KEY_8.PRESS_LONG_RELEASE",
-        "channel": 8
-      },
-      {
-        "name": "KEY_8.PRESS_CONT",
-        "channel": 8
-      },
-      {
-        "name": "KEY_8.INSTALL_TEST",
-        "channel": 8
-      }
-    ],
-    "write": [
-      {
-        "name": "KEY_1.PRESS_SHORT",
-        "channel": 1,
-        "type": "action"
-      },
-      {
-        "name": "KEY_1.PRESS_LONG",
-        "channel": 1,
-        "type": "action"
-      },
-      {
-        "name": "KEY_2.PRESS_SHORT",
-        "channel": 2,
-        "type": "action"
-      },
-      {
-        "name": "KEY_2.PRESS_LONG",
-        "channel": 2,
-        "type": "action"
-      },
-      {
-        "name": "KEY_3.PRESS_SHORT",
-        "channel": 3,
-        "type": "action"
-      },
-      {
-        "name": "KEY_3.PRESS_LONG",
-        "channel": 3,
-        "type": "action"
-      },
-      {
-        "name": "KEY_4.PRESS_SHORT",
-        "channel": 4,
-        "type": "action"
-      },
-      {
-        "name": "KEY_4.PRESS_LONG",
-        "channel": 4,
-        "type": "action"
-      },
-      {
-        "name": "KEY_5.PRESS_SHORT",
-        "channel": 5,
-        "type": "action"
-      },
-      {
-        "name": "KEY_5.PRESS_LONG",
-        "channel": 5,
-        "type": "action"
-      },
-      {
-        "name": "KEY_6.PRESS_SHORT",
-        "channel": 6,
-        "type": "action"
-      },
-      {
-        "name": "KEY_6.PRESS_LONG",
-        "channel": 6,
-        "type": "action"
-      },
-      {
-        "name": "KEY_7.PRESS_SHORT",
-        "channel": 7,
-        "type": "action"
-      },
-      {
-        "name": "KEY_7.PRESS_LONG",
-        "channel": 7,
-        "type": "action"
-      },
-      {
-        "name": "KEY_8.PRESS_SHORT",
-        "channel": 8,
-        "type": "action"
-      },
-      {
-        "name": "KEY_8.PRESS_LONG",
-        "channel": 8,
-        "type": "action"
-      }
-    ],
-    "names": [
-      "HM-RC-8"
-    ]
-  },
-  {
-    "read": [
-      {
-        "name": "KEY_1.PRESS_SHORT",
+        "name": "KEY_1.TEST_COUNTER",
         "channel": 1
       },
       {
-        "name": "KEY_1.PRESS_LONG",
-        "channel": 1
-      },
-      {
-        "name": "KEY_1.PRESS_LONG_RELEASE",
-        "channel": 1
-      },
-      {
-        "name": "KEY_1.PRESS_CONT",
-        "channel": 1
-      },
-      {
-        "name": "KEY_1.INSTALL_TEST",
+        "name": "KEY_1.SIM_COUNTER",
         "channel": 1
       },
       {
@@ -6059,6 +6219,14 @@
         "channel": 2
       },
       {
+        "name": "KEY_2.TEST_COUNTER",
+        "channel": 2
+      },
+      {
+        "name": "KEY_2.SIM_COUNTER",
+        "channel": 2
+      },
+      {
         "name": "KEY_3.PRESS_SHORT",
         "channel": 3
       },
@@ -6076,6 +6244,14 @@
       },
       {
         "name": "KEY_3.INSTALL_TEST",
+        "channel": 3
+      },
+      {
+        "name": "KEY_3.TEST_COUNTER",
+        "channel": 3
+      },
+      {
+        "name": "KEY_3.SIM_COUNTER",
         "channel": 3
       },
       {
@@ -6099,6 +6275,14 @@
         "channel": 4
       },
       {
+        "name": "KEY_4.TEST_COUNTER",
+        "channel": 4
+      },
+      {
+        "name": "KEY_4.SIM_COUNTER",
+        "channel": 4
+      },
+      {
         "name": "KEY_5.PRESS_SHORT",
         "channel": 5
       },
@@ -6116,6 +6300,14 @@
       },
       {
         "name": "KEY_5.INSTALL_TEST",
+        "channel": 5
+      },
+      {
+        "name": "KEY_5.TEST_COUNTER",
+        "channel": 5
+      },
+      {
+        "name": "KEY_5.SIM_COUNTER",
         "channel": 5
       },
       {
@@ -6139,6 +6331,14 @@
         "channel": 6
       },
       {
+        "name": "KEY_6.TEST_COUNTER",
+        "channel": 6
+      },
+      {
+        "name": "KEY_6.SIM_COUNTER",
+        "channel": 6
+      },
+      {
         "name": "KEY_7.PRESS_SHORT",
         "channel": 7
       },
@@ -6159,6 +6359,14 @@
         "channel": 7
       },
       {
+        "name": "KEY_7.TEST_COUNTER",
+        "channel": 7
+      },
+      {
+        "name": "KEY_7.SIM_COUNTER",
+        "channel": 7
+      },
+      {
         "name": "KEY_8.PRESS_SHORT",
         "channel": 8
       },
@@ -6176,6 +6384,14 @@
       },
       {
         "name": "KEY_8.INSTALL_TEST",
+        "channel": 8
+      },
+      {
+        "name": "KEY_8.TEST_COUNTER",
+        "channel": 8
+      },
+      {
+        "name": "KEY_8.SIM_COUNTER",
         "channel": 8
       },
       {
@@ -6199,6 +6415,14 @@
         "channel": 9
       },
       {
+        "name": "KEY_9.TEST_COUNTER",
+        "channel": 9
+      },
+      {
+        "name": "KEY_9.SIM_COUNTER",
+        "channel": 9
+      },
+      {
         "name": "KEY_10.PRESS_SHORT",
         "channel": 10
       },
@@ -6216,6 +6440,14 @@
       },
       {
         "name": "KEY_10.INSTALL_TEST",
+        "channel": 10
+      },
+      {
+        "name": "KEY_10.TEST_COUNTER",
+        "channel": 10
+      },
+      {
+        "name": "KEY_10.SIM_COUNTER",
         "channel": 10
       },
       {
@@ -6239,6 +6471,14 @@
         "channel": 11
       },
       {
+        "name": "KEY_11.TEST_COUNTER",
+        "channel": 11
+      },
+      {
+        "name": "KEY_11.SIM_COUNTER",
+        "channel": 11
+      },
+      {
         "name": "KEY_12.PRESS_SHORT",
         "channel": 12
       },
@@ -6256,6 +6496,14 @@
       },
       {
         "name": "KEY_12.INSTALL_TEST",
+        "channel": 12
+      },
+      {
+        "name": "KEY_12.TEST_COUNTER",
+        "channel": 12
+      },
+      {
+        "name": "KEY_12.SIM_COUNTER",
         "channel": 12
       },
       {
@@ -6279,6 +6527,14 @@
         "channel": 13
       },
       {
+        "name": "KEY_13.TEST_COUNTER",
+        "channel": 13
+      },
+      {
+        "name": "KEY_13.SIM_COUNTER",
+        "channel": 13
+      },
+      {
         "name": "KEY_14.PRESS_SHORT",
         "channel": 14
       },
@@ -6296,6 +6552,14 @@
       },
       {
         "name": "KEY_14.INSTALL_TEST",
+        "channel": 14
+      },
+      {
+        "name": "KEY_14.TEST_COUNTER",
+        "channel": 14
+      },
+      {
+        "name": "KEY_14.SIM_COUNTER",
         "channel": 14
       },
       {
@@ -6319,6 +6583,14 @@
         "channel": 15
       },
       {
+        "name": "KEY_15.TEST_COUNTER",
+        "channel": 15
+      },
+      {
+        "name": "KEY_15.SIM_COUNTER",
+        "channel": 15
+      },
+      {
         "name": "KEY_16.PRESS_SHORT",
         "channel": 16
       },
@@ -6336,6 +6608,14 @@
       },
       {
         "name": "KEY_16.INSTALL_TEST",
+        "channel": 16
+      },
+      {
+        "name": "KEY_16.TEST_COUNTER",
+        "channel": 16
+      },
+      {
+        "name": "KEY_16.SIM_COUNTER",
         "channel": 16
       },
       {
@@ -6359,6 +6639,14 @@
         "channel": 17
       },
       {
+        "name": "KEY_17.TEST_COUNTER",
+        "channel": 17
+      },
+      {
+        "name": "KEY_17.SIM_COUNTER",
+        "channel": 17
+      },
+      {
         "name": "KEY_18.PRESS_SHORT",
         "channel": 18
       },
@@ -6376,6 +6664,14 @@
       },
       {
         "name": "KEY_18.INSTALL_TEST",
+        "channel": 18
+      },
+      {
+        "name": "KEY_18.TEST_COUNTER",
+        "channel": 18
+      },
+      {
+        "name": "KEY_18.SIM_COUNTER",
         "channel": 18
       },
       {
@@ -6399,6 +6695,14 @@
         "channel": 19
       },
       {
+        "name": "KEY_19.TEST_COUNTER",
+        "channel": 19
+      },
+      {
+        "name": "KEY_19.SIM_COUNTER",
+        "channel": 19
+      },
+      {
         "name": "KEY_20.PRESS_SHORT",
         "channel": 20
       },
@@ -6416,6 +6720,14 @@
       },
       {
         "name": "KEY_20.INSTALL_TEST",
+        "channel": 20
+      },
+      {
+        "name": "KEY_20.TEST_COUNTER",
+        "channel": 20
+      },
+      {
+        "name": "KEY_20.SIM_COUNTER",
         "channel": 20
       }
     ],
@@ -6636,45 +6948,7 @@
         "channel": 1
       },
       {
-        "name": "KEY_2.PRESS_SHORT",
-        "channel": 2
-      },
-      {
-        "name": "KEY_2.PRESS_LONG",
-        "channel": 2
-      },
-      {
-        "name": "KEY.PRESS_SHORT",
-        "channel": 3
-      },
-      {
-        "name": "KEY.PRESS_LONG",
-        "channel": 3
-      },
-      {
-        "name": "KEY.PRESS_SHORT",
-        "channel": 4
-      },
-      {
-        "name": "KEY.PRESS_LONG",
-        "channel": 4
-      }
-    ],
-    "names": [
-      "HM-RC-Key4-2",
-      "HM-RC-Key4-3",
-      "HM-RC-Sec4-2",
-      "HM-RC-Sec4-3"
-    ]
-  },
-  {
-    "read": [
-      {
-        "name": "KEY_1.PRESS_SHORT",
-        "channel": 1
-      },
-      {
-        "name": "KEY_1.PRESS_LONG",
+        "name": "KEY_1.INSTALL_TEST",
         "channel": 1
       },
       {
@@ -6686,7 +6960,11 @@
         "channel": 1
       },
       {
-        "name": "KEY_1.INSTALL_TEST",
+        "name": "KEY_1.TEST_COUNTER",
+        "channel": 1
+      },
+      {
+        "name": "KEY_1.SIM_COUNTER",
         "channel": 1
       },
       {
@@ -6698,6 +6976,10 @@
         "channel": 2
       },
       {
+        "name": "KEY_2.INSTALL_TEST",
+        "channel": 2
+      },
+      {
         "name": "KEY_2.PRESS_LONG_RELEASE",
         "channel": 2
       },
@@ -6706,7 +6988,11 @@
         "channel": 2
       },
       {
-        "name": "KEY_2.INSTALL_TEST",
+        "name": "KEY_2.TEST_COUNTER",
+        "channel": 2
+      },
+      {
+        "name": "KEY_2.SIM_COUNTER",
         "channel": 2
       },
       {
@@ -6718,6 +7004,10 @@
         "channel": 3
       },
       {
+        "name": "KEY_3.INSTALL_TEST",
+        "channel": 3
+      },
+      {
         "name": "KEY_3.PRESS_LONG_RELEASE",
         "channel": 3
       },
@@ -6726,7 +7016,11 @@
         "channel": 3
       },
       {
-        "name": "KEY_3.INSTALL_TEST",
+        "name": "KEY_3.TEST_COUNTER",
+        "channel": 3
+      },
+      {
+        "name": "KEY_3.SIM_COUNTER",
         "channel": 3
       },
       {
@@ -6738,6 +7032,10 @@
         "channel": 4
       },
       {
+        "name": "KEY_4.INSTALL_TEST",
+        "channel": 4
+      },
+      {
         "name": "KEY_4.PRESS_LONG_RELEASE",
         "channel": 4
       },
@@ -6746,7 +7044,11 @@
         "channel": 4
       },
       {
-        "name": "KEY_4.INSTALL_TEST",
+        "name": "KEY_4.TEST_COUNTER",
+        "channel": 4
+      },
+      {
+        "name": "KEY_4.SIM_COUNTER",
         "channel": 4
       }
     ],
@@ -6789,6 +7091,216 @@
       {
         "name": "KEY_4.PRESS_LONG",
         "channel": 4,
+        "type": "action"
+      }
+    ],
+    "names": [
+      "HM-RC-Key4-2",
+      "HM-RC-Key4-3"
+    ]
+  },
+  {
+    "read": [
+      {
+        "name": "KEY_1.PRESS_SHORT",
+        "channel": 1
+      },
+      {
+        "name": "KEY_1.PRESS_LONG",
+        "channel": 1
+      },
+      {
+        "name": "KEY_1.INSTALL_TEST",
+        "channel": 1
+      },
+      {
+        "name": "KEY_1.PRESS_LONG_RELEASE",
+        "channel": 1
+      },
+      {
+        "name": "KEY_1.PRESS_CONT",
+        "channel": 1
+      },
+      {
+        "name": "KEY_1.TEST_COUNTER",
+        "channel": 1
+      },
+      {
+        "name": "KEY_1.SIM_COUNTER",
+        "channel": 1
+      },
+      {
+        "name": "KEY_2.PRESS_SHORT",
+        "channel": 2
+      },
+      {
+        "name": "KEY_2.PRESS_LONG",
+        "channel": 2
+      },
+      {
+        "name": "KEY_2.INSTALL_TEST",
+        "channel": 2
+      },
+      {
+        "name": "KEY_2.PRESS_LONG_RELEASE",
+        "channel": 2
+      },
+      {
+        "name": "KEY_2.PRESS_CONT",
+        "channel": 2
+      },
+      {
+        "name": "KEY_2.TEST_COUNTER",
+        "channel": 2
+      },
+      {
+        "name": "KEY_2.SIM_COUNTER",
+        "channel": 2
+      },
+      {
+        "name": "KEY_3.PRESS_SHORT",
+        "channel": 3
+      },
+      {
+        "name": "KEY_3.PRESS_LONG",
+        "channel": 3
+      },
+      {
+        "name": "KEY_3.INSTALL_TEST",
+        "channel": 3
+      },
+      {
+        "name": "KEY_3.PRESS_LONG_RELEASE",
+        "channel": 3
+      },
+      {
+        "name": "KEY_3.PRESS_CONT",
+        "channel": 3
+      },
+      {
+        "name": "KEY_3.TEST_COUNTER",
+        "channel": 3
+      },
+      {
+        "name": "KEY_3.SIM_COUNTER",
+        "channel": 3
+      },
+      {
+        "name": "KEY_4.PRESS_SHORT",
+        "channel": 4
+      },
+      {
+        "name": "KEY_4.PRESS_LONG",
+        "channel": 4
+      },
+      {
+        "name": "KEY_4.INSTALL_TEST",
+        "channel": 4
+      },
+      {
+        "name": "KEY_4.PRESS_LONG_RELEASE",
+        "channel": 4
+      },
+      {
+        "name": "KEY_4.PRESS_CONT",
+        "channel": 4
+      },
+      {
+        "name": "KEY_4.TEST_COUNTER",
+        "channel": 4
+      },
+      {
+        "name": "KEY_4.SIM_COUNTER",
+        "channel": 4
+      }
+    ],
+    "write": [
+      {
+        "name": "KEY_1.PRESS_SHORT",
+        "channel": 1,
+        "type": "action"
+      },
+      {
+        "name": "KEY_1.PRESS_LONG",
+        "channel": 1,
+        "type": "action"
+      },
+      {
+        "name": "KEY_2.PRESS_SHORT",
+        "channel": 2,
+        "type": "action"
+      },
+      {
+        "name": "KEY_2.PRESS_LONG",
+        "channel": 2,
+        "type": "action"
+      },
+      {
+        "name": "KEY_3.PRESS_SHORT",
+        "channel": 3,
+        "type": "action"
+      },
+      {
+        "name": "KEY_3.PRESS_LONG",
+        "channel": 3,
+        "type": "action"
+      },
+      {
+        "name": "KEY_4.PRESS_SHORT",
+        "channel": 4,
+        "type": "action"
+      },
+      {
+        "name": "KEY_4.PRESS_LONG",
+        "channel": 4,
+        "type": "action"
+      }
+    ],
+    "names": [
+      "HM-RC-Sec4-2",
+      "HM-RC-Sec4-3"
+    ]
+  },
+  {
+    "read": [
+      {
+        "name": "PRESS_SHORT",
+        "channel": 1
+      },
+      {
+        "name": "PRESS_LONG",
+        "channel": 1
+      },
+      {
+        "name": "PRESS_LONG_RELEASE",
+        "channel": 1
+      },
+      {
+        "name": "PRESS_CONT",
+        "channel": 1
+      },
+      {
+        "name": "INSTALL_TEST",
+        "channel": 1
+      },
+      {
+        "name": "TEST_COUNTER",
+        "channel": 1
+      },
+      {
+        "name": "SIM_COUNTER",
+        "channel": 1
+      }
+    ],
+    "write": [
+      {
+        "name": "PRESS_SHORT",
+        "channel": 1,
+        "type": "action"
+      },
+      {
+        "name": "PRESS_LONG",
+        "channel": 1,
         "type": "action"
       }
     ],
@@ -6817,6 +7329,14 @@
       {
         "name": "INSTALL_TEST",
         "channel": 1
+      },
+      {
+        "name": "TEST_COUNTER",
+        "channel": 1
+      },
+      {
+        "name": "SIM_COUNTER",
+        "channel": 1
       }
     ],
     "write": [
@@ -6828,361 +7348,28 @@
       {
         "name": "PRESS_LONG",
         "channel": 1,
-        "type": "action"
-      }
-    ],
-    "names": [
-      "HM-RC-SB-X"
-    ]
-  },
-  {
-    "read": [
-      {
-        "name": "KEY_1.PRESS_SHORT",
-        "channel": 1
-      },
-      {
-        "name": "KEY_1.PRESS_LONG",
-        "channel": 1
-      },
-      {
-        "name": "KEY_1.PRESS_LONG_RELEASE",
-        "channel": 1
-      },
-      {
-        "name": "KEY_1.PRESS_CONT",
-        "channel": 1
-      },
-      {
-        "name": "KEY_1.INSTALL_TEST",
-        "channel": 1
-      },
-      {
-        "name": "KEY_2.PRESS_SHORT",
-        "channel": 2
-      },
-      {
-        "name": "KEY_2.PRESS_LONG",
-        "channel": 2
-      },
-      {
-        "name": "KEY_2.PRESS_LONG_RELEASE",
-        "channel": 2
-      },
-      {
-        "name": "KEY_2.PRESS_CONT",
-        "channel": 2
-      },
-      {
-        "name": "KEY_2.INSTALL_TEST",
-        "channel": 2
-      },
-      {
-        "name": "KEY_3.PRESS_SHORT",
-        "channel": 3
-      },
-      {
-        "name": "KEY_3.PRESS_LONG",
-        "channel": 3
-      },
-      {
-        "name": "KEY_3.PRESS_LONG_RELEASE",
-        "channel": 3
-      },
-      {
-        "name": "KEY_3.PRESS_CONT",
-        "channel": 3
-      },
-      {
-        "name": "KEY_3.INSTALL_TEST",
-        "channel": 3
-      },
-      {
-        "name": "KEY_4.PRESS_SHORT",
-        "channel": 4
-      },
-      {
-        "name": "KEY_4.PRESS_LONG",
-        "channel": 4
-      },
-      {
-        "name": "KEY_4.PRESS_LONG_RELEASE",
-        "channel": 4
-      },
-      {
-        "name": "KEY_4.PRESS_CONT",
-        "channel": 4
-      },
-      {
-        "name": "KEY_4.INSTALL_TEST",
-        "channel": 4
-      }
-    ],
-    "write": [
-      {
-        "name": "KEY_1.PRESS_SHORT",
-        "channel": 1,
-        "type": "action"
-      },
-      {
-        "name": "KEY_1.PRESS_LONG",
-        "channel": 1,
-        "type": "action"
-      },
-      {
-        "name": "KEY_2.PRESS_SHORT",
-        "channel": 2,
-        "type": "action"
-      },
-      {
-        "name": "KEY_2.PRESS_LONG",
-        "channel": 2,
-        "type": "action"
-      },
-      {
-        "name": "KEY_3.PRESS_SHORT",
-        "channel": 3,
-        "type": "action"
-      },
-      {
-        "name": "KEY_3.PRESS_LONG",
-        "channel": 3,
-        "type": "action"
-      },
-      {
-        "name": "KEY_4.PRESS_SHORT",
-        "channel": 4,
-        "type": "action"
-      },
-      {
-        "name": "KEY_4.PRESS_LONG",
-        "channel": 4,
         "type": "action"
       }
     ],
     "names": [
       "HM-RC-4",
       "HM-RC-4-B",
+      "HM-RC-P1",
+      "HM-RC-Sec3",
+      "HM-RC-Sec3-B",
+      "HM-RC-Key3",
+      "HM-RC-Key3-B",
       "HM-PB-4-WM",
+      "HM-PB-2-WM",
       "RC-H",
+      "atent",
       "ZEL STG RM HS 4"
     ]
   },
   {
     "read": [
       {
-        "name": "PRESS_SHORT",
-        "channel": 1
-      },
-      {
-        "name": "PRESS_LONG",
-        "channel": 1
-      },
-      {
-        "name": "PRESS_LONG_RELEASE",
-        "channel": 1
-      },
-      {
-        "name": "PRESS_CONT",
-        "channel": 1
-      },
-      {
-        "name": "INSTALL_TEST",
-        "channel": 1
-      }
-    ],
-    "write": [
-      {
-        "name": "PRESS_SHORT",
-        "channel": 1,
-        "type": "action"
-      },
-      {
-        "name": "PRESS_LONG",
-        "channel": 1,
-        "type": "action"
-      }
-    ],
-    "names": [
-      "HM-RC-P1"
-    ]
-  },
-  {
-    "read": [
-      {
-        "name": "KEY_1.PRESS_SHORT",
-        "channel": 1
-      },
-      {
-        "name": "KEY_1.PRESS_LONG",
-        "channel": 1
-      },
-      {
-        "name": "KEY_1.PRESS_LONG_RELEASE",
-        "channel": 1
-      },
-      {
-        "name": "KEY_1.PRESS_CONT",
-        "channel": 1
-      },
-      {
-        "name": "KEY_1.INSTALL_TEST",
-        "channel": 1
-      },
-      {
-        "name": "KEY_2.PRESS_SHORT",
-        "channel": 2
-      },
-      {
-        "name": "KEY_2.PRESS_LONG",
-        "channel": 2
-      },
-      {
-        "name": "KEY_2.PRESS_LONG_RELEASE",
-        "channel": 2
-      },
-      {
-        "name": "KEY_2.PRESS_CONT",
-        "channel": 2
-      },
-      {
-        "name": "KEY_2.INSTALL_TEST",
-        "channel": 2
-      },
-      {
-        "name": "KEY_3.PRESS_SHORT",
-        "channel": 3
-      },
-      {
-        "name": "KEY_3.PRESS_LONG",
-        "channel": 3
-      },
-      {
-        "name": "KEY_3.PRESS_LONG_RELEASE",
-        "channel": 3
-      },
-      {
-        "name": "KEY_3.PRESS_CONT",
-        "channel": 3
-      },
-      {
-        "name": "KEY_3.INSTALL_TEST",
-        "channel": 3
-      }
-    ],
-    "write": [
-      {
-        "name": "KEY_1.PRESS_SHORT",
-        "channel": 1,
-        "type": "action"
-      },
-      {
-        "name": "KEY_1.PRESS_LONG",
-        "channel": 1,
-        "type": "action"
-      },
-      {
-        "name": "KEY_2.PRESS_SHORT",
-        "channel": 2,
-        "type": "action"
-      },
-      {
-        "name": "KEY_2.PRESS_LONG",
-        "channel": 2,
-        "type": "action"
-      },
-      {
-        "name": "KEY_3.PRESS_SHORT",
-        "channel": 3,
-        "type": "action"
-      },
-      {
-        "name": "KEY_3.PRESS_LONG",
-        "channel": 3,
-        "type": "action"
-      }
-    ],
-    "names": [
-      "HM-RC-Sec3",
-      "HM-RC-Sec3-B",
-      "HM-RC-Key3",
-      "HM-RC-Key3-B",
-      "atent"
-    ]
-  },
-  {
-    "read": [
-      {
-        "name": "KEY_1.PRESS_SHORT",
-        "channel": 1
-      },
-      {
-        "name": "KEY_1.PRESS_LONG",
-        "channel": 1
-      },
-      {
-        "name": "KEY_1.PRESS_LONG_RELEASE",
-        "channel": 1
-      },
-      {
-        "name": "KEY_1.PRESS_CONT",
-        "channel": 1
-      },
-      {
-        "name": "KEY_1.INSTALL_TEST",
-        "channel": 1
-      },
-      {
-        "name": "KEY_2.PRESS_SHORT",
-        "channel": 2
-      },
-      {
-        "name": "KEY_2.PRESS_LONG",
-        "channel": 2
-      },
-      {
-        "name": "KEY_2.PRESS_LONG_RELEASE",
-        "channel": 2
-      },
-      {
-        "name": "KEY_2.PRESS_CONT",
-        "channel": 2
-      },
-      {
-        "name": "KEY_2.INSTALL_TEST",
-        "channel": 2
-      }
-    ],
-    "write": [
-      {
-        "name": "KEY_1.PRESS_SHORT",
-        "channel": 1,
-        "type": "action"
-      },
-      {
-        "name": "KEY_1.PRESS_LONG",
-        "channel": 1,
-        "type": "action"
-      },
-      {
-        "name": "KEY_2.PRESS_SHORT",
-        "channel": 2,
-        "type": "action"
-      },
-      {
-        "name": "KEY_2.PRESS_LONG",
-        "channel": 2,
-        "type": "action"
-      }
-    ],
-    "names": [
-      "HM-PB-2-WM"
-    ]
-  },
-  {
-    "read": [
-      {
-        "name": "STATE",
+        "name": "RAINDETECTOR.STATE",
         "channel": 1,
         "mapping": [
           "DRY",
@@ -7190,8 +7377,33 @@
         ]
       },
       {
-        "name": "INSTALL_TEST",
+        "name": "RAINDETECTOR.INSTALL_TEST",
         "channel": 1
+      },
+      {
+        "name": "RAINDETECTOR_HEAT.STATE",
+        "channel": 2
+      },
+      {
+        "name": "RAINDETECTOR_HEAT.WORKING",
+        "channel": 2
+      }
+    ],
+    "write": [
+      {
+        "name": "STATE",
+        "channel": 2,
+        "type": "boolean"
+      },
+      {
+        "name": "INHIBIT",
+        "channel": 2,
+        "type": "boolean"
+      },
+      {
+        "name": "INSTALL_TEST",
+        "channel": 2,
+        "type": "action"
       }
     ],
     "names": [
@@ -7205,6 +7417,10 @@
   },
   {
     "read": [
+      {
+        "name": "ACTOR_WINDOW.LEVEL",
+        "channel": 1
+      },
       {
         "name": "ACTOR_WINDOW.HANDLE_LOCK",
         "channel": 1
@@ -7238,10 +7454,6 @@
       },
       {
         "name": "ACTOR_WINDOW.WORKING",
-        "channel": 1
-      },
-      {
-        "name": "ACTOR_WINDOW.INHIBIT",
         "channel": 1
       },
       {
@@ -7414,20 +7626,11 @@
       {
         "name": "ACTOR_SECURITY.SECURE_STATE",
         "channel": 3
-      },
-      {
-        "name": "ACTOR_SECURITY.INHIBIT",
-        "channel": 3
       }
     ],
     "write": [
       {
         "name": "ACTOR_WINDOW.LEVEL",
-        "channel": 1,
-        "type": "float"
-      },
-      {
-        "name": "ACTOR_WINDOW.ON_TIME",
         "channel": 1,
         "type": "float"
       },
@@ -7454,7 +7657,7 @@
       {
         "name": "ACTOR_WINDOW.HANDLE_LED_MODE",
         "channel": 1,
-        "type": "option",
+        "type": "integer",
         "mapping": [
           "OFF",
           "DIMMED_ON",
@@ -7469,7 +7672,7 @@
       {
         "name": "ACTOR_WINDOW.SHEV_POS",
         "channel": 1,
-        "type": "option",
+        "type": "integer",
         "mapping": [
           "ZULUFT_DEACTIVATED",
           "ZULUFT_UNBLOCKED",
@@ -7487,32 +7690,9 @@
         "type": "action"
       },
       {
-        "name": "ACTOR_WINDOW.STICKY_ERR_TTM_OVERVOLT",
-        "channel": 1,
-        "type": "option",
-        "mapping": [
-          "WAS_OVERVOLT",
-          "OVERVOLT"
-        ]
-      },
-      {
-        "name": "ACTOR_WINDOW.STICKY_ERR_TTM_UNDERVOLT",
-        "channel": 1,
-        "type": "option",
-        "mapping": [
-          "WAS_UNDERVOLT",
-          "UNDERVOLT"
-        ]
-      },
-      {
         "name": "ACTOR_SECURITY.SECURE_STATE",
         "channel": 3,
         "type": "boolean"
-      },
-      {
-        "name": "ACTOR_SECURITY.ON_TIME",
-        "channel": 3,
-        "type": "float"
       },
       {
         "name": "ACTOR_SECURITY.INSTALL_TEST",
@@ -7526,8 +7706,12 @@
       }
     ],
     "names": [
-      "263_149_/_263_150",
-      "HM-ReSC-Win-PCB-xx"
+      "263_149_/_263_150"
+    ]
+  },
+  {
+    "names": [
+      "HM-LC-RGBW-WM"
     ]
   },
   {
@@ -7546,6 +7730,12 @@
         "channel": 1,
         "mapping": [
           "NO_ERROR",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
           "SABOTAGE"
         ]
       },
@@ -7559,8 +7749,7 @@
       }
     ],
     "names": [
-      "HM-Sec-RHS",
-      "HM-Sec-xx"
+      "HM-Sec-RHS"
     ]
   },
   {
@@ -7579,6 +7768,12 @@
         "channel": 1,
         "mapping": [
           "NO_ERROR",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
           "SABOTAGE"
         ]
       },
@@ -7598,19 +7793,46 @@
   {
     "read": [
       {
-        "name": "BLIND_2.LEVEL",
+        "name": "WINDOW.LEVEL",
+        "channel": 1
+      },
+      {
+        "name": "WINDOW.STATE_UNCERTAIN",
+        "channel": 1
+      },
+      {
+        "name": "WINDOW.DIRECTION",
+        "channel": 1,
+        "mapping": [
+          "NONE",
+          "UP",
+          "DOWN",
+          "UNDEFINED"
+        ]
+      },
+      {
+        "name": "WINDOW.WORKING",
+        "channel": 1
+      },
+      {
+        "name": "WINDOW.ERROR",
+        "channel": 1,
+        "mapping": [
+          "NO_ERROR",
+          "MOTOR_TURN_ERROR",
+          "MOTOR_TILT_ERROR"
+        ]
+      },
+      {
+        "name": "BLIND_1.LEVEL",
         "channel": 2
       },
       {
-        "name": "BLIND_2.INHIBIT",
+        "name": "BLIND_1.WORKING",
         "channel": 2
       },
       {
-        "name": "BLIND_2.WORKING",
-        "channel": 2
-      },
-      {
-        "name": "BLIND_2.DIRECTION",
+        "name": "BLIND_1.DIRECTION",
         "channel": 2,
         "mapping": [
           "NONE",
@@ -7620,19 +7842,15 @@
         ]
       },
       {
-        "name": "BLIND_3.LEVEL",
+        "name": "BLIND_2.LEVEL",
         "channel": 3
       },
       {
-        "name": "BLIND_3.INHIBIT",
+        "name": "BLIND_2.WORKING",
         "channel": 3
       },
       {
-        "name": "BLIND_3.WORKING",
-        "channel": 3
-      },
-      {
-        "name": "BLIND_3.DIRECTION",
+        "name": "BLIND_2.DIRECTION",
         "channel": 3,
         "mapping": [
           "NONE",
@@ -7644,42 +7862,62 @@
     ],
     "write": [
       {
-        "name": "BLIND_2.LEVEL",
+        "name": "WINDOW.LEVEL",
+        "channel": 1,
+        "type": "float"
+      },
+      {
+        "name": "WINDOW.STOP",
+        "channel": 1,
+        "type": "action"
+      },
+      {
+        "name": "WINDOW.INHIBIT",
+        "channel": 1,
+        "type": "boolean"
+      },
+      {
+        "name": "WINDOW.INSTALL_TEST",
+        "channel": 1,
+        "type": "action"
+      },
+      {
+        "name": "BLIND_1.LEVEL",
         "channel": 2,
+        "type": "float"
+      },
+      {
+        "name": "BLIND_1.STOP",
+        "channel": 2,
+        "type": "action"
+      },
+      {
+        "name": "BLIND_1.INHIBIT",
+        "channel": 2,
+        "type": "boolean"
+      },
+      {
+        "name": "BLIND_1.INSTALL_TEST",
+        "channel": 2,
+        "type": "action"
+      },
+      {
+        "name": "BLIND_2.LEVEL",
+        "channel": 3,
         "type": "float"
       },
       {
         "name": "BLIND_2.STOP",
-        "channel": 2,
+        "channel": 3,
         "type": "action"
       },
       {
         "name": "BLIND_2.INHIBIT",
-        "channel": 2,
+        "channel": 3,
         "type": "boolean"
       },
       {
         "name": "BLIND_2.INSTALL_TEST",
-        "channel": 2,
-        "type": "action"
-      },
-      {
-        "name": "BLIND_3.LEVEL",
-        "channel": 3,
-        "type": "float"
-      },
-      {
-        "name": "BLIND_3.STOP",
-        "channel": 3,
-        "type": "action"
-      },
-      {
-        "name": "BLIND_3.INHIBIT",
-        "channel": 3,
-        "type": "boolean"
-      },
-      {
-        "name": "BLIND_3.INSTALL_TEST",
         "channel": 3,
         "type": "action"
       }
@@ -7710,11 +7948,6 @@
         "type": "boolean"
       },
       {
-        "name": "ON_TIME",
-        "channel": 1,
-        "type": "float"
-      },
-      {
         "name": "INHIBIT",
         "channel": 1,
         "type": "boolean"
@@ -7733,133 +7966,28 @@
   {
     "read": [
       {
-        "name": "SWITCH_1.STATE",
+        "name": "STATE",
         "channel": 1
       },
       {
-        "name": "SWITCH_1.INHIBIT",
+        "name": "WORKING",
         "channel": 1
-      },
-      {
-        "name": "SWITCH_1.WORKING",
-        "channel": 1
-      },
-      {
-        "name": "SWITCH_2.STATE",
-        "channel": 2
-      },
-      {
-        "name": "SWITCH_2.INHIBIT",
-        "channel": 2
-      },
-      {
-        "name": "SWITCH_2.WORKING",
-        "channel": 2
-      },
-      {
-        "name": "SWITCH_3.STATE",
-        "channel": 3
-      },
-      {
-        "name": "SWITCH_3.INHIBIT",
-        "channel": 3
-      },
-      {
-        "name": "SWITCH_3.WORKING",
-        "channel": 3
-      },
-      {
-        "name": "SWITCH_4.STATE",
-        "channel": 4
-      },
-      {
-        "name": "SWITCH_4.INHIBIT",
-        "channel": 4
-      },
-      {
-        "name": "SWITCH_4.WORKING",
-        "channel": 4
       }
     ],
     "write": [
       {
-        "name": "SWITCH_1.STATE",
+        "name": "STATE",
         "channel": 1,
         "type": "boolean"
       },
       {
-        "name": "SWITCH_1.ON_TIME",
-        "channel": 1,
-        "type": "float"
-      },
-      {
-        "name": "SWITCH_1.INHIBIT",
+        "name": "INHIBIT",
         "channel": 1,
         "type": "boolean"
       },
       {
-        "name": "SWITCH_1.INSTALL_TEST",
+        "name": "INSTALL_TEST",
         "channel": 1,
-        "type": "action"
-      },
-      {
-        "name": "SWITCH_2.STATE",
-        "channel": 2,
-        "type": "boolean"
-      },
-      {
-        "name": "SWITCH_2.ON_TIME",
-        "channel": 2,
-        "type": "float"
-      },
-      {
-        "name": "SWITCH_2.INHIBIT",
-        "channel": 2,
-        "type": "boolean"
-      },
-      {
-        "name": "SWITCH_2.INSTALL_TEST",
-        "channel": 2,
-        "type": "action"
-      },
-      {
-        "name": "SWITCH_3.STATE",
-        "channel": 3,
-        "type": "boolean"
-      },
-      {
-        "name": "SWITCH_3.ON_TIME",
-        "channel": 3,
-        "type": "float"
-      },
-      {
-        "name": "SWITCH_3.INHIBIT",
-        "channel": 3,
-        "type": "boolean"
-      },
-      {
-        "name": "SWITCH_3.INSTALL_TEST",
-        "channel": 3,
-        "type": "action"
-      },
-      {
-        "name": "SWITCH_4.STATE",
-        "channel": 4,
-        "type": "boolean"
-      },
-      {
-        "name": "SWITCH_4.ON_TIME",
-        "channel": 4,
-        "type": "float"
-      },
-      {
-        "name": "SWITCH_4.INHIBIT",
-        "channel": 4,
-        "type": "boolean"
-      },
-      {
-        "name": "SWITCH_4.INSTALL_TEST",
-        "channel": 4,
         "type": "action"
       }
     ],
@@ -7886,10 +8014,6 @@
         "channel": 1
       },
       {
-        "name": "INHIBIT",
-        "channel": 1
-      },
-      {
         "name": "WORKING",
         "channel": 1
       }
@@ -7899,11 +8023,6 @@
         "name": "STATE",
         "channel": 1,
         "type": "boolean"
-      },
-      {
-        "name": "ON_TIME",
-        "channel": 1,
-        "type": "float"
       },
       {
         "name": "INHIBIT",
@@ -7919,237 +8038,30 @@
     "names": [
       "HM-LC-Sw1-Pl-3",
       "HM-LC-Sw1-SM-2",
+      "HM-LC-Sw4-SM-2",
+      "HM-LC-Sw4-PCB-2",
+      "HM-LC-Sw4-WM-2",
       "HM-LC-Sw1-FM-2",
+      "HM-LC-Sw2-FM-2",
+      "HM-LC-Sw4-DR-2",
+      "HM-LC-Sw2-DR-2",
       "HM-LC-Sw1-Pl-DN-R1",
       "HM-LC-Sw1-Pl-DN-R2",
       "HM-LC-Sw1-Pl-DN-R3",
       "HM-LC-Sw1-Pl-DN-R4",
       "HM-LC-Sw1-Pl-DN-R5",
-      "HM-LC-Sw1-DR"
-    ]
-  },
-  {
-    "read": [
-      {
-        "name": "SWITCH_1.STATE",
-        "channel": 1
-      },
-      {
-        "name": "SWITCH_1.INHIBIT",
-        "channel": 1
-      },
-      {
-        "name": "SWITCH_1.WORKING",
-        "channel": 1
-      },
-      {
-        "name": "SWITCH_2.STATE",
-        "channel": 2
-      },
-      {
-        "name": "SWITCH_2.INHIBIT",
-        "channel": 2
-      },
-      {
-        "name": "SWITCH_2.WORKING",
-        "channel": 2
-      },
-      {
-        "name": "SWITCH_3.STATE",
-        "channel": 3
-      },
-      {
-        "name": "SWITCH_3.INHIBIT",
-        "channel": 3
-      },
-      {
-        "name": "SWITCH_3.WORKING",
-        "channel": 3
-      },
-      {
-        "name": "SWITCH_4.STATE",
-        "channel": 4
-      },
-      {
-        "name": "SWITCH_4.INHIBIT",
-        "channel": 4
-      },
-      {
-        "name": "SWITCH_4.WORKING",
-        "channel": 4
-      }
-    ],
-    "write": [
-      {
-        "name": "SWITCH_1.STATE",
-        "channel": 1,
-        "type": "boolean"
-      },
-      {
-        "name": "SWITCH_1.ON_TIME",
-        "channel": 1,
-        "type": "float"
-      },
-      {
-        "name": "SWITCH_1.INHIBIT",
-        "channel": 1,
-        "type": "boolean"
-      },
-      {
-        "name": "SWITCH_1.INSTALL_TEST",
-        "channel": 1,
-        "type": "action"
-      },
-      {
-        "name": "SWITCH_2.STATE",
-        "channel": 2,
-        "type": "boolean"
-      },
-      {
-        "name": "SWITCH_2.ON_TIME",
-        "channel": 2,
-        "type": "float"
-      },
-      {
-        "name": "SWITCH_2.INHIBIT",
-        "channel": 2,
-        "type": "boolean"
-      },
-      {
-        "name": "SWITCH_2.INSTALL_TEST",
-        "channel": 2,
-        "type": "action"
-      },
-      {
-        "name": "SWITCH_3.STATE",
-        "channel": 3,
-        "type": "boolean"
-      },
-      {
-        "name": "SWITCH_3.ON_TIME",
-        "channel": 3,
-        "type": "float"
-      },
-      {
-        "name": "SWITCH_3.INHIBIT",
-        "channel": 3,
-        "type": "boolean"
-      },
-      {
-        "name": "SWITCH_3.INSTALL_TEST",
-        "channel": 3,
-        "type": "action"
-      },
-      {
-        "name": "SWITCH_4.STATE",
-        "channel": 4,
-        "type": "boolean"
-      },
-      {
-        "name": "SWITCH_4.ON_TIME",
-        "channel": 4,
-        "type": "float"
-      },
-      {
-        "name": "SWITCH_4.INHIBIT",
-        "channel": 4,
-        "type": "boolean"
-      },
-      {
-        "name": "SWITCH_4.INSTALL_TEST",
-        "channel": 4,
-        "type": "action"
-      }
-    ],
-    "names": [
-      "HM-LC-Sw4-SM-2",
-      "HM-LC-Sw4-PCB-2",
-      "HM-LC-Sw4-WM-2",
-      "HM-LC-Sw4-DR-2"
-    ]
-  },
-  {
-    "read": [
-      {
-        "name": "SWITCH_1.STATE",
-        "channel": 1
-      },
-      {
-        "name": "SWITCH_1.INHIBIT",
-        "channel": 1
-      },
-      {
-        "name": "SWITCH_1.WORKING",
-        "channel": 1
-      },
-      {
-        "name": "SWITCH_2.STATE",
-        "channel": 2
-      },
-      {
-        "name": "SWITCH_2.INHIBIT",
-        "channel": 2
-      },
-      {
-        "name": "SWITCH_2.WORKING",
-        "channel": 2
-      }
-    ],
-    "write": [
-      {
-        "name": "SWITCH_1.STATE",
-        "channel": 1,
-        "type": "boolean"
-      },
-      {
-        "name": "SWITCH_1.ON_TIME",
-        "channel": 1,
-        "type": "float"
-      },
-      {
-        "name": "SWITCH_1.INHIBIT",
-        "channel": 1,
-        "type": "boolean"
-      },
-      {
-        "name": "SWITCH_1.INSTALL_TEST",
-        "channel": 1,
-        "type": "action"
-      },
-      {
-        "name": "SWITCH_2.STATE",
-        "channel": 2,
-        "type": "boolean"
-      },
-      {
-        "name": "SWITCH_2.ON_TIME",
-        "channel": 2,
-        "type": "float"
-      },
-      {
-        "name": "SWITCH_2.INHIBIT",
-        "channel": 2,
-        "type": "boolean"
-      },
-      {
-        "name": "SWITCH_2.INSTALL_TEST",
-        "channel": 2,
-        "type": "action"
-      }
-    ],
-    "names": [
-      "HM-LC-Sw2-FM-2",
-      "HM-LC-Sw2-DR-2"
+      "HM-LC-Sw1-DR",
+      "HM-LC-Sw1-Pl-CT-R1",
+      "HM-LC-Sw1-Pl-CT-R2",
+      "HM-LC-Sw1-Pl-CT-R3",
+      "HM-LC-Sw1-Pl-CT-R4",
+      "HM-LC-Sw1-Pl-CT-R5"
     ]
   },
   {
     "read": [
       {
         "name": "STATE",
-        "channel": 1
-      },
-      {
-        "name": "INHIBIT",
         "channel": 1
       },
       {
@@ -8162,11 +8074,6 @@
         "name": "STATE",
         "channel": 1,
         "type": "boolean"
-      },
-      {
-        "name": "ON_TIME",
-        "channel": 1,
-        "type": "float"
       },
       {
         "name": "INHIBIT",
@@ -8190,10 +8097,6 @@
         "channel": 1
       },
       {
-        "name": "INHIBIT",
-        "channel": 1
-      },
-      {
         "name": "WORKING",
         "channel": 1
       }
@@ -8203,11 +8106,6 @@
         "name": "STATE",
         "channel": 1,
         "type": "boolean"
-      },
-      {
-        "name": "ON_TIME",
-        "channel": 1,
-        "type": "float"
       },
       {
         "name": "INHIBIT",
@@ -8256,6 +8154,12 @@
         "channel": 1,
         "mapping": [
           "NO_ERROR",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
           "SABOTAGE"
         ]
       },
@@ -8302,6 +8206,12 @@
         "channel": 1,
         "mapping": [
           "NO_ERROR",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
           "SABOTAGE"
         ]
       },
@@ -8322,6 +8232,81 @@
   {
     "read": [
       {
+        "name": "BRIGHTNESS",
+        "channel": 1
+      },
+      {
+        "name": "NEXT_TRANSMISSION",
+        "channel": 1
+      },
+      {
+        "name": "MOTION",
+        "channel": 1
+      },
+      {
+        "name": "ERROR",
+        "channel": 1,
+        "mapping": [
+          "NO_ERROR",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "SABOTAGE"
+        ]
+      },
+      {
+        "name": "INSTALL_TEST",
+        "channel": 1
+      }
+    ],
+    "names": [
+      "HM-Sec-MDIR",
+      "263 162"
+    ]
+  },
+  {
+    "read": [
+      {
+        "name": "BRIGHTNESS",
+        "channel": 1
+      },
+      {
+        "name": "NEXT_TRANSMISSION",
+        "channel": 1
+      },
+      {
+        "name": "MOTION",
+        "channel": 1
+      },
+      {
+        "name": "ERROR",
+        "channel": 1,
+        "mapping": [
+          "NO_ERROR",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "SABOTAGE"
+        ]
+      },
+      {
+        "name": "INSTALL_TEST",
+        "channel": 1
+      }
+    ],
+    "names": [
+      "HM-Sec-MDIR-2"
+    ]
+  },
+  {
+    "read": [
+      {
         "name": "STATE",
         "channel": 1
       },
@@ -8330,6 +8315,12 @@
         "channel": 1,
         "mapping": [
           "NO_ERROR",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
           "SABOTAGE"
         ]
       },
@@ -8378,8 +8369,7 @@
       }
     ],
     "names": [
-      "HM-Sec-SD-2",
-      "HM-Sec-SD-2-Generic"
+      "HM-Sec-SD-2"
     ]
   },
   {
@@ -8409,8 +8399,67 @@
       }
     ],
     "names": [
-      "HM-Sec-SD",
-      "HM-Sec-SD-Generic"
+      "HM-Sec-SD"
+    ]
+  },
+  {
+    "read": [
+      {
+        "name": "STATE",
+        "channel": 1
+      },
+      {
+        "name": "ERROR_POWER",
+        "channel": 1,
+        "mapping": [
+          "NO_ERROR",
+          "POWER_FAILURE"
+        ]
+      },
+      {
+        "name": "ERROR_SABOTAGE",
+        "channel": 1,
+        "mapping": [
+          "NO_ERROR",
+          "SABOTAGE"
+        ]
+      },
+      {
+        "name": "ERROR_BATTERY",
+        "channel": 1,
+        "mapping": [
+          "NO_ERROR",
+          "BATTERY_DEFECT"
+        ]
+      },
+      {
+        "name": "WORKING",
+        "channel": 1
+      },
+      {
+        "name": "LOWBAT",
+        "channel": 1
+      }
+    ],
+    "write": [
+      {
+        "name": "STATE",
+        "channel": 1,
+        "type": "boolean"
+      },
+      {
+        "name": "INHIBIT",
+        "channel": 1,
+        "type": "boolean"
+      },
+      {
+        "name": "INSTALL_TEST",
+        "channel": 1,
+        "type": "action"
+      }
+    ],
+    "names": [
+      "HM-Sec-SFA-SM"
     ]
   },
   {
@@ -8440,9 +8489,49 @@
     ]
   },
   {
+    "read": [
+      {
+        "name": "SEQUENCE_OK",
+        "channel": 1
+      },
+      {
+        "name": "INSTALL_TEST",
+        "channel": 1
+      }
+    ],
+    "write": [
+      {
+        "name": "SEQUENCE_OK",
+        "channel": 1,
+        "type": "action"
+      }
+    ],
     "names": [
-      "HM-Sen-EP",
-      "HM-Sen-X"
+      "HM-Sen-EP"
+    ]
+  },
+  {
+    "read": [
+      {
+        "name": "BRIGHTNESS",
+        "channel": 1
+      },
+      {
+        "name": "NEXT_TRANSMISSION",
+        "channel": 1
+      },
+      {
+        "name": "MOTION",
+        "channel": 1
+      },
+      {
+        "name": "INSTALL_TEST",
+        "channel": 1
+      }
+    ],
+    "names": [
+      "HM-Sen-MDIR-SM",
+      "HM-Sen-MDIR-O"
     ]
   },
   {
@@ -8486,6 +8575,22 @@
       {
         "name": "KEY_2.INSTALL_TEST",
         "channel": 2
+      },
+      {
+        "name": "MOTION_DETECTOR.BRIGHTNESS",
+        "channel": 3
+      },
+      {
+        "name": "MOTION_DETECTOR.NEXT_TRANSMISSION",
+        "channel": 3
+      },
+      {
+        "name": "MOTION_DETECTOR.MOTION",
+        "channel": 3
+      },
+      {
+        "name": "MOTION_DETECTOR.INSTALL_TEST",
+        "channel": 3
       }
     ],
     "write": [
@@ -8517,6 +8622,29 @@
   {
     "read": [
       {
+        "name": "BRIGHTNESS",
+        "channel": 1
+      },
+      {
+        "name": "NEXT_TRANSMISSION",
+        "channel": 1
+      },
+      {
+        "name": "MOTION",
+        "channel": 1
+      },
+      {
+        "name": "INSTALL_TEST",
+        "channel": 1
+      }
+    ],
+    "names": [
+      "HM-Sen-MDIR-O-2"
+    ]
+  },
+  {
+    "read": [
+      {
         "name": "INSTALL_TEST",
         "channel": 1
       },
@@ -8533,10 +8661,6 @@
     "read": [
       {
         "name": "STATE",
-        "channel": 1
-      },
-      {
-        "name": "INHIBIT",
         "channel": 1
       },
       {
@@ -8564,190 +8688,11 @@
     "names": [
       "HM-LC-Sw1-Pl",
       "HM-LC-Sw1-SM",
-      "HM-LC-Sw1-FM",
-      "HM-LC-SwX"
-    ]
-  },
-  {
-    "read": [
-      {
-        "name": "SWITCH_1.STATE",
-        "channel": 1
-      },
-      {
-        "name": "SWITCH_1.INHIBIT",
-        "channel": 1
-      },
-      {
-        "name": "SWITCH_1.WORKING",
-        "channel": 1
-      },
-      {
-        "name": "SWITCH_2.STATE",
-        "channel": 2
-      },
-      {
-        "name": "SWITCH_2.INHIBIT",
-        "channel": 2
-      },
-      {
-        "name": "SWITCH_2.WORKING",
-        "channel": 2
-      }
-    ],
-    "write": [
-      {
-        "name": "SWITCH_1.STATE",
-        "channel": 1,
-        "type": "boolean"
-      },
-      {
-        "name": "SWITCH_1.INHIBIT",
-        "channel": 1,
-        "type": "boolean"
-      },
-      {
-        "name": "SWITCH_1.INSTALL_TEST",
-        "channel": 1,
-        "type": "action"
-      },
-      {
-        "name": "SWITCH_2.STATE",
-        "channel": 2,
-        "type": "boolean"
-      },
-      {
-        "name": "SWITCH_2.INHIBIT",
-        "channel": 2,
-        "type": "boolean"
-      },
-      {
-        "name": "SWITCH_2.INSTALL_TEST",
-        "channel": 2,
-        "type": "action"
-      }
-    ],
-    "names": [
       "HM-LC-Sw2-SM",
-      "HM-LC-Sw2-FM"
-    ]
-  },
-  {
-    "read": [
-      {
-        "name": "SWITCH_1.STATE",
-        "channel": 1
-      },
-      {
-        "name": "SWITCH_1.INHIBIT",
-        "channel": 1
-      },
-      {
-        "name": "SWITCH_1.WORKING",
-        "channel": 1
-      },
-      {
-        "name": "SWITCH_2.STATE",
-        "channel": 2
-      },
-      {
-        "name": "SWITCH_2.INHIBIT",
-        "channel": 2
-      },
-      {
-        "name": "SWITCH_2.WORKING",
-        "channel": 2
-      },
-      {
-        "name": "SWITCH_3.STATE",
-        "channel": 3
-      },
-      {
-        "name": "SWITCH_3.INHIBIT",
-        "channel": 3
-      },
-      {
-        "name": "SWITCH_3.WORKING",
-        "channel": 3
-      },
-      {
-        "name": "SWITCH_4.STATE",
-        "channel": 4
-      },
-      {
-        "name": "SWITCH_4.INHIBIT",
-        "channel": 4
-      },
-      {
-        "name": "SWITCH_4.WORKING",
-        "channel": 4
-      }
-    ],
-    "write": [
-      {
-        "name": "SWITCH_1.STATE",
-        "channel": 1,
-        "type": "boolean"
-      },
-      {
-        "name": "SWITCH_1.INHIBIT",
-        "channel": 1,
-        "type": "boolean"
-      },
-      {
-        "name": "SWITCH_1.INSTALL_TEST",
-        "channel": 1,
-        "type": "action"
-      },
-      {
-        "name": "SWITCH_2.STATE",
-        "channel": 2,
-        "type": "boolean"
-      },
-      {
-        "name": "SWITCH_2.INHIBIT",
-        "channel": 2,
-        "type": "boolean"
-      },
-      {
-        "name": "SWITCH_2.INSTALL_TEST",
-        "channel": 2,
-        "type": "action"
-      },
-      {
-        "name": "SWITCH_3.STATE",
-        "channel": 3,
-        "type": "boolean"
-      },
-      {
-        "name": "SWITCH_3.INHIBIT",
-        "channel": 3,
-        "type": "boolean"
-      },
-      {
-        "name": "SWITCH_3.INSTALL_TEST",
-        "channel": 3,
-        "type": "action"
-      },
-      {
-        "name": "SWITCH_4.STATE",
-        "channel": 4,
-        "type": "boolean"
-      },
-      {
-        "name": "SWITCH_4.INHIBIT",
-        "channel": 4,
-        "type": "boolean"
-      },
-      {
-        "name": "SWITCH_4.INSTALL_TEST",
-        "channel": 4,
-        "type": "action"
-      }
-    ],
-    "names": [
       "HM-LC-Sw4-SM",
-      "HM-LC-Sw4-PCB"
+      "HM-LC-Sw4-PCB",
+      "HM-LC-Sw1-FM",
+      "HM-LC-Sw2-FM"
     ]
   },
   {
@@ -8770,11 +8715,6 @@
         "name": "STATE",
         "channel": 1,
         "type": "boolean"
-      },
-      {
-        "name": "ON_TIME",
-        "channel": 1,
-        "type": "float"
       },
       {
         "name": "INHIBIT",
@@ -8789,8 +8729,12 @@
     ],
     "names": [
       "HM-LC-Sw1-Pl-2",
+      "HM-LC-Sw4-WM",
       "263 130",
       "HM-LC-Sw1-PB-FM",
+      "HM-LC-Sw2-PB-FM",
+      "HM-LC-Sw4-DR",
+      "HM-LC-Sw2-DR",
       "ZEL STG RM FZS",
       "ZEL STG RM FZS-2"
     ]
@@ -8798,223 +8742,7 @@
   {
     "read": [
       {
-        "name": "SWITCH_1.STATE",
-        "channel": 1
-      },
-      {
-        "name": "SWITCH_1.INHIBIT",
-        "channel": 1
-      },
-      {
-        "name": "SWITCH_1.WORKING",
-        "channel": 1
-      },
-      {
-        "name": "SWITCH_2.STATE",
-        "channel": 2
-      },
-      {
-        "name": "SWITCH_2.INHIBIT",
-        "channel": 2
-      },
-      {
-        "name": "SWITCH_2.WORKING",
-        "channel": 2
-      },
-      {
-        "name": "SWITCH_3.STATE",
-        "channel": 3
-      },
-      {
-        "name": "SWITCH_3.INHIBIT",
-        "channel": 3
-      },
-      {
-        "name": "SWITCH_3.WORKING",
-        "channel": 3
-      },
-      {
-        "name": "SWITCH_4.STATE",
-        "channel": 4
-      },
-      {
-        "name": "SWITCH_4.INHIBIT",
-        "channel": 4
-      },
-      {
-        "name": "SWITCH_4.WORKING",
-        "channel": 4
-      }
-    ],
-    "write": [
-      {
-        "name": "SWITCH_1.STATE",
-        "channel": 1,
-        "type": "boolean"
-      },
-      {
-        "name": "SWITCH_1.ON_TIME",
-        "channel": 1,
-        "type": "float"
-      },
-      {
-        "name": "SWITCH_1.INHIBIT",
-        "channel": 1,
-        "type": "boolean"
-      },
-      {
-        "name": "SWITCH_1.INSTALL_TEST",
-        "channel": 1,
-        "type": "action"
-      },
-      {
-        "name": "SWITCH_2.STATE",
-        "channel": 2,
-        "type": "boolean"
-      },
-      {
-        "name": "SWITCH_2.ON_TIME",
-        "channel": 2,
-        "type": "float"
-      },
-      {
-        "name": "SWITCH_2.INHIBIT",
-        "channel": 2,
-        "type": "boolean"
-      },
-      {
-        "name": "SWITCH_2.INSTALL_TEST",
-        "channel": 2,
-        "type": "action"
-      },
-      {
-        "name": "SWITCH_3.STATE",
-        "channel": 3,
-        "type": "boolean"
-      },
-      {
-        "name": "SWITCH_3.ON_TIME",
-        "channel": 3,
-        "type": "float"
-      },
-      {
-        "name": "SWITCH_3.INHIBIT",
-        "channel": 3,
-        "type": "boolean"
-      },
-      {
-        "name": "SWITCH_3.INSTALL_TEST",
-        "channel": 3,
-        "type": "action"
-      },
-      {
-        "name": "SWITCH_4.STATE",
-        "channel": 4,
-        "type": "boolean"
-      },
-      {
-        "name": "SWITCH_4.ON_TIME",
-        "channel": 4,
-        "type": "float"
-      },
-      {
-        "name": "SWITCH_4.INHIBIT",
-        "channel": 4,
-        "type": "boolean"
-      },
-      {
-        "name": "SWITCH_4.INSTALL_TEST",
-        "channel": 4,
-        "type": "action"
-      }
-    ],
-    "names": [
-      "HM-LC-Sw4-WM",
-      "HM-LC-Sw4-DR"
-    ]
-  },
-  {
-    "read": [
-      {
-        "name": "SWITCH_1.STATE",
-        "channel": 1
-      },
-      {
-        "name": "SWITCH_1.INHIBIT",
-        "channel": 1
-      },
-      {
-        "name": "SWITCH_1.WORKING",
-        "channel": 1
-      },
-      {
-        "name": "SWITCH_2.STATE",
-        "channel": 2
-      },
-      {
-        "name": "SWITCH_2.INHIBIT",
-        "channel": 2
-      },
-      {
-        "name": "SWITCH_2.WORKING",
-        "channel": 2
-      }
-    ],
-    "write": [
-      {
-        "name": "SWITCH_1.STATE",
-        "channel": 1,
-        "type": "boolean"
-      },
-      {
-        "name": "SWITCH_1.ON_TIME",
-        "channel": 1,
-        "type": "float"
-      },
-      {
-        "name": "SWITCH_1.INHIBIT",
-        "channel": 1,
-        "type": "boolean"
-      },
-      {
-        "name": "SWITCH_1.INSTALL_TEST",
-        "channel": 1,
-        "type": "action"
-      },
-      {
-        "name": "SWITCH_2.STATE",
-        "channel": 2,
-        "type": "boolean"
-      },
-      {
-        "name": "SWITCH_2.ON_TIME",
-        "channel": 2,
-        "type": "float"
-      },
-      {
-        "name": "SWITCH_2.INHIBIT",
-        "channel": 2,
-        "type": "boolean"
-      },
-      {
-        "name": "SWITCH_2.INSTALL_TEST",
-        "channel": 2,
-        "type": "action"
-      }
-    ],
-    "names": [
-      "HM-LC-Sw2-PB-FM",
-      "HM-LC-Sw2-DR"
-    ]
-  },
-  {
-    "read": [
-      {
         "name": "STATE",
-        "channel": 1
-      },
-      {
-        "name": "INHIBIT",
         "channel": 1
       },
       {
@@ -9027,11 +8755,6 @@
         "name": "STATE",
         "channel": 1,
         "type": "boolean"
-      },
-      {
-        "name": "ON_TIME",
-        "channel": 1,
-        "type": "float"
       },
       {
         "name": "INHIBIT",
@@ -9053,44 +8776,18 @@
   {
     "read": [
       {
-        "name": "SWITCH_INTERFACE_1.PRESS",
+        "name": "PRESS",
         "channel": 1
       },
       {
-        "name": "SWITCH_INTERFACE_1.INSTALL_TEST",
+        "name": "INSTALL_TEST",
         "channel": 1
-      },
-      {
-        "name": "SWITCH_INTERFACE_2.PRESS",
-        "channel": 2
-      },
-      {
-        "name": "SWITCH_INTERFACE_2.INSTALL_TEST",
-        "channel": 2
-      },
-      {
-        "name": "SWITCH_INTERFACE_3.PRESS",
-        "channel": 3
-      },
-      {
-        "name": "SWITCH_INTERFACE_3.INSTALL_TEST",
-        "channel": 3
       }
     ],
     "write": [
       {
-        "name": "SWITCH_INTERFACE_1.PRESS",
+        "name": "PRESS",
         "channel": 1,
-        "type": "action"
-      },
-      {
-        "name": "SWITCH_INTERFACE_2.PRESS",
-        "channel": 2,
-        "type": "action"
-      },
-      {
-        "name": "SWITCH_INTERFACE_3.PRESS",
-        "channel": 3,
         "type": "action"
       }
     ],
@@ -9098,51 +8795,6 @@
       "HM-SwI-3-FM",
       "ZEL STG RM FSS UP3",
       "263 144"
-    ]
-  },
-  {
-    "read": [
-      {
-        "name": "STATE",
-        "channel": 1
-      },
-      {
-        "name": "INHIBIT",
-        "channel": 1
-      },
-      {
-        "name": "WORKING",
-        "channel": 1
-      }
-    ],
-    "write": [
-      {
-        "name": "STATE",
-        "channel": 1,
-        "type": "boolean"
-      },
-      {
-        "name": "ON_TIME",
-        "channel": 1,
-        "type": "float"
-      },
-      {
-        "name": "INHIBIT",
-        "channel": 1,
-        "type": "boolean"
-      },
-      {
-        "name": "INSTALL_TEST",
-        "channel": 1,
-        "type": "action"
-      }
-    ],
-    "names": [
-      "HM-LC-Sw1-Pl-CT-R1",
-      "HM-LC-Sw1-Pl-CT-R2",
-      "HM-LC-Sw1-Pl-CT-R3",
-      "HM-LC-Sw1-Pl-CT-R4",
-      "HM-LC-Sw1-Pl-CT-R5"
     ]
   },
   {
@@ -9196,6 +8848,46 @@
       {
         "name": "SET_TEMPERATURE",
         "channel": 2
+      },
+      {
+        "name": "PARTY_TEMPERATURE",
+        "channel": 2
+      },
+      {
+        "name": "PARTY_START_TIME",
+        "channel": 2
+      },
+      {
+        "name": "PARTY_START_DAY",
+        "channel": 2
+      },
+      {
+        "name": "PARTY_START_MONTH",
+        "channel": 2
+      },
+      {
+        "name": "PARTY_START_YEAR",
+        "channel": 2
+      },
+      {
+        "name": "PARTY_STOP_TIME",
+        "channel": 2
+      },
+      {
+        "name": "PARTY_STOP_DAY",
+        "channel": 2
+      },
+      {
+        "name": "PARTY_STOP_MONTH",
+        "channel": 2
+      },
+      {
+        "name": "PARTY_STOP_YEAR",
+        "channel": 2
+      },
+      {
+        "name": "DECISION_VALUE",
+        "channel": 7
       }
     ],
     "write": [
@@ -9240,44 +8932,9 @@
         "type": "float"
       },
       {
-        "name": "PARTY_START_TIME",
-        "channel": 2,
-        "type": "integer"
-      },
-      {
-        "name": "PARTY_START_DAY",
-        "channel": 2,
-        "type": "integer"
-      },
-      {
-        "name": "PARTY_START_MONTH",
-        "channel": 2,
-        "type": "integer"
-      },
-      {
-        "name": "PARTY_START_YEAR",
-        "channel": 2,
-        "type": "integer"
-      },
-      {
-        "name": "PARTY_STOP_TIME",
-        "channel": 2,
-        "type": "integer"
-      },
-      {
-        "name": "PARTY_STOP_DAY",
-        "channel": 2,
-        "type": "integer"
-      },
-      {
-        "name": "PARTY_STOP_MONTH",
-        "channel": 2,
-        "type": "integer"
-      },
-      {
-        "name": "PARTY_STOP_YEAR",
-        "channel": 2,
-        "type": "integer"
+        "name": "WINDOW_STATE",
+        "channel": 3,
+        "type": "boolean"
       }
     ],
     "names": [
@@ -9338,11 +8995,11 @@
         "channel": 4
       },
       {
-        "name": "WEATHER.TEMPERATURE",
+        "name": "WEATHER_0.TEMPERATURE",
         "channel": 5
       },
       {
-        "name": "WEATHER.LOWBAT",
+        "name": "WEATHER_0.LOWBAT",
         "channel": 5
       }
     ],
@@ -9438,10 +9095,6 @@
         "channel": 1
       },
       {
-        "name": "WINMATIC.INHIBIT",
-        "channel": 1
-      },
-      {
         "name": "WINMATIC.ERROR",
         "channel": 1,
         "mapping": [
@@ -9472,16 +9125,6 @@
         "type": "float"
       },
       {
-        "name": "RELOCK_DELAY",
-        "channel": 1,
-        "type": "float"
-      },
-      {
-        "name": "SPEED",
-        "channel": 1,
-        "type": "float"
-      },
-      {
         "name": "STOP",
         "channel": 1,
         "type": "action"
@@ -9493,8 +9136,7 @@
       }
     ],
     "names": [
-      "HM-Sec-Win",
-      "HM-Sec-Win-Generic"
+      "HM-Sec-Win"
     ]
   },
   {
