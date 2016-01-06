@@ -1,0 +1,1153 @@
+[
+  {
+    "read": [
+      {
+        "name": "KEY_1.PRESS",
+        "channel": 1
+      },
+      {
+        "name": "KEY_2.PRESS",
+        "channel": 2
+      }
+    ],
+    "names": [
+      "BC-PB-2-WM"
+    ]
+  },
+  {
+    "read": [
+      {
+        "name": "ACTUAL_TEMPERATURE",
+        "channel": 1
+      },
+      {
+        "name": "SET_TEMPERATURE",
+        "channel": 1
+      },
+      {
+        "name": "CONTROL_MODE",
+        "channel": 1,
+        "mapping": [
+          "AUTO-MODE",
+          "MANU-MODE",
+          "PARTY-MODE",
+          "BOOST-MODE"
+        ]
+      },
+      {
+        "name": "VALVE_STATE",
+        "channel": 1
+      },
+      {
+        "name": "PARTY_STOP_TIME",
+        "channel": 1
+      },
+      {
+        "name": "PARTY_STOP_DAY",
+        "channel": 1
+      },
+      {
+        "name": "PARTY_STOP_MONTH",
+        "channel": 1
+      },
+      {
+        "name": "PARTY_STOP_YEAR",
+        "channel": 1
+      }
+    ],
+    "write": [
+      {
+        "name": "SET_TEMPERATURE",
+        "channel": 1,
+        "type": "float"
+      },
+      {
+        "name": "COMFORT_TEMPERATURE",
+        "channel": 1,
+        "type": "float"
+      },
+      {
+        "name": "ECO_TEMPERATURE",
+        "channel": 1,
+        "type": "float"
+      },
+      {
+        "name": "MAX_TEMPERATURE",
+        "channel": 1,
+        "type": "float"
+      },
+      {
+        "name": "WINDOW_OPEN_TEMPERATURE",
+        "channel": 1,
+        "type": "float"
+      },
+      {
+        "name": "TEMPERATURE_OFFSET",
+        "channel": 1,
+        "type": "integer",
+        "mapping": [
+          "-3.5K",
+          "-3.0K",
+          "-2.5K",
+          "-2.0K",
+          "-1.5K",
+          "-1.0K",
+          "-0.5K",
+          "0.0K",
+          "0.5K",
+          "1.0K",
+          "1.5K",
+          "2.0K",
+          "2.5K",
+          "3.0K",
+          "3.5K"
+        ]
+      },
+      {
+        "name": "AUTO_MODE",
+        "channel": 1,
+        "type": "action"
+      },
+      {
+        "name": "MANU_MODE",
+        "channel": 1,
+        "type": "float"
+      },
+      {
+        "name": "BOOST_MODE",
+        "channel": 1,
+        "type": "action"
+      },
+      {
+        "name": "CONTROL_MODE",
+        "channel": 1,
+        "type": "integer",
+        "mapping": [
+          "AUTO-MODE",
+          "MANU-MODE",
+          "PARTY-MODE",
+          "BOOST-MODE"
+        ]
+      },
+      {
+        "name": "DECALCIFICATION_WEEKDAY",
+        "channel": 1,
+        "type": "integer",
+        "mapping": [
+          "SATURDAY",
+          "SUNDAY",
+          "MONDAY",
+          "TUESDAY",
+          "WEDNESDAY",
+          "THURSDAY",
+          "FRIDAY"
+        ]
+      },
+      {
+        "name": "DECALCIFICATION_TIME",
+        "channel": 1,
+        "type": "integer"
+      },
+      {
+        "name": "BOOST_TIME_PERIOD",
+        "channel": 1,
+        "type": "integer",
+        "mapping": [
+          "0 min",
+          "5 min",
+          "10 min",
+          "15 min",
+          "20 min",
+          "25 min",
+          "30 min",
+          "60 min"
+        ]
+      },
+      {
+        "name": "BOOST_POSITION",
+        "channel": 1,
+        "type": "integer"
+      },
+      {
+        "name": "PARTY_TEMPERATURE",
+        "channel": 1,
+        "type": "float"
+      },
+      {
+        "name": "PARTY_STOP_TIME",
+        "channel": 1,
+        "type": "integer"
+      },
+      {
+        "name": "PARTY_STOP_DAY",
+        "channel": 1,
+        "type": "integer"
+      },
+      {
+        "name": "PARTY_STOP_MONTH",
+        "channel": 1,
+        "type": "integer"
+      },
+      {
+        "name": "PARTY_STOP_YEAR",
+        "channel": 1,
+        "type": "integer"
+      }
+    ],
+    "names": [
+      "BC-RT-TRX-CyG-2"
+    ]
+  },
+  {
+    "read": [
+      {
+        "name": "ACTUAL_TEMPERATURE",
+        "channel": 1
+      },
+      {
+        "name": "SET_TEMPERATURE",
+        "channel": 1
+      },
+      {
+        "name": "CONTROL_MODE",
+        "channel": 1,
+        "mapping": [
+          "AUTO-MODE",
+          "MANU-MODE",
+          "PARTY-MODE",
+          "BOOST-MODE"
+        ]
+      },
+      {
+        "name": "LOCKED",
+        "channel": 1
+      },
+      {
+        "name": "VALVE_STATE",
+        "channel": 1
+      },
+      {
+        "name": "PARTY_STOP_TIME",
+        "channel": 1
+      },
+      {
+        "name": "PARTY_STOP_DAY",
+        "channel": 1
+      },
+      {
+        "name": "PARTY_STOP_MONTH",
+        "channel": 1
+      },
+      {
+        "name": "PARTY_STOP_YEAR",
+        "channel": 1
+      }
+    ],
+    "write": [
+      {
+        "name": "SET_TEMPERATURE",
+        "channel": 1,
+        "type": "float"
+      },
+      {
+        "name": "COMFORT_TEMPERATURE",
+        "channel": 1,
+        "type": "float"
+      },
+      {
+        "name": "ECO_TEMPERATURE",
+        "channel": 1,
+        "type": "float"
+      },
+      {
+        "name": "MAX_TEMPERATURE",
+        "channel": 1,
+        "type": "float"
+      },
+      {
+        "name": "WINDOW_OPEN_TEMPERATURE",
+        "channel": 1,
+        "type": "float"
+      },
+      {
+        "name": "TEMPERATURE_OFFSET",
+        "channel": 1,
+        "type": "integer",
+        "mapping": [
+          "-3.5K",
+          "-3.0K",
+          "-2.5K",
+          "-2.0K",
+          "-1.5K",
+          "-1.0K",
+          "-0.5K",
+          "0.0K",
+          "0.5K",
+          "1.0K",
+          "1.5K",
+          "2.0K",
+          "2.5K",
+          "3.0K",
+          "3.5K"
+        ]
+      },
+      {
+        "name": "AUTO_MODE",
+        "channel": 1,
+        "type": "action"
+      },
+      {
+        "name": "MANU_MODE",
+        "channel": 1,
+        "type": "float"
+      },
+      {
+        "name": "BOOST_MODE",
+        "channel": 1,
+        "type": "action"
+      },
+      {
+        "name": "CONTROL_MODE",
+        "channel": 1,
+        "type": "integer",
+        "mapping": [
+          "AUTO-MODE",
+          "MANU-MODE",
+          "PARTY-MODE",
+          "BOOST-MODE"
+        ]
+      },
+      {
+        "name": "DECALCIFICATION_WEEKDAY",
+        "channel": 1,
+        "type": "integer",
+        "mapping": [
+          "SATURDAY",
+          "SUNDAY",
+          "MONDAY",
+          "TUESDAY",
+          "WEDNESDAY",
+          "THURSDAY",
+          "FRIDAY"
+        ]
+      },
+      {
+        "name": "DECALCIFICATION_TIME",
+        "channel": 1,
+        "type": "integer"
+      },
+      {
+        "name": "BOOST_TIME_PERIOD",
+        "channel": 1,
+        "type": "integer",
+        "mapping": [
+          "0 min",
+          "5 min",
+          "10 min",
+          "15 min",
+          "20 min",
+          "25 min",
+          "30 min",
+          "60 min"
+        ]
+      },
+      {
+        "name": "BOOST_POSITION",
+        "channel": 1,
+        "type": "integer"
+      },
+      {
+        "name": "PARTY_TEMPERATURE",
+        "channel": 1,
+        "type": "float"
+      },
+      {
+        "name": "PARTY_STOP_TIME",
+        "channel": 1,
+        "type": "integer"
+      },
+      {
+        "name": "PARTY_STOP_DAY",
+        "channel": 1,
+        "type": "integer"
+      },
+      {
+        "name": "PARTY_STOP_MONTH",
+        "channel": 1,
+        "type": "integer"
+      },
+      {
+        "name": "PARTY_STOP_YEAR",
+        "channel": 1,
+        "type": "integer"
+      }
+    ],
+    "names": [
+      "BC-RT-TRX-CyG-3"
+    ]
+  },
+  {
+    "read": [
+      {
+        "name": "ACTUAL_TEMPERATURE",
+        "channel": 1
+      },
+      {
+        "name": "SET_TEMPERATURE",
+        "channel": 1
+      },
+      {
+        "name": "CONTROL_MODE",
+        "channel": 1,
+        "mapping": [
+          "AUTO-MODE",
+          "MANU-MODE",
+          "PARTY-MODE",
+          "BOOST-MODE"
+        ]
+      },
+      {
+        "name": "LOCKED",
+        "channel": 1
+      },
+      {
+        "name": "VALVE_STATE",
+        "channel": 1
+      },
+      {
+        "name": "PARTY_STOP_TIME",
+        "channel": 1
+      },
+      {
+        "name": "PARTY_STOP_DAY",
+        "channel": 1
+      },
+      {
+        "name": "PARTY_STOP_MONTH",
+        "channel": 1
+      },
+      {
+        "name": "PARTY_STOP_YEAR",
+        "channel": 1
+      }
+    ],
+    "write": [
+      {
+        "name": "SET_TEMPERATURE",
+        "channel": 1,
+        "type": "float"
+      },
+      {
+        "name": "COMFORT_TEMPERATURE",
+        "channel": 1,
+        "type": "float"
+      },
+      {
+        "name": "ECO_TEMPERATURE",
+        "channel": 1,
+        "type": "float"
+      },
+      {
+        "name": "MAX_TEMPERATURE",
+        "channel": 1,
+        "type": "float"
+      },
+      {
+        "name": "WINDOW_OPEN_TEMPERATURE",
+        "channel": 1,
+        "type": "float"
+      },
+      {
+        "name": "TEMPERATURE_OFFSET",
+        "channel": 1,
+        "type": "integer",
+        "mapping": [
+          "-3.5K",
+          "-3.0K",
+          "-2.5K",
+          "-2.0K",
+          "-1.5K",
+          "-1.0K",
+          "-0.5K",
+          "0.0K",
+          "0.5K",
+          "1.0K",
+          "1.5K",
+          "2.0K",
+          "2.5K",
+          "3.0K",
+          "3.5K"
+        ]
+      },
+      {
+        "name": "AUTO_MODE",
+        "channel": 1,
+        "type": "action"
+      },
+      {
+        "name": "MANU_MODE",
+        "channel": 1,
+        "type": "float"
+      },
+      {
+        "name": "BOOST_MODE",
+        "channel": 1,
+        "type": "action"
+      },
+      {
+        "name": "CONTROL_MODE",
+        "channel": 1,
+        "type": "integer",
+        "mapping": [
+          "AUTO-MODE",
+          "MANU-MODE",
+          "PARTY-MODE",
+          "BOOST-MODE"
+        ]
+      },
+      {
+        "name": "DECALCIFICATION_WEEKDAY",
+        "channel": 1,
+        "type": "integer",
+        "mapping": [
+          "SATURDAY",
+          "SUNDAY",
+          "MONDAY",
+          "TUESDAY",
+          "WEDNESDAY",
+          "THURSDAY",
+          "FRIDAY"
+        ]
+      },
+      {
+        "name": "DECALCIFICATION_TIME",
+        "channel": 1,
+        "type": "integer"
+      },
+      {
+        "name": "BOOST_TIME_PERIOD",
+        "channel": 1,
+        "type": "integer",
+        "mapping": [
+          "0 min",
+          "5 min",
+          "10 min",
+          "15 min",
+          "20 min",
+          "25 min",
+          "30 min",
+          "60 min"
+        ]
+      },
+      {
+        "name": "BOOST_POSITION",
+        "channel": 1,
+        "type": "integer"
+      },
+      {
+        "name": "PARTY_TEMPERATURE",
+        "channel": 1,
+        "type": "float"
+      },
+      {
+        "name": "PARTY_STOP_TIME",
+        "channel": 1,
+        "type": "integer"
+      },
+      {
+        "name": "PARTY_STOP_DAY",
+        "channel": 1,
+        "type": "integer"
+      },
+      {
+        "name": "PARTY_STOP_MONTH",
+        "channel": 1,
+        "type": "integer"
+      },
+      {
+        "name": "PARTY_STOP_YEAR",
+        "channel": 1,
+        "type": "integer"
+      }
+    ],
+    "names": [
+      "BC-RT-TRX-CyG"
+    ]
+  },
+  {
+    "read": [
+      {
+        "name": "ACTUAL_TEMPERATURE",
+        "channel": 1
+      },
+      {
+        "name": "SET_TEMPERATURE",
+        "channel": 1
+      },
+      {
+        "name": "CONTROL_MODE",
+        "channel": 1,
+        "mapping": [
+          "AUTO-MODE",
+          "MANU-MODE",
+          "PARTY-MODE",
+          "BOOST-MODE"
+        ]
+      },
+      {
+        "name": "LOCKED",
+        "channel": 1
+      },
+      {
+        "name": "VALVE_STATE",
+        "channel": 1
+      },
+      {
+        "name": "PARTY_STOP_TIME",
+        "channel": 1
+      },
+      {
+        "name": "PARTY_STOP_DAY",
+        "channel": 1
+      },
+      {
+        "name": "PARTY_STOP_MONTH",
+        "channel": 1
+      },
+      {
+        "name": "PARTY_STOP_YEAR",
+        "channel": 1
+      }
+    ],
+    "write": [
+      {
+        "name": "SET_TEMPERATURE",
+        "channel": 1,
+        "type": "float"
+      },
+      {
+        "name": "COMFORT_TEMPERATURE",
+        "channel": 1,
+        "type": "float"
+      },
+      {
+        "name": "ECO_TEMPERATURE",
+        "channel": 1,
+        "type": "float"
+      },
+      {
+        "name": "MAX_TEMPERATURE",
+        "channel": 1,
+        "type": "float"
+      },
+      {
+        "name": "WINDOW_OPEN_TEMPERATURE",
+        "channel": 1,
+        "type": "float"
+      },
+      {
+        "name": "TEMPERATURE_OFFSET",
+        "channel": 1,
+        "type": "integer",
+        "mapping": [
+          "-3.5K",
+          "-3.0K",
+          "-2.5K",
+          "-2.0K",
+          "-1.5K",
+          "-1.0K",
+          "-0.5K",
+          "0.0K",
+          "0.5K",
+          "1.0K",
+          "1.5K",
+          "2.0K",
+          "2.5K",
+          "3.0K",
+          "3.5K"
+        ]
+      },
+      {
+        "name": "AUTO_MODE",
+        "channel": 1,
+        "type": "action"
+      },
+      {
+        "name": "MANU_MODE",
+        "channel": 1,
+        "type": "float"
+      },
+      {
+        "name": "BOOST_MODE",
+        "channel": 1,
+        "type": "action"
+      },
+      {
+        "name": "CONTROL_MODE",
+        "channel": 1,
+        "type": "integer",
+        "mapping": [
+          "AUTO-MODE",
+          "MANU-MODE",
+          "PARTY-MODE",
+          "BOOST-MODE"
+        ]
+      },
+      {
+        "name": "DECALCIFICATION_WEEKDAY",
+        "channel": 1,
+        "type": "integer",
+        "mapping": [
+          "SATURDAY",
+          "SUNDAY",
+          "MONDAY",
+          "TUESDAY",
+          "WEDNESDAY",
+          "THURSDAY",
+          "FRIDAY"
+        ]
+      },
+      {
+        "name": "DECALCIFICATION_TIME",
+        "channel": 1,
+        "type": "integer"
+      },
+      {
+        "name": "BOOST_TIME_PERIOD",
+        "channel": 1,
+        "type": "integer",
+        "mapping": [
+          "0 min",
+          "5 min",
+          "10 min",
+          "15 min",
+          "20 min",
+          "25 min",
+          "30 min",
+          "60 min"
+        ]
+      },
+      {
+        "name": "BOOST_POSITION",
+        "channel": 1,
+        "type": "integer"
+      },
+      {
+        "name": "PARTY_TEMPERATURE",
+        "channel": 1,
+        "type": "float"
+      },
+      {
+        "name": "PARTY_STOP_TIME",
+        "channel": 1,
+        "type": "integer"
+      },
+      {
+        "name": "PARTY_STOP_DAY",
+        "channel": 1,
+        "type": "integer"
+      },
+      {
+        "name": "PARTY_STOP_MONTH",
+        "channel": 1,
+        "type": "integer"
+      },
+      {
+        "name": "PARTY_STOP_YEAR",
+        "channel": 1,
+        "type": "integer"
+      }
+    ],
+    "names": [
+      "BC-RT-TRX-CyN"
+    ]
+  },
+  {
+    "read": [
+      {
+        "name": "STATE",
+        "channel": 1
+      }
+    ],
+    "names": [
+      "BC-SC-Rd-WM-2"
+    ]
+  },
+  {
+    "read": [
+      {
+        "name": "STATE",
+        "channel": 1
+      }
+    ],
+    "names": [
+      "BC-SC-Rd-WM"
+    ]
+  },
+  {
+    "read": [
+      {
+        "name": "ACTUAL_TEMPERATURE",
+        "channel": 1
+      },
+      {
+        "name": "SET_TEMPERATURE",
+        "channel": 1
+      },
+      {
+        "name": "CONTROL_MODE",
+        "channel": 1,
+        "mapping": [
+          "AUTO-MODE",
+          "MANU-MODE",
+          "PARTY-MODE",
+          "BOOST-MODE"
+        ]
+      },
+      {
+        "name": "PARTY_STOP_TIME",
+        "channel": 1
+      },
+      {
+        "name": "PARTY_STOP_DAY",
+        "channel": 1
+      },
+      {
+        "name": "PARTY_STOP_MONTH",
+        "channel": 1
+      },
+      {
+        "name": "PARTY_STOP_YEAR",
+        "channel": 1
+      }
+    ],
+    "write": [
+      {
+        "name": "SET_TEMPERATURE",
+        "channel": 1,
+        "type": "float"
+      },
+      {
+        "name": "COMFORT_TEMPERATURE",
+        "channel": 1,
+        "type": "float"
+      },
+      {
+        "name": "ECO_TEMPERATURE",
+        "channel": 1,
+        "type": "float"
+      },
+      {
+        "name": "MAX_TEMPERATURE",
+        "channel": 1,
+        "type": "float"
+      },
+      {
+        "name": "WINDOW_OPEN_TEMPERATURE",
+        "channel": 1,
+        "type": "float"
+      },
+      {
+        "name": "TEMPERATURE_OFFSET",
+        "channel": 1,
+        "type": "integer",
+        "mapping": [
+          "-3.5K",
+          "-3.0K",
+          "-2.5K",
+          "-2.0K",
+          "-1.5K",
+          "-1.0K",
+          "-0.5K",
+          "0.0K",
+          "0.5K",
+          "1.0K",
+          "1.5K",
+          "2.0K",
+          "2.5K",
+          "3.0K",
+          "3.5K"
+        ]
+      },
+      {
+        "name": "AUTO_MODE",
+        "channel": 1,
+        "type": "action"
+      },
+      {
+        "name": "MANU_MODE",
+        "channel": 1,
+        "type": "float"
+      },
+      {
+        "name": "BOOST_MODE",
+        "channel": 1,
+        "type": "action"
+      },
+      {
+        "name": "SHOW_SET_TEMPERATURE",
+        "channel": 1,
+        "type": "integer",
+        "mapping": [
+          "SET_TEMPERATURE",
+          "ACTUAL_TEMPERATURE"
+        ]
+      },
+      {
+        "name": "CONTROL_MODE",
+        "channel": 1,
+        "type": "integer",
+        "mapping": [
+          "AUTO-MODE",
+          "MANU-MODE",
+          "PARTY-MODE",
+          "BOOST-MODE"
+        ]
+      },
+      {
+        "name": "BOOST_TIME_PERIOD",
+        "channel": 1,
+        "type": "integer",
+        "mapping": [
+          "0 min",
+          "5 min",
+          "10 min",
+          "15 min",
+          "20 min",
+          "25 min",
+          "30 min",
+          "60 min"
+        ]
+      },
+      {
+        "name": "PARTY_TEMPERATURE",
+        "channel": 1,
+        "type": "float"
+      },
+      {
+        "name": "PARTY_STOP_TIME",
+        "channel": 1,
+        "type": "integer"
+      },
+      {
+        "name": "PARTY_STOP_DAY",
+        "channel": 1,
+        "type": "integer"
+      },
+      {
+        "name": "PARTY_STOP_MONTH",
+        "channel": 1,
+        "type": "integer"
+      },
+      {
+        "name": "PARTY_STOP_YEAR",
+        "channel": 1,
+        "type": "integer"
+      }
+    ],
+    "names": [
+      "BC-TC-C-WM-2"
+    ]
+  },
+  {
+    "read": [
+      {
+        "name": "ACTUAL_TEMPERATURE",
+        "channel": 1
+      },
+      {
+        "name": "SET_TEMPERATURE",
+        "channel": 1
+      },
+      {
+        "name": "CONTROL_MODE",
+        "channel": 1,
+        "mapping": [
+          "AUTO-MODE",
+          "MANU-MODE",
+          "PARTY-MODE",
+          "BOOST-MODE"
+        ]
+      },
+      {
+        "name": "PARTY_STOP_TIME",
+        "channel": 1
+      },
+      {
+        "name": "PARTY_STOP_DAY",
+        "channel": 1
+      },
+      {
+        "name": "PARTY_STOP_MONTH",
+        "channel": 1
+      },
+      {
+        "name": "PARTY_STOP_YEAR",
+        "channel": 1
+      }
+    ],
+    "write": [
+      {
+        "name": "SET_TEMPERATURE",
+        "channel": 1,
+        "type": "float"
+      },
+      {
+        "name": "COMFORT_TEMPERATURE",
+        "channel": 1,
+        "type": "float"
+      },
+      {
+        "name": "ECO_TEMPERATURE",
+        "channel": 1,
+        "type": "float"
+      },
+      {
+        "name": "MAX_TEMPERATURE",
+        "channel": 1,
+        "type": "float"
+      },
+      {
+        "name": "WINDOW_OPEN_TEMPERATURE",
+        "channel": 1,
+        "type": "float"
+      },
+      {
+        "name": "TEMPERATURE_OFFSET",
+        "channel": 1,
+        "type": "integer",
+        "mapping": [
+          "-3.5K",
+          "-3.0K",
+          "-2.5K",
+          "-2.0K",
+          "-1.5K",
+          "-1.0K",
+          "-0.5K",
+          "0.0K",
+          "0.5K",
+          "1.0K",
+          "1.5K",
+          "2.0K",
+          "2.5K",
+          "3.0K",
+          "3.5K"
+        ]
+      },
+      {
+        "name": "AUTO_MODE",
+        "channel": 1,
+        "type": "action"
+      },
+      {
+        "name": "MANU_MODE",
+        "channel": 1,
+        "type": "float"
+      },
+      {
+        "name": "BOOST_MODE",
+        "channel": 1,
+        "type": "action"
+      },
+      {
+        "name": "SHOW_SET_TEMPERATURE",
+        "channel": 1,
+        "type": "integer",
+        "mapping": [
+          "SET_TEMPERATURE",
+          "ACTUAL_TEMPERATURE"
+        ]
+      },
+      {
+        "name": "CONTROL_MODE",
+        "channel": 1,
+        "type": "integer",
+        "mapping": [
+          "AUTO-MODE",
+          "MANU-MODE",
+          "PARTY-MODE",
+          "BOOST-MODE"
+        ]
+      },
+      {
+        "name": "BOOST_TIME_PERIOD",
+        "channel": 1,
+        "type": "integer",
+        "mapping": [
+          "0 min",
+          "5 min",
+          "10 min",
+          "15 min",
+          "20 min",
+          "25 min",
+          "30 min",
+          "60 min"
+        ]
+      },
+      {
+        "name": "PARTY_TEMPERATURE",
+        "channel": 1,
+        "type": "float"
+      },
+      {
+        "name": "PARTY_STOP_TIME",
+        "channel": 1,
+        "type": "integer"
+      },
+      {
+        "name": "PARTY_STOP_DAY",
+        "channel": 1,
+        "type": "integer"
+      },
+      {
+        "name": "PARTY_STOP_MONTH",
+        "channel": 1,
+        "type": "integer"
+      },
+      {
+        "name": "PARTY_STOP_YEAR",
+        "channel": 1,
+        "type": "integer"
+      }
+    ],
+    "names": [
+      "BC-TC-C-WM-4"
+    ]
+  },
+  {
+    "read": [
+      {
+        "name": "STATE",
+        "channel": 1
+      },
+      {
+        "name": "CONTROL_MODE",
+        "channel": 1,
+        "mapping": [
+          "AUTO-MODE",
+          "MANU-MODE"
+        ]
+      }
+    ],
+    "write": [
+      {
+        "name": "STATE",
+        "channel": 1,
+        "type": "boolean"
+      },
+      {
+        "name": "MANU_MODE",
+        "channel": 1,
+        "type": "action"
+      },
+      {
+        "name": "AUTO_MODE",
+        "channel": 1,
+        "type": "action"
+      }
+    ],
+    "names": [
+      "BC-TS-Sw-Pl"
+    ]
+  }
+]
