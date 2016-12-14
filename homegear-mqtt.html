@@ -262,7 +262,7 @@
 								break;
 
 							case 'boolean':
-								var selected = $('#node-input-paramValue').val();
+								var selected = Number($('#node-input-paramValue').val()) || 0;
 
 								$('<option></option>').val(0).text('false')
 													  .appendTo('#node-input-paramValueList');
