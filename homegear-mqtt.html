@@ -262,13 +262,14 @@
 								break;
 
 							case 'boolean':
-								var select = Number($('#node-input-paramValue').val()) || 0;
+								var selected = Number($('#node-input-paramValue').val()) || 0;
 
 								$('<option></option>').val(0).text('false')
 													  .appendTo('#node-input-paramValueList');
 								$('<option></option>').val(1).text('true')
 													  .appendTo('#node-input-paramValueList');
 
+								$('#node-input-paramValueList').val(selected).change();
 								$('#node-input-paramValueList').show();
 								$('#node-input-paramValueRow').show();
 								break;
