@@ -26,7 +26,7 @@ module.exports = function(RED) {
 		this.publishComplete = n.publishComplete;
 
 
-		this.eventTopic = 'homegear/' + this.homegearId + '/event/' + this.peerId + '/#';
+		this.eventTopic = 'homegear/' + this.homegearId + '/json/' + this.peerId + '/#';
 		this.rpcTopic   = 'homegear/' + this.homegearId + '/rpcResult';
 		this.rpcId      = Math.floor(1 + Math.random() * 7295);
 
