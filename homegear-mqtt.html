@@ -169,45 +169,59 @@
 			$('#node-input-paramValueList').hide();
 
 			$('#node-input-deviceType').hide();
-
-			$.getScript('homegear-mqtt/common')
-			.done(function(data, textStatus, jqxhr) {
-				$.getScript('homegear-mqtt/families/homematic')
-				.done(function(data, textStatus, jqxhr) {
-					$('#node-input-deviceTypeList option').remove();
-
-					var deviceTypes = JSON.parse(data);
-					var deviceOpts  = [];
-
-					var selected = $('#node-input-deviceType').val();
-					for(var i in deviceTypes) {
-						for(var j in deviceTypes[i].names) {
-							var name = deviceTypes[i].names[j];
-							var value = i.toString() + ':' + j.toString();
-							deviceOpts.push([name, value]);
-						}
-					}
-					deviceOpts.sort();
-					for(i = 0; i < deviceOpts.length; ++i) {
-						var opt = $('<option></option>').val(deviceOpts[i][1])
-														.text(deviceOpts[i][0]);
-
-						opt.appendTo('#node-input-deviceTypeList');
-						if(selected === opt.val()) {
-							opt.attr('selected', 'selected');
-						}
-					}
-
-					$('#node-input-deviceTypeList').change(function() {
-						var value = $('#node-input-deviceTypeList option:selected').val();
-						var name  = $('#node-input-deviceTypeList option:selected').text();
-						$('#node-input-deviceType').val(value);
-
-						updateDeviceParamLists(deviceTypes[Number(value.split(':')[0])]);
-					}).show();
-
-					updateDeviceParamLists(deviceTypes[Number((selected || '0:0').split(':')[0])]);
+			
+			$.getMultiScripts = function(arr, path) {
+				var _arr = $.map(arr, function(scr) {
+					return $.getScript( (path||"") + scr );
 				});
+
+				_arr.push($.Deferred(function( deferred ){
+					$( deferred.resolve );
+				}));
+
+				return $.when.apply($, _arr);
+			};
+
+			var script_arr = [
+				'homegear-mqtt/common',
+				'homegear-mqtt/families/homematic'
+			];
+
+			$.getMultiScripts(script_arr).done(function(response1, response2) {
+
+				$('#node-input-deviceTypeList option').remove();
+
+				var deviceTypes = JSON.parse(response2[0]);
+				var deviceOpts  = [];
+
+				var selected = $('#node-input-deviceType').val();
+				for(var i in deviceTypes) {
+					for(var j in deviceTypes[i].names) {
+						var name = deviceTypes[i].names[j];
+						var value = i.toString() + ':' + j.toString();
+						deviceOpts.push([name, value]);
+					}
+				}
+				deviceOpts.sort();
+				for(i = 0; i < deviceOpts.length; ++i) {
+					var opt = $('<option></option>').val(deviceOpts[i][1])
+													.text(deviceOpts[i][0]);
+
+					opt.appendTo('#node-input-deviceTypeList');
+					if(selected === opt.val()) {
+						opt.attr('selected', 'selected');
+					}
+				}
+
+				$('#node-input-deviceTypeList').change(function() {
+					var value = $('#node-input-deviceTypeList option:selected').val();
+					var name  = $('#node-input-deviceTypeList option:selected').text();
+					$('#node-input-deviceType').val(value);
+
+					updateDeviceParamLists(deviceTypes[Number(value.split(':')[0])]);
+				}).show();
+
+				updateDeviceParamLists(deviceTypes[Number((selected || '0:0').split(':')[0])]);
 			});
 
 			function updateDeviceParamLists(device) {
