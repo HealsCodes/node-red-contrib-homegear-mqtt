@@ -14,6 +14,7 @@
 			deviceType: {required:true},
 			publishUpdates: {value:true, required:true},
 			publishComplete: {value:true, required:true},
+			resetAfterPublish: {value:true, required:true},
 			name: {value:''},
 			genName: {value:''}
 		},
@@ -101,6 +102,11 @@
 		<label>&nbsp;</label>
 		<input type="checkbox" id="node-input-publishComplete" style="display: inline-block; width: auto; vertial-align: top;">
 		<label for="node-input-publishComplete" style="width: 70%;"><span data-i18n="homegear-mqtt.label.publishComplete"></span></label>
+	</div>
+	<div class="form-row">
+					<label>&nbsp;</label>
+					<input type="checkbox" id="node-input-resetAfterPublish" style="display: inline-block; width: auto; vertial-align: top;">
+					<label for="node-input-resetAfterPublish" style="width: 70%;"><span data-i18n="homegear-mqtt.label.resetAfterPublish"></span></label>
 	</div>
 	<div class="form-row">
 		<label for="node-input-name"><i class="icon-tag"></i><span data-i18n="node-red:common.label.name"></span></label>

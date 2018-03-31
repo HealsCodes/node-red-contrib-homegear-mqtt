@@ -7,6 +7,7 @@
 			"deviceType": " Device Type",
 			"publishUpdates": "Only send a message on property changes.",
 			"publishComplete": "Wait for complete property before first message.",
+			"resetAfterPublish": "Reset properties after publish (good for sensors)",
 			"publishResult": "Output for HomeGear response.",
 			"paramName": " Parameter",
 			"paramValue": " Value",
