@@ -24,6 +24,7 @@ module.exports = function(RED) {
 		this.deviceState = homegear.payloadDictForDevice(this.deviceType);
 		this.publishUpdates = n.publishUpdates;
 		this.publishComplete = n.publishComplete;
+		this.resetAfterPublish = n.resetAfterPublish;
 
 
 		this.eventTopic = 'homegear/' + this.homegearId + '/json/' + this.peerId + '/#';
@@ -53,6 +54,10 @@ module.exports = function(RED) {
 				}
 				/* good to send */
 				node.send({topic: node.name, payload: node.deviceState});
+				if(node.resetAfterPublish === true) {
+					/* reset deviceState to default to prevent sending on each new value */
+					node.deviceState = homegear.payloadDictForDevice(node.deviceType);
+				}
 			}
 			oldState = null;
 		}
