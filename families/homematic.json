@@ -9338,10 +9338,6 @@
         "channel": 4
       },
       {
-        "name": "WEATHER.TEMPERATURE",
-        "channel": 5
-      },
-      {
         "name": "WEATHER.LOWBAT",
         "channel": 5
       }
