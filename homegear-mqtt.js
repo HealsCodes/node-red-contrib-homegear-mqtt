@@ -113,11 +113,11 @@ module.exports = function(RED) {
 			});
 		}
 
-		this.on('close', function() {
+		this.on('close', function (done) {
 			if(node.brokerConn) {
 				node.brokerConn.unsubscribe(node.evenTopic,node.id);
 				node.brokerConn.unsubscribe(node.rpcTopic,node.id);
-				node.brokerConn.deregister(node);
+				node.brokerConn.deregister(node, done);
 			}
 		});
 	}
@@ -205,10 +205,10 @@ module.exports = function(RED) {
 			}
 		});
 
-		this.on('close', function() {
+		this.on('close', function (done) {
 			if(node.brokerConn) {
 				node.brokerConn.unsubscribe(node.rpcTopic,node.id);
-				node.brokerConn.deregister(node);
+				node.brokerConn.deregister(node, done);
 			}
 		});
 	}
